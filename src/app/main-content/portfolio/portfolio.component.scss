@@ -12,19 +12,19 @@ section {
   overflow: hidden;
   max-width: 1440px;
   .my-work {
-    display: flex;
     .ball {
       @include ball();
       position: relative;
       left: 10%;
-      top: -60px;
+      top: 120px;
       height: 108px;
       width: 108px;
-      animation-name: moveAnimation5;
+      animation-name: moveAnimation1;
       animation-duration: 5ms; /* Firefox requires this to apply the animation */
       animation-direction: alternate;
       animation-timeline: scroll(block nearest);
     }
+    display: flex;
     h1 {
       font-family: "Baloo 2";
       font-weight: 700;
@@ -36,12 +36,12 @@ section {
   }
 }
 
-@keyframes moveAnimation5 {
+@keyframes moveAnimation1 {
   from {
-      top: -60px;
+      top: 120px;
   }
   to {
-      top: -240px;
+      top: -300px;
   }
 }
 

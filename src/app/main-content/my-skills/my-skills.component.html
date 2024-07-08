@@ -4,7 +4,11 @@
     </div>
 
     <div class="skills-icons">
-        <div class="icon">
+
+        @for(skill of skillsArray; track skill.name; let index = $index) {
+            <app-single-skill [skill]="skill"></app-single-skill>
+        }
+        <!-- <div class="icon">
             <img src="assets/img/angular.png" alt="angular">
             <span>Angular</span>
         </div>
@@ -43,6 +47,6 @@
         <div class="icon">
             <img src="assets/img/material_design.png" alt="material_design">
             <span>Material<br>Design</span>
-        </div>
+        </div> -->
     </div>
 </section>
