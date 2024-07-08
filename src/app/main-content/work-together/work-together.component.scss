@@ -1,0 +1,133 @@
+@import './../../../styles.scss';
+
+.work-together {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 3rem 6.25rem;
+    background-color: #fff;
+    position: relative;
+    .ball {
+        @include ball();
+        // align-self: end;
+        position: absolute;
+        width: 5.125rem;
+        height: 5.125rem;
+        top: 25px;
+        right: 11%;
+        @include animation();
+    }
+    .together-section {
+        display: flex;
+        gap: 6.25rem;
+        z-index: 2;
+        .together{
+            // flex: 1;
+            color: $blue;
+            font-family: 'Baloo 2';
+            font-weight: 400;
+            font-size: 65px;
+            line-height: 90px;
+            padding-bottom: 55px;
+        }
+        .together-description{
+            display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 1.4375rem;
+        line-height: 1.725rem;
+        flex: 1;
+        gap: 16px;
+    }
+}
+}
+
+@keyframes moveAnimation {
+    from {
+        top: 25px;
+    }
+    to {
+        top: -75px;
+    }
+  }
+
+button {
+    position: relative;
+    display: flex;
+    align-self: center;
+    font-family: 'Poppins';
+    cursor: pointer;
+    border-radius: .625rem;
+    font-weight: 400;
+    padding: .9375rem 1.875rem;
+    gap: .625rem;
+    min-width: 15.875rem;
+    transform: scale(1);
+    color: $blue;
+    border: solid 2px $blue;
+    background: white;
+    overflow: hidden;
+    &:before {
+        background: linear-gradient(125deg, rgb(89, 136, 255) 55%, rgb(89, 136, 255) 45%, rgb(0, 67, 240) 63%);
+        content: "";
+        height: 21.875rem;
+        width: 18.75rem;
+        left: -23.5625rem;
+        position: absolute;
+        top: -11.5625rem;
+        transform: rotate(50deg);
+        transition: all 175ms ease-in-out;
+        color: white;
+    }
+    &:hover:before {
+        left: .625rem;
+        z-index: -1;
+    }
+    &:hover {
+        transform: scale(1.1);
+        border: solid 2px transparent;
+        color: white;
+    }
+}
+
+@media (max-width: 1000px) {
+    .work-together {
+        padding: 3rem 2.25rem;
+        .ball {
+            align-self: end;
+            width: 3.8125rem;
+            height: 3.8125rem;
+        }
+        .together-section{
+            flex-direction: column;
+            align-items: start;
+            // margin-top: 200px;
+            gap: 0;
+            img {
+                top: -9.25rem;
+                right: -5%;
+            }
+            .together{
+                font-size: 40px;
+                line-height: 55px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .work-together {
+        padding: 3rem 2.25rem;
+        .ball {
+            align-self: end;
+            width: 3.8125rem;
+            height: 3.8125rem;
+            margin-right: 0;
+        }
+    }
+}

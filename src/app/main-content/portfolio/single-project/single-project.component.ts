@@ -1,0 +1,22 @@
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-single-project',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './single-project.component.html',
+  styleUrl: './single-project.component.scss',
+})
+export class SingleProjectComponent {
+  @Input() project = {
+    id: 0,
+    image: 'assets/img/join.png',
+    project_name: 'Join',
+    language: 'Java Script | HTML | CSS',
+    description:
+      'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+    test: 'Live test',
+    git_hub: 'GitHub',
+  };
+}

@@ -1,0 +1,15 @@
+<div class="main-project" [ngClass]="{'even-flex-direction': project.id % 2 === 0, 'odd-flex-direction': project.id % 2 !== 0}">
+    <div class="project">
+        <img src="{{project.image}}" alt="{{project.image}}">
+    </div>
+
+    <div class="description" [ngClass]="{'even-align-items': project.id % 2 === 0, 'odd-align-items': project.id % 2 !== 0}">
+        <h2>{{project.project_name}}</h2>
+        <h3>{{project.language}}</h3>
+        <div [ngClass]="{'even-text-align': project.id % 2 === 0, 'odd-text-align': project.id % 2 !== 0}">{{project.description}}</div>
+        <div class="buttons">
+            <button>{{project.test}}</button>
+            <button>{{project.git_hub}}</button>
+        </div>
+    </div>
+</div>

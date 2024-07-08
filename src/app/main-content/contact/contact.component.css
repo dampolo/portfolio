@@ -1,0 +1,11 @@
+section {
+  .title {
+    h2 {
+      font-family: 'Baloo';
+      font-size: 90px;
+      font-weight: 400;
+      line-height: 108px;
+      text-align: center;
+    }
+  }
+}

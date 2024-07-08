@@ -1,0 +1,26 @@
+<section>
+
+    <div class="half-ball"></div>
+    <div class="ball-pollo-loco"></div>
+    <div class="little-ball-pollo-loco"></div>
+    <div class="ball-pokemons"></div>
+    <div class="ball-simple-crm"></div>
+
+
+    <div class="my-work">
+        <h1>My work</h1>
+        <div class="ball"></div>
+
+    </div>
+    <div class="my-work-description">
+        <p>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</p>
+        <div class="ball-bigger"></div>
+
+    </div>
+
+    @for(project of portfolio; track project.id; let index = $index) {
+        <app-single-project [project]="project"></app-single-project>
+    }
+    
+</section>
+

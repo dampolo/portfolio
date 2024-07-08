@@ -1,0 +1,109 @@
+@import "./../../../../../styles.scss";
+
+section {
+  background: radial-gradient(
+      71.18% 335.57% at 28.82% -124.4%,
+      #5988ff 6.25%,
+      #5988ff 51.56%,
+      #0043f0 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 291px;
+
+  .logo-copyright-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .logo {
+      filter: none;
+      cursor: pointer;
+      transition: all 150ms ease-in-out;
+      &:hover {
+        filter: drop-shadow(2px 4px 6px black);
+      }
+    }
+
+    .copyright {
+      font-family: "Montserrat";
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 27.6px;
+      text-align: left;
+      color: #fff;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 42px;
+    img {
+      position: relative;
+      top: 0;
+      scale: (1);
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: all 125ms ease-in-out;
+      &:hover {
+        position: relative;
+        top: -0.625rem;
+        scale: (1.2);
+      }
+    }
+  }
+
+  .imprint {
+    padding: 5px 10px 5px 10px;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 19.2px;
+      padding-block: 5px;
+      font-size: 16px;
+      text-align: left;
+      transition: all 125ms ease-in-out;
+      &:hover {
+        font-weight: 700;
+      }
+      &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: white;
+      transition: all 150ms ease-in;
+    }
+      &:hover::before  {
+      left: 25%;
+      width: 50%;
+    }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 380px;
+    .logo-copyright-icons {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
