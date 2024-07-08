@@ -25,11 +25,8 @@ export class ContactComponent {
   checkboxState = false;
 
   sendMessage() {
-
-  }
-
-  changeStatus() {
-    this.checkboxState = !this.checkboxState;
+    console.log('TEST');
+    
   }
 
   post = {

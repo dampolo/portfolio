@@ -53,29 +53,30 @@
           }
         </div>
 
+
         <div class="checkbox-container">
 
-          <button (click)="changeStatus()" type="button" value="Submit" id="checkbox">
+        <!-- TU JESTEM -->
 
-            @if(checkboxState) {
-              <img  alt="agree to privacy policy" src="assets/img/checkbox-checked.svg">
-            } @else {
-              <img  alt="agree to privacy policy" src="assets/img/checkbox-unchecked.svg">
-            }
-          
+          <button type="button" value="Submit" id="checkbox">
+            <input [(ngModel)]="checkboxState" type="checkbox" name="checkbox" id="">
+            {{checkboxState}}
           </button>
+
+        <!-- TU JESTEM -->
 
           <div class="checkbox-description">
             <label for="checkbox">I've read the <a class="privacy" href="">privacy policy</a> and agree to the processing of my data as outlined.</label>
-            @if(!checkboxState) {
-              <span></span>
-            } @else {
+            @if(!checkboxState && contactForm.form.valid) {
               <span>Please accept the privacy policy.</span>
-            }
+            } 
           </div>
         </div>
-        
-        <button type="submit" value="Submit" onclick="sendMessage()" >Say Hello ;)</button>
+      
+        <button (click)="sendMessage()" type="submit" value="Submit" [disabled]="!contactForm.form.valid" >Say Hello ;)</button>
+        {{contactForm.form.valid}}
+        {{checkboxState}}
+
     </form>
   </div>
 

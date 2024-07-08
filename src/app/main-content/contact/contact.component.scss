@@ -111,7 +111,7 @@ form {
     text-align: left;
     color: black;
     &:focus {
-      border: solid 2px $blue;
+      border: solid 3px $blue;
       outline: $blue;
     }
     &:focus ~ label,
@@ -245,6 +245,21 @@ button[type="submit"] {
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  &[disabled]{
+    cursor: auto;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    &::before {
+      content: none;
+    }
+    &:hover {
+      transform: scale(1);
+      border: 1px solid #999999;
+      color: #666666;
+    }
+  }
+
   &:before {
     background: linear-gradient(
       125deg,
@@ -281,9 +296,11 @@ button[type="submit"] {
     display: contents;
     width: 24px;
     height: 24px;
-    cursor: pointer;
-    img {
+    input {
+      cursor: pointer;
       align-self: baseline;
+      width: 24px;
+      height: 24px;
       &:hover {
         background: #d4e0ff;
         border-radius: 38px;
