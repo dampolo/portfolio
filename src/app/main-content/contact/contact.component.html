@@ -73,9 +73,11 @@
           </div>
         </div>
       
-        <button (click)="sendMessage()" type="submit" value="Submit" [disabled]="!contactForm.form.valid" >Say Hello ;)</button>
-        {{contactForm.form.valid}}
-        {{checkboxState}}
+        {{'to jest tylko dla button   Jesli jest true to jest DISABLED'}}
+        <button (click)="sendMessage()" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState" >Say Hello ;)</button>
+        
+        {{'form '+  !contactForm.form.valid}}
+        {{'checkbox '+ !checkboxState}}
 
     </form>
   </div>
