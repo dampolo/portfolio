@@ -20,6 +20,10 @@ section {
       top: -60px;
       height: 108px;
       width: 108px;
+      animation-name: moveAnimation5;
+      animation-duration: 5ms; /* Firefox requires this to apply the animation */
+      animation-direction: alternate;
+      animation-timeline: scroll(block nearest);
     }
     h1 {
       font-family: "Baloo 2";
@@ -29,6 +33,15 @@ section {
       color: $blue;
       padding-bottom: 30px;
     }
+  }
+}
+
+@keyframes moveAnimation5 {
+  from {
+      top: -60px;
+  }
+  to {
+      bottom: -240px;
   }
 }
 
