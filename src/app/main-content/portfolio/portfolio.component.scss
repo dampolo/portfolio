@@ -9,18 +9,18 @@ section {
   padding: 7rem 6.25rem 3rem;
   position: relative;
   background: #ffffff;
-  overflow: hidden;
+  // overflow: hidden;
   max-width: 1440px;
   .my-work {
     .ball {
       @include ball();
       position: relative;
       left: 10%;
-      top: 120px;
+      top: 300px;
       height: 108px;
       width: 108px;
       animation-name: moveAnimation1;
-      animation-duration: 5ms; /* Firefox requires this to apply the animation */
+      animation-duration: 1ms; /* Firefox requires this to apply the animation */
       animation-direction: alternate;
       animation-timeline: scroll(block nearest);
     }
@@ -38,7 +38,7 @@ section {
 
 @keyframes moveAnimation1 {
   from {
-      top: 120px;
+      top: 300px;
   }
   to {
       top: -300px;
@@ -54,6 +54,7 @@ section {
       @include ball();
       height: 183px;
       width: 183px;
+      position: relative;
     }
     p {
       font-family: "Montserrat";
@@ -66,38 +67,55 @@ section {
 }
 
 section{
+  position: relative;
   .half-ball {
     @include ball();
     position: absolute;
     width: 393.32px;
     height: 393.32px;
-    top: 600px;
+    top: 1800px;
     left: -195px;
+    animation-name: moveAnimation3;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
   }
 
   .ball-pollo-loco {
     @include ball();
     position: absolute;
-    top: 880px;
+    top: 0px;
     right: -200px;
     width: 650px;
     height: 650px;
+    animation-name: moveAnimation4;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
   }
   .little-ball-pollo-loco {
     @include ball();
     position: absolute;
-    top: 1250px;
+    top: 0px;
     left: 100px;
     width: 51px;
     height: 51px;
+    animation-name: moveAnimation5;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
   }
   .ball-pokemons {
     @include ball();
     position: absolute;
-    top: 1600px;
+    top: 0px;
     left: 100px;
     width: 300px;
     height: 300px;
+    animation-name: moveAnimation6;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
   }
 
   .ball-simple-crm {
@@ -110,12 +128,40 @@ section{
   }
 }
 
-@keyframes moveAnimation {
+@keyframes moveAnimation3 {
   0% {
-      top: 600px;
+      top: 1800px;
   }
   100% {
-      top: 1800px;
+      top: 0px;
+  }
+}
+
+@keyframes moveAnimation4 {
+  0% {
+      top: 3000px;
+  }
+  100% {
+      top: -500px;
+  }
+}
+
+@keyframes moveAnimation5 {
+  0% {
+      top: 3500px;
+  }
+  100% {
+      top: 1000px;
+  }
+}
+
+
+@keyframes moveAnimation6 {
+  0% {
+      top: 10000px;
+  }
+  100% {
+      top: 300px;
   }
 }
 
