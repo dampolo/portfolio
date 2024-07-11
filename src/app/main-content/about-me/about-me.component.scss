@@ -1,287 +1,174 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 .about-me {
-    height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(#ffff, #eaf0ff);
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    .small-ball {
-        position: absolute;
-        @include ball();
-        width: 12.875rem;
-        height: 12.875rem;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -103px;
-        z-index: 2;
-        @include animation();
-    }
-    .ball {
-        // @include ball();
-        position: absolute;
-        // width: 100%;
-        // height: 100%;
-        // width: 1800px;
-        // height: 1800px;
-        // top: -300px;
-        // left: -300px;
-        top: 0;
-        left: 0;
-        
-    }
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#ffff, #eaf0ff);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .small-ball {
+    position: absolute;
+    @include ball();
+    width: 12.875rem;
+    height: 12.875rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -103px;
+    z-index: 2;
+    @include animation();
+  }
+  .ball {
+    @include ball();
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    top: 0;
+    left: 0;
+  }
 }
 
 @keyframes moveAnimation {
-    from {
-        bottom: -103px;
-    }
-    to {
-        bottom: 312px;
-    }
+  from {
+    bottom: -103px;
   }
+  to {
+    bottom: 312px;
+  }
+}
 
 .about-me-img {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .damian {
-        width: 60vh;
-        z-index: 2;
-        margin-top: auto;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .damian {
+    width: 60vh;
+    z-index: 2;
+    margin-top: auto;
+  }
 }
 
 .about-me-right {
-    position: relative; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 50px;
+  color: $blue;
+  .me {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(1.25rem, 6.5185vw + -0.3456rem, 3.7rem);
+  }
+
+  .frontend {
+    font-family: "Baloo 2";
+    font-style: normal;
+    font-weight: 650;
+    font-size: clamp(2.5rem, 14.6667vw + -1.1667rem, 8rem);
+    line-height: 0.8em;
+  }
+  .developer {
+    font-family: "Baloo 2";
+    font-style: normal;
+    font-weight: 650;
+    font-size: clamp(2.3125rem, 13.5vw + -1.0625rem, 7.375rem);
+    line-height: 0.8em;
+  }
+  .about-me-top {
+    margin: auto;
+  }
+}
+
+.about-me-bottom {
+  position: relative;
+  h4 {
+    text-align: center;
+    left: 43%;
+    bottom: 21rem;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 1.4375rem;
+  }
+  .line {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-right: 50px;
-    color: $blue;
+    gap: 1.5625rem;
+    position: absolute;
+    bottom: 3.75rem;
+    right: 2.6rem;
+    .icon-img {
+      a {
+        outline: none;
+        position: relative;
+        right: 0;
+        scale: (1);
+        cursor: pointer;
+        transition: all 125ms ease-in-out;
+        &:focus img {
+          position: relative;
+          right: 0.625rem;
+          scale: (1.1);
+          outline: none;
+        }
+        &:hover img {
+          position: relative;
+          right: 0.625rem;
+          scale: (1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .about-me {
+    flex-direction: column-reverse;
     h3 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 64px;
-        margin: 0;
-        padding: 0;
+      font-size: 55px;
     }
-    
-    .frontend {
-        font-family: 'Baloo 2';
-        font-style: normal;
-        font-weight: 650;
-        font-size: 128px;
-        line-height: 95px;
+    .about-me-right {
+      color: #ffff;
+      margin-top: 9.375rem;
+      margin-bottom: auto;
+      margin-inline: 0.625rem;
     }
-    .developer {
-        font-family: 'Baloo 2';
-        font-style: normal;
-        font-weight: 650;
-        font-size: 118px;
-        line-height: 105px;
+    .about-me-bottom {
+      display: none;
     }
-    .about-me-top {
-        margin: auto;
+    .small-ball {
+      position: absolute;
+      width: 9.75rem;
+      height: 9.75rem;
+      bottom: -80px;
     }
-}
-
-.about-me-bottom{
-    position: relative;
-    h4 {
-        text-align: center;
-        left: 43%;
-        bottom: 21rem;
-        font-family: 'Montserrat';
-        font-weight: 500;
-        font-size: 1.4375rem;
+    .ball {
+      width: 100%;
+      height: 100vw;
     }
-    .line {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .icons {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5625rem;
-        position: absolute;
-        bottom: 3.75rem;
-        right: 2.6rem;
-        img {
-            position: relative;
-            right: 0;
-            scale: (1);
-            cursor: pointer;
-            transition: all 125ms ease-in-out;
-            &:hover{
-                position: relative;
-                right: .625rem;
-                scale: (1.1);
-            }
-        }
-        
-    }
-}
-
-@media(max-width: 1550px) {
-    .about-me {
-        .ball {
-            // width: 1500px;
-            // height: 1500px;
-        }
-    }
-}
-
-@media(max-width: 1400px) {
-    .about-me {
-        h3 {
-            font-size: 55px;
-        }
-        .frontend {
-            font-size: 113px;
-            line-height: 90px;
-        }
-        .developer {
-            font-size: 105px;
-            line-height: 85px;
-        }
-        // .ball {
-        //     width: 1000px;
-        //     height: 1000px;
-        // }
-    }
-}
-
-@media(max-width: 1300px) {
-    .about-me {
-        h3 {
-            font-size: 47px;
-        }
-        .frontend {
-            font-size: 95px;
-            line-height: 80px;
-        }
-        .developer {
-            font-size: 88px;
-            line-height: 73px;
-        }
-    }
-}
-
-@media (max-width: 1200px) {
-    .about-me {
-        flex-direction: column-reverse;
-        h3 {
-            font-size: 55px;
-        }
-        .frontend {
-            font-size: 113px;
-            line-height: 90px;
-        }
-        .developer {
-            font-size: 105px;
-            line-height: 85px;
-        }
-        .about-me-right {
-            color: #ffff;
-            margin-top: 9.375rem;
-            margin-bottom: auto;
-            margin-inline: .625rem;
-        }
-        .about-me-bottom {
-            display: none;
-        }
-        .small-ball {
-            position: absolute;
-            width: 9.75rem;
-            height: 9.75rem;
-            bottom: -80px;
-        }
-        .ball {
-            width: 900px;
-            // height: 1200px;
-        }
-    }
-}
-
-@media (max-width: 950px) {
-    .about-me {
-        .ball {
-            // width: 1100px;
-            // height: 1100px;
-        }
-    }
+  }
 }
 
 @media (max-width: 600px) {
-    .about-me {
-        h3 {
-            font-size: 32px;
-        }
-        .frontend {
-            font-size: 65px;
-            line-height: 55px;
-        }
-        .developer {
-            font-size: 60px;
-            line-height: 45px;
-        }
-        .damian {
-            max-width: 35rem;
-            width: 100%;
-        }
-        .ball {
-            // width: 900px;
-            // height: 900px;
-        }
+  .about-me {
+    .damian {
+      max-width: 35rem;
+      width: 100%;
     }
-}
-
-@media (max-width: 450px) {
-    .about-me {
-            .frontend {
-                font-size: 55px;
-                line-height: 40px;
-            }
-            .developer {
-                font-size: 51px;
-                line-height: 50px;
-            }
-            h3 {
-                font-size: 1.6rem;
-            }
-    }
-}
-
-@media (max-width: 350px) {
-    .about-me {
-            .frontend {
-                font-size: 45px;
-                line-height: 30px;
-            }
-            .developer {
-                font-size: 41px;
-                line-height: 40px;
-            }
-            h3 {
-                font-size: 1.3rem;
-            }
-            .ball {
-                width: 330px;
-                height: 330px;
-            }
-    }
+  }
 }
 
 @media (max-height: 850px) {
-    .about-me-right {
-        .about-me-top {
-            margin-top: 1.5rem;
-        }
+  .about-me-right {
+    .about-me-top {
+      margin-top: 1.5rem;
     }
+  }
 }

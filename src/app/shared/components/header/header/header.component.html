@@ -7,11 +7,15 @@
 
 
             <div class="links">
-                @for(item of menu; track item.name; let index = $index){
-                    <a href="{{item.path}}" class="link">
-                        <span>{{item.name}}</span>
-                    </a>
-                }
+                <ul>
+                    @for(item of menu; track item.name; let index = $index){
+                        <li>
+                            <a href="{{item.path}}" class="link">
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    }
+                </ul>
             </div>
 
             

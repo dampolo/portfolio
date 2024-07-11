@@ -17,43 +17,52 @@
     }
   }
   .links {
-    display: flex;
-    gap: 2.25rem;
-    .link {
-      position: relative;
+    ul {
       display: flex;
-      justify-content: center;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1.4375rem;
-      width: 7.5rem;
-      height: 2rem;
-      text-decoration: none;
-      line-height: 1.725rem;
-      color: $blue;
-      transition: all 125ms ease-in;
-      &:hover {
-        font-weight: 700;
+      gap: 2.25rem;
+      list-style-type: none;
+      li {
+        .link {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.4375rem;
+          width: 7.5rem;
+          height: 2rem;
+          text-decoration: none;
+          line-height: 1.725rem;
+          color: $blue;
+          transition: all 125ms ease-in;
+          &:focus {
+            outline: none;
+            border-bottom: 3px solid $blue;
+          }
+          &:hover {
+            font-weight: 700;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $blue;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 125ms ease-in;
+          }
+          &:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
       }
-      &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: $blue;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 125ms ease-in;
-    }
-      &:hover::before  {
-      transform: scaleX(1);
-      transform-origin: left;
     }
   }
-}
 
   button {
     display: none;
@@ -106,7 +115,7 @@
         transform-origin: right;
         transition: transform 125ms ease-in;
       }
-        &:active::before  {
+      &:active::before {
         transform: scaleX(1);
         transform-origin: left;
       }
