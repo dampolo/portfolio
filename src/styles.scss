@@ -1,12 +1,28 @@
 @import url('./reset.css');
 
 $blue: #5988FF;
+$blue-active: #2963F7;
 $ball-color: linear-gradient(#b7c2ff, #6283ff);
 $ball-color-second: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
 
+@mixin buttonBlueHover() {
+  border: solid 2px $blue;
+  background-color: $blue;
+  color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+
+@mixin buttonWhiteHover() {
+  color: $blue;
+  background-color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+
 @mixin ball() {
   background: $ball-color;
-  filter: blur(5px);
+  filter: blur(1px);
   border-radius: 50%;
 }
 

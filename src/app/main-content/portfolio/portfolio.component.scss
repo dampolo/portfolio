@@ -12,6 +12,15 @@ section {
   // overflow: hidden;
   max-width: 1440px;
   .my-work {
+    display: flex;
+    h2 {
+      font-family: "Baloo 2";
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 96px;
+      color: $blue;
+      padding-bottom: 30px;
+    }
     .ball {
       @include ball();
       position: relative;
@@ -23,15 +32,6 @@ section {
       animation-duration: 1ms; /* Firefox requires this to apply the animation */
       animation-direction: alternate;
       animation-timeline: scroll(block nearest);
-    }
-    display: flex;
-    h1 {
-      font-family: "Baloo 2";
-      font-weight: 700;
-      font-size: 96px;
-      line-height: 96px;
-      color: $blue;
-      padding-bottom: 30px;
     }
   }
 }
@@ -61,7 +61,7 @@ section {
       font-style: normal;
       font-weight: 400;
       font-size: 23px;
-      line-height: 27.6px;
+      line-height: 1.5;
     }
   }
 }

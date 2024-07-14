@@ -55,7 +55,7 @@
     flex-direction: column;
     flex-basis: 45%;
     gap: 15px;
-    h2 {
+    h3 {
       font-family: "Baloo 2";
       font-size: 45px;
       font-weight: 700;
@@ -63,7 +63,7 @@
       text-align: left;
       color: $blue;
     }
-    h3 {
+    h4 {
       font-family: "Montserrat";
       font-size: 23px;
       font-weight: 400;
@@ -75,7 +75,7 @@
       font-family: "Montserrat";
       font-size: 16px;
       font-weight: 400;
-      line-height: 19.2px;
+      line-height: 1.5;
     }
   }
 }
@@ -86,10 +86,10 @@
   gap: 40px;
   button {
     cursor: pointer;
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-size: 23px;
     font-weight: 400;
-    line-height: 27.6px;
+    line-height: 1.725rem;
     text-align: center;
     color: $blue;
     box-shadow: 5px 5px 15px 0px #00000026;
@@ -102,34 +102,19 @@
     border: solid 2px $blue;
     overflow: hidden;
     position: relative;
-    transform: scale(1);
     z-index: 5;
     color: white;
-    &:before {
-      background: linear-gradient(
-        125deg,
-        rgb(89, 136, 255) 55%,
-        rgb(89, 136, 255) 45%,
-        rgb(0, 67, 240) 63%
-      );
-      content: "";
-      height: 21.875rem;
-      width: 18.75rem;
-      left: -23.5625rem;
-      position: absolute;
-      top: -11.5625rem;
-      transform: rotate(50deg);
-      transition: all 175ms ease-in-out;
-      color: white;
-    }
-    &:hover:before {
-      left: 0.625rem;
-      z-index: -1;
-    }
+    transform: scale(1);
+    transition: all 175ms ease-in-out;
     &:hover {
-      transform: scale(1.1);
+      @include buttonWhiteHover();
+    }
+    &:active {
+      background-color: $blue-active;
       color: white;
-      border: none;
+    }
+    &:focus {
+      @include buttonWhiteHover();
     }
   }
 }
@@ -139,10 +124,10 @@
   gap: 40px;
   button:nth-of-type(2) {
     cursor: pointer;
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-size: 23px;
     font-weight: 400;
-    line-height: 27.6px;
+    line-height: 1.725rem;
     text-align: center;
     color: $blue;
     box-shadow: 5px 5px 15px 0px #00000026;
@@ -158,31 +143,14 @@
     transform: scale(1);
     z-index: 5;
     color: $blue;
-    &:before {
-      background: linear-gradient(
-        125deg,
-        rgb(89, 136, 255) 55%,
-        rgb(89, 136, 255) 45%,
-        rgb(0, 67, 240) 63%
-      );
-      content: "";
-      height: 21.875rem;
-      width: 18.75rem;
-      left: -23.5625rem;
-      position: absolute;
-      top: -11.5625rem;
-      transform: rotate(50deg);
-      transition: all 175ms ease-in-out;
-      color: white;
-    }
-    &:hover:before {
-      left: 0.625rem;
-      z-index: -1;
-    }
     &:hover {
-      transform: scale(1.1);
-      color: white;
-      border: none;
+      @include buttonBlueHover();
+    }
+    &:active {
+      background-color: $blue-active;
+    }
+    &:focus {
+      @include buttonBlueHover();
     }
   }
 }

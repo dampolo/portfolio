@@ -25,10 +25,10 @@ section {
   .title {
     h2 {
       font-family: "Baloo 2";
-      font-size: 64px;
       font-weight: 700;
-      line-height: 90px;
-      text-align: left;
+      font-size: 96px;
+      line-height: 96px;
+      margin-top: 30px;
       color: $blue;
     }
   }
@@ -245,7 +245,7 @@ button[type="submit"] {
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  &[disabled]{
+  &[disabled] {
     cursor: auto;
     border: 1px solid #999999;
     background-color: #cccccc;

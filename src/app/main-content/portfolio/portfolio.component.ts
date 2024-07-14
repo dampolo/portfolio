@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SingleProjectComponent } from './single-project/single-project.component';
+import { BallsComponent } from './balls/balls.component';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule, SingleProjectComponent],
+  imports: [CommonModule, SingleProjectComponent, BallsComponent],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })

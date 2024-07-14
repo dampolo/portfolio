@@ -1,6 +1,6 @@
 @import "./../../../../../styles.scss";
 
-section {
+footer {
   background: radial-gradient(
       71.18% 335.57% at 28.82% -124.4%,
       #5988ff 6.25%,
@@ -59,7 +59,7 @@ section {
   }
 
   .imprint {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 60px 5px 10px;
 
     a {
       position: relative;
@@ -95,11 +95,17 @@ section {
 }
 
 @media (max-width: 850px) {
-  section {
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 380px;
+    .imprint {
+      padding: 5px 10px 5px 10px;
+    }
+    img {
+      height: 64px;
+    }
     .logo-copyright-icons {
       display: flex;
       flex-direction: column;

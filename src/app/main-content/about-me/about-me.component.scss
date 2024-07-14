@@ -22,8 +22,8 @@
   .ball {
     @include ball();
     position: absolute;
-    width: 50vw;
-    height: 50vw;
+    width: 75vh;
+    height: 75vh;
     top: 0;
     left: 0;
   }

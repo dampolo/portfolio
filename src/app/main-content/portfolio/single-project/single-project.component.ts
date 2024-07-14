@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './single-project.component.scss',
 })
 export class SingleProjectComponent {
+  @Input() index: number = 0;
   @Input() project = {
     id: 0,
     image: 'assets/img/join.png',

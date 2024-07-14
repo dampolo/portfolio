@@ -10,12 +10,14 @@ section{
     background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
     
     .title {
-        font-family: 'Baloo 2';
-        color: white;
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 96px;
-        margin-top: 30px;
+        h2 {
+            font-family: 'Baloo 2';
+            color: white;
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 96px;
+            margin-top: 30px;
+        }
     }
     .skills-icons {
         display: flex;
