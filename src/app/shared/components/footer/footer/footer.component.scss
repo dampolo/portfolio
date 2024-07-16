@@ -21,6 +21,9 @@ footer {
     justify-content: space-around;
 
     .logo {
+      img {
+        height: 64px;
+      }
       filter: none;
       cursor: pointer;
       transition: all 150ms ease-in-out;
@@ -39,21 +42,47 @@ footer {
     }
   }
 
+  // .icons {
+  //   display: flex;
+  //   gap: 42px;
+  //   img {
+  //     position: relative;
+  //     top: 0;
+  //     scale: (1);
+  //     width: 30px;
+  //     height: 30px;
+  //     cursor: pointer;
+  //     transition: all 125ms ease-in-out;
+  //     &:hover {
+  //       position: relative;
+  //       top: -0.625rem;
+  //       scale: (1.2);
+  //     }
+  //   }
+  // }
+
   .icons {
     display: flex;
     gap: 42px;
-    img {
-      position: relative;
-      top: 0;
-      scale: (1);
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      transition: all 125ms ease-in-out;
-      &:hover {
+    .icon-img {
+      a {
+        outline: none;
         position: relative;
-        top: -0.625rem;
-        scale: (1.2);
+        top: 0;
+        scale: (1);
+        cursor: pointer;
+        transition: all 125ms ease-in-out;
+        &:focus img {
+          position: relative;
+          top: -0.625rem;
+          scale: (1.1);
+          outline: none;
+        }
+        &:hover img {
+          position: relative;
+          top: -0.625rem;
+          scale: (1.1);
+        }
       }
     }
   }
@@ -102,9 +131,6 @@ footer {
     height: 380px;
     .imprint {
       padding: 5px 10px 5px 10px;
-    }
-    img {
-      height: 64px;
     }
     .logo-copyright-icons {
       display: flex;

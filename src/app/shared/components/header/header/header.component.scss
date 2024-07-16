@@ -74,6 +74,22 @@
   }
 }
 
+.pos-fix {
+  position: fixed;
+  top: 15px;
+  right: 5px;
+}
+
+.pos-fix-logo {
+  position: fixed;
+  top: 11px;
+  left: 4px;
+}
+
+.show-burger {
+  display: flex;
+}
+
 .main-nav {
   .links-responsive {
     display: flex;
@@ -130,7 +146,7 @@
   transform: translate(0) !important;
 }
 
-@media (max-width: 1200px) {
+@media (width < 1200px) {
   .main-nav {
     height: 5.3125rem;
     margin-inline: 4px;
@@ -139,6 +155,17 @@
     }
     button {
       display: flex;
+    }
+  }
+}
+
+@media (width > 1200px) {
+  .pos-fix-logo {
+    position: static;
+  }
+  .main-nav {
+    .links-responsive {
+      transform: translate(100%) !important;
     }
   }
 }

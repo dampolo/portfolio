@@ -1,52 +1,58 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
-section{
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 632px;
+  gap: 50px;
+  background: linear-gradient(
+    128.94deg,
+    #5988ff -33.96%,
+    #5988ff 36.71%,
+    #0043f0 112.25%
+  );
+
+  .title {
+    h2 {
+      font-family: "Baloo 2";
+      color: white;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 96px;
+      margin-top: 30px;
+    }
+  }
+  .skills-icons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: 632px;
-    gap: 50px;
-    background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
-    
-    .title {
-        h2 {
-            font-family: 'Baloo 2';
-            color: white;
-            font-weight: 700;
-            font-size: 96px;
-            line-height: 96px;
-            margin-top: 30px;
-        }
-    }
-    .skills-icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        gap: 50px 100px;
-        max-width: 950px;
-        margin-bottom: 30px;
-    }
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 50px 100px;
+    max-width: 950px;
+    margin-bottom: 30px;
+  }
 }
 
-@media(max-width: 1200px) {
-    section {
-        .title {
-            font-size: 64px;
-            line-height: 76.8px;
-            margin-top: 30px;
-        }
-        .skills-icons {
-            .icon {
-                height: 100px;
-                img {
-                    width: 60px;
-                    height: 60px;
-                }
-
-            }
-        }
+@media (max-width: 1200px) {
+  section {
+    .title {
+      margin-top: 30px;
+      h2 {
+        font-size: 64px;
+        line-height: 1.5;
+      }
     }
+    .skills-icons {
+      .icon {
+        height: 100px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
 }

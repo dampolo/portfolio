@@ -60,7 +60,7 @@
 
           <button type="button" value="Submit" id="checkbox">
             <input [(ngModel)]="checkboxState" type="checkbox" name="checkbox" id="">
-            {{checkboxState}}
+            <!-- {{checkboxState}} -->
           </button>
 
         <!-- TU JESTEM -->
@@ -73,22 +73,22 @@
           </div>
         </div>
       
-        {{'to jest tylko dla button   Jesli jest true to jest DISABLED'}}
+        <!-- {{'to jest tylko dla button   Jesli jest true to jest DISABLED'}} -->
         <button (click)="sendMessage()" type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState" >Say Hello ;)</button>
         
-        {{'form '+  !contactForm.form.valid}}
-        {{'checkbox '+ !checkboxState}}
+        <!-- {{'form '+  !contactForm.form.valid}} -->
+        <!-- {{'checkbox '+ !checkboxState}} -->
 
     </form>
   </div>
 
   <div class="to-top">
     <a href="#">
-      <img class="arrow-full" src="assets/img/arrow-full.png" alt="arrow-full"/>
-      <img class="arrow-empty" src="assets/img/arrow-empty.png" alt="arrow-empty"/>
+        <img class="arrow-white" src="assets/img/arrow-white.svg" alt="arrow-white"/>
+        <img class="arrow-blue" src="assets/img/arrow-blue.svg" alt="arrow-blue"/>
     </a>
-
   </div>
+
   <div class="small-ball"></div>
 
 </section>

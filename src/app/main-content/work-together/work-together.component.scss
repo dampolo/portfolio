@@ -32,7 +32,7 @@
         font-weight: 700;
         font-size: 96px;
         line-height: 96px;
-        padding-bottom: 55px;
+        padding-bottom: 50px;
       }
     }
     .together-description {
@@ -97,11 +97,11 @@ button {
   &:hover {
     @include buttonBlueHover();
   }
-  &:active {
-    background-color: $blue-active;
-  }
   &:focus {
     @include buttonBlueHover();
+  }
+  &:active {
+    @include buttonBlueActive();
   }
 }
 
@@ -122,9 +122,15 @@ button {
         top: -9.25rem;
         right: -5%;
       }
+
       .together {
         font-size: 40px;
         line-height: 55px;
+        h2{
+          font-size: 64px;
+          line-height: 64px;
+          padding-bottom: 25px;
+        }
       }
     }
   }

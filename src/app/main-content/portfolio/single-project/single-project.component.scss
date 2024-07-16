@@ -109,12 +109,11 @@
     &:hover {
       @include buttonWhiteHover();
     }
-    &:active {
-      background-color: $blue-active;
-      color: white;
-    }
     &:focus {
       @include buttonWhiteHover();
+    }
+    &:active {
+      @include buttonBlueActive();
     }
   }
 }
@@ -146,11 +145,11 @@
     &:hover {
       @include buttonBlueHover();
     }
-    &:active {
-      background-color: $blue-active;
-    }
     &:focus {
       @include buttonBlueHover();
+    }
+    &:active {
+      @include buttonBlueActive();
     }
   }
 }
