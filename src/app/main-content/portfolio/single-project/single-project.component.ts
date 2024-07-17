@@ -12,12 +12,13 @@ export class SingleProjectComponent {
   @Input() index: number = 0;
   @Input() project = {
     id: 0,
-    image: 'assets/img/join.png',
+    image: "assets/img/join.png",
     project_name: 'Join',
     language: 'Java Script | HTML | CSS',
-    description:
-      'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+    description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
     test: 'Live test',
+    test_link: 'https://github.com/dampolo/ElPolloLoco',
     git_hub: 'GitHub',
+    link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
   };
 }

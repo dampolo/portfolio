@@ -57,51 +57,35 @@
   }
 }
 
-button {
-  position: relative;
+a {
+  text-decoration: none;
   display: flex;
   align-self: center;
-  font-family: "Poppins";
-  cursor: pointer;
-  border-radius: 0.625rem;
-  font-weight: 400;
-  padding: 0.9375rem 1.875rem;
-  gap: 0.625rem;
-  min-width: 15.875rem;
-  // transform: scale(1);
-  color: $blue;
-  border: solid 2px $blue;
-  background: white;
-  transition: all 175ms ease-in-out;
-  overflow: hidden;
-  // &:before {
-  //   background: linear-gradient(
-  //     125deg,
-  //     rgb(89, 136, 255) 55%,
-  //     rgb(89, 136, 255) 45%,
-  //     rgb(0, 67, 240) 63%
-  //   );
-  //   content: "";
-  //   height: 21.875rem;
-  //   width: 18.75rem;
-  //   left: -23.5625rem;
-  //   position: absolute;
-  //   top: -11.5625rem;
-  //   transform: rotate(50deg);
-  //   color: white;
-  // }
-  // &:hover:before {
-  //   left: 0.625rem;
-  //   z-index: -1;
-  // }
-  &:hover {
-    @include buttonBlueHover();
-  }
-  &:focus {
-    @include buttonBlueHover();
-  }
-  &:active {
-    @include buttonBlueActive();
+  button {
+    color: $blue;
+    text-decoration: none;
+    position: relative;
+    font-family: "Poppins";
+    cursor: pointer;
+    border-radius: 0.625rem;
+    font-weight: 400;
+    padding: 0.9375rem 1.875rem;
+    gap: 0.625rem;
+    min-width: 15.875rem;
+    // transform: scale(1);
+    border: solid 2px $blue;
+    background: white;
+    transition: all 175ms ease-in-out;
+    overflow: hidden;
+    &:hover {
+      @include buttonBlueHover();
+    }
+    &:focus {
+      @include buttonBlueHover();
+    }
+    &:active {
+      @include buttonBlueActive();
+    }
   }
 }
 
@@ -126,7 +110,7 @@ button {
       .together {
         font-size: 40px;
         line-height: 55px;
-        h2{
+        h2 {
           font-size: 64px;
           line-height: 64px;
           padding-bottom: 25px;

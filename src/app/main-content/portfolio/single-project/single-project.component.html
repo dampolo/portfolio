@@ -1,6 +1,8 @@
 <div class="main-project" [ngClass]="{'even-flex-direction': index % 2 === 0, 'odd-flex-direction': index % 2 !== 0}">
     <div class="project">
-        <img src="{{project.image}}" alt="{{project.image}}">
+        <a href="http://">
+            <img src="{{project.image}}" alt="{{project.image}}">
+        </a>
     </div>
 
     <div class="description" [ngClass]="{'even-align-items': index % 2 === 0, 'odd-align-items': index % 2 !== 0}">
@@ -8,8 +10,16 @@
         <h4>{{project.language}}</h4>
         <div [ngClass]="{'even-text-align': index % 2 === 0, 'odd-text-align': index % 2 !== 0}">{{project.description}}</div>
         <div class="buttons">
-            <button>{{project.test}}</button>
-            <button>{{project.git_hub}}</button>
+            <a href="{{project.test_link}}">
+                <button>
+                {{project.test}}
+                </button>
+            </a>
+            <a href="{{project.link_git_hub}}">
+                <button>
+                {{project.git_hub}}
+                </button>
+            </a>
         </div>
     </div>
 </div>

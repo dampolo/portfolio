@@ -20,7 +20,9 @@ export class PortfolioComponent {
       language: 'Java Script | HTML | CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       test: 'Live test',
-      git_hub: 'GitHub'
+      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      git_hub: 'GitHub',
+      link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
     },
     {
       id: 1,
@@ -29,7 +31,9 @@ export class PortfolioComponent {
       language: 'Java Script | HTML | CSS',
       description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       test: 'Live test',
-      git_hub: 'GitHub'
+      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      git_hub: 'GitHub',
+      link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
     },
     {
       id: 2,
@@ -38,7 +42,9 @@ export class PortfolioComponent {
       language: 'JavaScript | HTML | CSS | Bootstrap | API',
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information..',
       test: 'Live test',
-      git_hub: 'GitHub'
+      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      git_hub: 'GitHub',
+      link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
     },
     {
       id: 3,
@@ -47,7 +53,9 @@ export class PortfolioComponent {
       language: 'Angular | Firebase',
       description: 'A very Simple Customer Relationship Management system working with CRUD functionality.',
       test: 'Live test',
-      git_hub: 'GitHub'
+      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      git_hub: 'GitHub',
+      link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
     },
   ]
 }

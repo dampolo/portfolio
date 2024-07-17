@@ -60,21 +60,21 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(1.25rem, 6.5185vw + -0.3456rem, 3.7rem);
+    font-size: clamp(1.875rem, 6.5185vw + -0.3456rem, 3.7rem);
   }
 
   .frontend {
     font-family: "Baloo 2";
     font-style: normal;
     font-weight: 650;
-    font-size: clamp(2.5rem, 14.6667vw + -1.1667rem, 8rem);
+    font-size: clamp(3.75rem, 14.6667vw + -1.1667rem, 8rem);
     line-height: 0.8em;
   }
   .developer {
     font-family: "Baloo 2";
     font-style: normal;
     font-weight: 650;
-    font-size: clamp(2.3125rem, 13.5vw + -1.0625rem, 7.375rem);
+    font-size: clamp(3.4375rem, 13.5vw + -1.0625rem, 7.375rem);
     line-height: 0.8em;
   }
   .about-me-top {
@@ -161,14 +161,6 @@
     .damian {
       max-width: 35rem;
       width: 100%;
-    }
-  }
-}
-
-@media (max-height: 850px) {
-  .about-me-right {
-    .about-me-top {
-      margin-top: 1.5rem;
     }
   }
 }
