@@ -24,11 +24,6 @@ export class ContactComponent {
   mailTest = true;
   checkboxState = false;
 
-  sendMessage() {
-    console.log('TEST');
-    
-  }
-
   post = {
     endPoint: 'https://damianpoloczek.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
