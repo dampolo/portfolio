@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -12,7 +13,11 @@ export class HeaderComponent {
   isMenuOpen = false
   posFixBurger = false;
   posFixLogo = false;
-    
+  setBorder = false;
+  
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
 
   openMenu() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -45,4 +50,9 @@ export class HeaderComponent {
       path: '#contact',
     },
   ];
+
+  changeLanguage(language: string) {
+    this.translate.use(language);
+    this.setBorder = !this.setBorder;
+  }
 }

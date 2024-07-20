@@ -13,5 +13,5 @@ import { FooterComponent } from './shared/components/footer/footer/footer.compon
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Damian Poloczek';
 }

@@ -7,7 +7,17 @@
 
 
             <div class="links">
+
+                
                 <ul>
+                    <li class="languages">
+                        <button class="en" (click)="changeLanguage('en')" [ngClass]="{'set-border': setBorder}">
+                            EN
+                        </button>
+                        <button class="de" (click)="changeLanguage('de')"  [ngClass]="{'set-border': setBorder}">
+                            DE
+                        </button>
+                    </li>
                     @for(item of menu; track item.name; let index = $index){
                         <li>
                             <a href="{{item.path}}" class="link">
@@ -30,8 +40,16 @@
                     <a href="{{item.path}}" (click)="closeMenu()" class="link">
                         <span>{{item.name}}</span>
                     </a>
-                    
                 }
+
+                <div class="languages">
+                    <button class="en" (click)="changeLanguage('en')" [ngClass]="{'set-border': setBorder}">
+                        EN
+                    </button>
+                    <button class="de" (click)="changeLanguage('de')"  [ngClass]="{'set-border': setBorder}">
+                        DE
+                    </button>
+                </div>
                 
             </div>
         </nav>
