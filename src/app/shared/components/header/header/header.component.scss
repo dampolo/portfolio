@@ -55,7 +55,7 @@
   .links {
     display: flex;
     .languages {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
       column-gap: 1.25rem;
       display: flex;
       font-family: "Montserrat";
@@ -66,28 +66,22 @@
         display: flex;
         color: $blue;
         cursor: pointer;
+        border: solid 2px transparent;
+        border-radius: 0.5rem;
+        line-height: normal;
+        padding: 2px;
         &:hover {
           font-weight: 700;
         }
       }
-      button:nth-of-type(1) {
+      .selected {
         border: solid 2px $blue;
-        border-radius: 0.5rem;
-        line-height: normal;
-        padding: 2px;
-      }
-      button:nth-of-type(2) {
-        border: solid 2px transparent;
         border-radius: 0.5rem;
         line-height: normal;
         padding: 2px;
       }
     }
   }
-}
-
-.set-border {
-  border: solid 2px $blue !important;
 }
 
 .main-nav {
@@ -202,7 +196,7 @@
           font-weight: 700;
         }
       }
-      button:nth-of-type(1) {
+      .selected {
         border: solid 2px $blue;
         border-radius: 0.5rem;
         line-height: normal;

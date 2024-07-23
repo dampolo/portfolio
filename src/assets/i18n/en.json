@@ -1,5 +1,37 @@
 {
-    "I_AM": "Hello! I am Damian", 
-    "FRONTEND": "FRONTEND",
-    "DEVELOPER": "DEVELOPER"
+    "MENU": {
+        "ABOUT_ME": "About me",
+        "SKILL_SET": "Skill set",
+        "MY_WORK": "My work",
+        "CONTACT": "Contact"
+      },
+    "ABOUT_ME": {
+        "I_AM": "Hello! I am Damian", 
+        "FRONTEND": "FRONTEND",
+        "DEVELOPER": "DEVELOPER"
+    },
+    "SKILLS": {
+        "TITLE": "Skills"
+    },
+    "WORK_TOGETHER": {
+        "TITEL": "Let's work together",
+        "DESCRIPTION_1": "I am a frontend developer based in Munich. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
+        "DESCRIPTION_2": "If you think I'd be a good match for your projects, contact me!",
+        "BUTTON": "Send a message"
+    },
+    "MY_WORK": {
+        "MY_WORK": "My work",
+        "H2": "Take a look at some of my projects here and interact with them to see my skills in action."
+    },
+    "MY_PROJECTS" : {
+        "PROJECTS_1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'",
+        "PROJECTS_2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+    "CONTACT": {
+        "TITLE": "Contact",
+        "TITLE_H3": "Got a problem to solve?",
+        "PRIVACY_1": "I've read the",
+        "PRIVACY_2": "privacy policy",
+        "PRIVACY_3": "and agree to the processing of my data as outlined."
+    }
 }

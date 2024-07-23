@@ -7,21 +7,15 @@
 
 
             <div class="links">
-
-                
                 <ul>
                     <li class="languages">
-                        <button class="en" (click)="changeLanguage('en')" [ngClass]="{'set-border': setBorder}">
-                            EN
-                        </button>
-                        <button class="de" (click)="changeLanguage('de')"  [ngClass]="{'set-border': setBorder}">
-                            DE
-                        </button>
+                            <button class="en" (click)="changeLanguage('en')" [ngClass]="{'selected': selectedLanguage === 'en'}">EN</button>
+                            <button class="de" (click)="changeLanguage('de')" [ngClass]="{'selected': selectedLanguage === 'de'}">DE</button>
                     </li>
                     @for(item of menu; track item.name; let index = $index){
                         <li>
                             <a href="{{item.path}}" class="link">
-                                <span>{{item.name}}</span>
+                                <span>{{ item.name | translate }}</span>
                             </a>
                         </li>
                     }
@@ -38,15 +32,15 @@
             <div class="links-responsive" [ngClass]="{'show-menu': isMenuOpen}">
                 @for(item of menu; track item.name; let index = $index){
                     <a href="{{item.path}}" (click)="closeMenu()" class="link">
-                        <span>{{item.name}}</span>
+                        <span>{{ item.name | translate }}</span>
                     </a>
                 }
 
                 <div class="languages">
-                    <button class="en" (click)="changeLanguage('en')" [ngClass]="{'set-border': setBorder}">
+                    <button class="en" (click)="changeLanguage('en')" [ngClass]="{'selected': selectedLanguage === 'en'}">
                         EN
                     </button>
-                    <button class="de" (click)="changeLanguage('de')"  [ngClass]="{'set-border': setBorder}">
+                    <button class="de" (click)="changeLanguage('de')"  [ngClass]="{'selected': selectedLanguage === 'de'}">
                         DE
                     </button>
                 </div>

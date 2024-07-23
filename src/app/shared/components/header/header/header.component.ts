@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, FormsModule ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -14,6 +15,7 @@ export class HeaderComponent {
   posFixBurger = false;
   posFixLogo = false;
   setBorder = false;
+  selectedLanguage: string = 'en';
   
   constructor(private translate: TranslateService) {
     this.translate.setDefaultLang('en');
@@ -33,26 +35,14 @@ export class HeaderComponent {
   }
 
   menu = [
-    {
-      name: 'About me',
-      path: '#about-me',
-    },
-    {
-      name: 'Skill set',
-      path: '#skill-set',
-    },
-    {
-      name: 'My work',
-      path: '#my-work',
-    },
-    {
-      name: 'Contact',
-      path: '#contact',
-    },
+    { name: 'MENU.ABOUT_ME', path: '#about-me' },
+    { name: 'MENU.SKILL_SET', path: '#skill-set' },
+    { name: 'MENU.MY_WORK', path: '#my-work' },
+    { name: 'MENU.CONTACT', path: '#contact' }
   ];
 
   changeLanguage(language: string) {
+    this.selectedLanguage = language;
     this.translate.use(language);
-    this.setBorder = !this.setBorder;
   }
 }

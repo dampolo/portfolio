@@ -1,12 +1,12 @@
 <section>
   <div class="title">
-    <h2>Contact</h2>
+    <h2>{{"CONTACT.TITLE" | translate  }}</h2>
   </div>
   <div class="big-ball"></div>
 
   <div class="description-with-form">
     <div class="description">
-      <h3>Got a problem to solve?</h3>
+      <h3>{{"CONTACT.TITLE_H3" | translate  }}</h3>
       <div>
         Contact me through this form, I am interested in hearing from you,
         knowing your ideas and contributing to your projects with my work.
@@ -60,13 +60,12 @@
 
           <button type="button" value="Submit" id="checkbox">
             <input [(ngModel)]="checkboxState" type="checkbox" name="checkbox" id="">
-            <!-- {{checkboxState}} -->
           </button>
 
         <!-- TU JESTEM -->
 
           <div class="checkbox-description">
-            <label for="checkbox">I've read the <a class="privacy" href="">privacy policy</a> and agree to the processing of my data as outlined.</label>
+            <label for="checkbox">{{"CONTACT.PRIVACY_1" | translate}} <a class="privacy" href="">{{"CONTACT.PRIVACY_2" | translate}}</a> {{"CONTACT.PRIVACY_3" | translate}}</label>
             @if(!checkboxState && contactForm.form.valid) {
               <span>Please accept the privacy policy.</span>
             } 

@@ -1,6 +1,6 @@
 <div class="main-project" [ngClass]="{'even-flex-direction': index % 2 === 0, 'odd-flex-direction': index % 2 !== 0}">
     <div class="project">
-        <a href="http://">
+        <a href="{{project.test_link}}">
             <img src="{{project.image}}" alt="{{project.image}}">
         </a>
     </div>
@@ -8,7 +8,7 @@
     <div class="description" [ngClass]="{'even-align-items': index % 2 === 0, 'odd-align-items': index % 2 !== 0}">
         <h3>{{project.project_name}}</h3>
         <h4>{{project.language}}</h4>
-        <div [ngClass]="{'even-text-align': index % 2 === 0, 'odd-text-align': index % 2 !== 0}">{{project.description}}</div>
+        <div [ngClass]="{'even-text-align': index % 2 === 0, 'odd-text-align': index % 2 !== 0}">{{project.description | translate}}</div>
         <div class="buttons">
             <a href="{{project.test_link}}">
                 <button>

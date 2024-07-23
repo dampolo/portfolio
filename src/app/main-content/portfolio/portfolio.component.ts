@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { BallsComponent } from './balls/balls.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule, SingleProjectComponent, BallsComponent],
+  imports: [CommonModule, SingleProjectComponent, BallsComponent, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
@@ -18,20 +19,20 @@ export class PortfolioComponent {
       image: "assets/img/join.png",
       project_name: 'Join',
       language: 'Java Script | HTML | CSS',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: 'MY_PROJECTS.PROJECTS_1',
       test: 'Live test',
-      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      test_link: 'https://join.damianpoloczek.com/',
       git_hub: 'GitHub',
       link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
     },
     {
       id: 1,
       image: 'assets/img/pollo-loco.png',
-      project_name: 'Polo loco',
+      project_name: 'El Pollo loco',
       language: 'Java Script | HTML | CSS',
-      description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      description: 'MY_PROJECTS.PROJECTS_2',
       test: 'Live test',
-      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      test_link: 'https://elpolloloco.damianpoloczek.com/',
       git_hub: 'GitHub',
       link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
     },
@@ -44,7 +45,7 @@ export class PortfolioComponent {
       test: 'Live test',
       test_link: 'https://github.com/dampolo/ElPolloLoco',
       git_hub: 'GitHub',
-      link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
+      link_git_hub: 'https://github.com/dampolo/PokeApi'
     },
     {
       id: 3,

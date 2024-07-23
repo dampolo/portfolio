@@ -30,7 +30,7 @@ section {
       font-weight: 700;
       font-size: 96px;
       line-height: 96px;
-      margin-top: 30px;
+      // margin-top: 30px;
       color: $blue;
     }
   }
@@ -336,15 +336,11 @@ label {
   line-height: 16.8px;
   text-align: left;
   .privacy {
-    display: inline-block;
-    text-align: center;
     text-decoration: none;
-    width: 116px;
     color: $blue;
     cursor: pointer;
     &:hover {
-      font-weight: 700;
-      color: $blue;
+    text-decoration: underline;
     }
   }
 }
@@ -393,7 +389,7 @@ label {
 
 @media (max-width: 1200px) {
   section {
-    padding: 4rem 1.25rem 3rem;
+    padding: 0rem 1.25rem 3rem;
     .title {
       h2 {
         font-size: 64px;
@@ -407,6 +403,7 @@ label {
   }
   .description-with-form {
     flex-direction: column;
+    gap: 1.25rem
   }
 }
 

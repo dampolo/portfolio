@@ -15,7 +15,6 @@
     height: 12.875rem;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -103px;
     z-index: 2;
     @include animation();
   }
@@ -31,7 +30,7 @@
 
 @keyframes moveAnimation {
   from {
-    bottom: -103px;
+    bottom: -80px;
   }
   to {
     bottom: 312px;
@@ -43,7 +42,7 @@
   flex-direction: column;
   align-items: center;
   .damian {
-    width: 60vh;
+    width: 55vh;
     z-index: 2;
     margin-top: auto;
   }
@@ -54,8 +53,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 50px;
+  margin-right: 3.125rem;
   color: $blue;
+  .about-me-top {
+    min-width: 680px;
+    margin: auto;
+  }
   .me {
     font-family: "Montserrat";
     font-style: normal;
@@ -76,9 +79,6 @@
     font-weight: 650;
     font-size: clamp(3.4375rem, 13.5vw + -1.0625rem, 7.375rem);
     line-height: 0.8em;
-  }
-  .about-me-top {
-    margin: auto;
   }
 }
 
@@ -136,9 +136,12 @@
     }
     .about-me-right {
       color: #ffff;
-      margin-top: 9.375rem;
+      margin-top: 8.375rem;
       margin-bottom: auto;
       margin-inline: 0.625rem;
+    }
+    .about-me-top {
+      min-width: 300px;
     }
     .about-me-bottom {
       display: none;

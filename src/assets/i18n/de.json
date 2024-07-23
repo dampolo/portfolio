@@ -1,5 +1,37 @@
 {   
-    "I_AM": "Hallo! I bin Damian", 
-    "FRONTEND": "FRONTEND",
-    "DEVELOPER": "ENTWICKLER"
+    "MENU": {
+        "ABOUT_ME": "Über mich",
+        "SKILL_SET": "Meine Skills",
+        "MY_WORK": "Portfolio",
+        "CONTACT": "Kontakt"
+    },
+    "ABOUT_ME": {
+        "I_AM": "Hallo! I bin Damian", 
+        "FRONTEND": "FRONTEND",
+        "DEVELOPER": "ENTWICKLER"
+    },
+    "SKILLS": {
+        "TITLE": "Meine Skills"
+    },
+    "WORK_TOGETHER": {
+        "TITEL": "Über mich",
+        "DESCRIPTION_1": "Ich bin ein Frontend-Entwickler aus München. Es macht mir Spaß, zu designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler fortzusetzen und eine Stelle als Junior-Webentwickler zu finden.",
+        "DESCRIPTION_2": "Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich gerne!",
+        "BUTTON": "Lass uns sprechen"
+    },
+    "MY_WORK": {
+        "MY_WORK": "Portfolio",
+        "H2": "Hier finden Sie eine Auswahl meiner aktuellen Projekte."
+    },
+    "MY_PROJECTS" : {
+        "PROJECTS_1": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "PROJECTS_2": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Helfen Sie Peppe, Münzen und Giftflaschen zu finden, um gegen den Hünchen zu kämpfen."
+    },
+    "CONTACT": {
+        "TITLE": "Kontakt",
+        "TITLE_H3": "Möchten Sie ein neues Projekt besprechen?",
+        "PRIVACY_1": "Ich habe die",
+        "PRIVACY_2": "Datenschutzrichtlinie",
+        "PRIVACY_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    }
 }

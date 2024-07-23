@@ -26,12 +26,9 @@
     gap: 6.25rem;
     z-index: 2;
     .together {
+      flex: 1;
       h2 {
-        font-family: "Baloo 2";
-        color: $blue;
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 96px;
+        @include fontH2();
         padding-bottom: 50px;
       }
     }
@@ -111,8 +108,7 @@ a {
         font-size: 40px;
         line-height: 55px;
         h2 {
-          font-size: 64px;
-          line-height: 64px;
+          @include fontH2Responsiv($color: $blue);
           padding-bottom: 25px;
         }
       }

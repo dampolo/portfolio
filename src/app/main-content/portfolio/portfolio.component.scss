@@ -22,30 +22,8 @@ section {
       color: $blue;
       padding-bottom: 30px;
     }
-    .ball {
-      @include ball();
-      position: relative;
-      left: 10%;
-      top: 300px;
-      height: 108px;
-      width: 108px;
-      animation-name: moveAnimation1;
-      animation-duration: 1ms; /* Firefox requires this to apply the animation */
-      animation-direction: alternate;
-      animation-timeline: scroll(block nearest);
-    }
   }
 }
-
-@keyframes moveAnimation1 {
-  from {
-      top: 300px;
-  }
-  to {
-      top: -300px;
-  }
-}
-
 
 section {
   .my-work-description {
