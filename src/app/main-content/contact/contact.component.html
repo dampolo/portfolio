@@ -7,11 +7,8 @@
   <div class="description-with-form">
     <div class="description">
       <h3>{{"CONTACT.TITLE_H3" | translate  }}</h3>
-      <div>
-        Contact me through this form, I am interested in hearing from you,
-        knowing your ideas and contributing to your projects with my work.
-      </div>
-      <div>Need a Frontend developer? <span>Contact me!</span></div>
+      <div> {{ "CONTACT.DESCRIPTION_1" | translate }}      </div>
+      <div> {{ "CONTACT.DESCRIPTION_2" | translate }} <span> {{ "CONTACT.DESCRIPTION_3" | translate }} </span></div>
     </div>
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -65,7 +62,7 @@
         <!-- TU JESTEM -->
 
           <div class="checkbox-description">
-            <label for="checkbox">{{"CONTACT.PRIVACY_1" | translate}} <a class="privacy" href="">{{"CONTACT.PRIVACY_2" | translate}}</a> {{"CONTACT.PRIVACY_3" | translate}}</label>
+            <label for="checkbox">{{"CONTACT.PRIVACY_1" | translate}} <a class="privacy" href="/privacy-policy">{{"CONTACT.PRIVACY_2" | translate}}</a> {{"CONTACT.PRIVACY_3" | translate}}</label>
             @if(!checkboxState && contactForm.form.valid) {
               <span>Please accept the privacy policy.</span>
             } 

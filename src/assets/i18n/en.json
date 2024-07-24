@@ -30,8 +30,12 @@
     "CONTACT": {
         "TITLE": "Contact",
         "TITLE_H3": "Got a problem to solve?",
+        "DESCRIPTION_1": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "DESCRIPTION_2": "Looking for a Frontend developer?",
+        "DESCRIPTION_3": "Contact me!",
         "PRIVACY_1": "I've read the",
         "PRIVACY_2": "privacy policy",
-        "PRIVACY_3": "and agree to the processing of my data as outlined."
+        "PRIVACY_3": "and agree to the processing of my data as outlined.",
+        "PRIVACY_POLICY": "<h1>Datenschutzerklärung</h1> <h2>Willkommen auf meiner Website</h2> <p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung beschreibt, wie ich Ihre Daten sammle, verwende und schütze.</p> <h2>Kontaktformular</h2> <p>Wenn Sie das Kontaktformular auf meiner Website nutzen, werden die von Ihnen bereitgestellten Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zum Zwecke der Kontaktaufnahme verwendet. Diese Daten werden nicht an Dritte weitergegeben.</p> <h2>Verwendung der Daten</h2> <p>Die gesammelten Daten werden ausschließlich für folgende Zwecke verwendet:</p> <ul> <li>Kontaktaufnahme und Beantwortung Ihrer Anfragen.</li> <li>Registrierung und Nutzung der Projektseiten.</li> </ul> <h2>Projektseiten</h2> <h3>Join Projekt</h3> <p>Dies ist ein Task-Manager, der nach einem Kanban-Board modelliert ist. Es gibt eine Option zur Registrierung, Anmeldung und zum Gastzugang. Diese Daten dienen nur zu Demozwecken, um das Projekt zu sehen.</p> <h3>Sharkie</h3> <p>Ein Spiel, das in JavaScript entwickelt wurde. Hier ist keine Registrierung erforderlich.</p> <h2>Weitergabe der Daten</h2> <p>Ihre persönlichen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben.</p> <h2>Hinweis auf deutsches Recht</h2> <p>Diese Datenschutzerklärung bezieht sich auf die gesetzlichen Bestimmungen des deutschen Datenschutzgesetzes (DSGVO).</p> <p>Wenn Sie Fragen oder Bedenken zum Datenschutz haben, können Sie mich per E-Mail unter <a href='mailto:contact@michal-galas.de'>contact@michal-galas.de</a> kontaktieren.</p>"
     }
 }

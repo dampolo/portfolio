@@ -136,7 +136,7 @@
     }
     .about-me-right {
       color: #ffff;
-      margin-top: 8.375rem;
+      margin-top: 7.375rem;
       margin-bottom: auto;
       margin-inline: 0.625rem;
     }
@@ -164,6 +164,23 @@
     .damian {
       max-width: 35rem;
       width: 100%;
+    }
+  }
+}
+
+@media (max-height: 1100px) and (min-width: 1000px) {
+  .about-me {
+    .about-me-right {
+      margin-top: 5.375rem;
+      .me {
+        font-size: clamp(1.875rem, 6.5185vh + -0.3456rem, 3.7rem);
+      }
+      .frontend {
+        font-size: clamp(3.75rem, 14.6667vh + -1.1667rem, 8rem);
+      }
+      .developer {
+        font-size: clamp(3.4375rem, 13.5vh + -1.0625rem, 7.375rem);
+      }
     }
   }
 }

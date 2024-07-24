@@ -1,0 +1,86 @@
+@import "./../../styles.scss";
+
+.privacy-policy {
+  margin-top: 11.3125rem;
+  margin-bottom: 100px;
+  max-width: 1440px;
+
+  h3 {
+    font-family: "Baloo 2";
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 54px;
+    color: $blue;
+    padding-bottom: 30px;
+  }
+  h4 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 27.6px;
+  }
+  h5 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27.6px;
+  }
+  p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  ul {
+    padding-bottom: 20px;
+  }
+}
+
+.to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-top: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  border: solid 3px $blue;
+  width: 50px;
+  height: 50px;
+  background: $blue;
+  transition: all 175ms ease-in-out;
+  .arrow-white {
+    transform: rotate(-90deg);
+    width: 25px;
+    height: 25px;
+    // opacity: 1;
+  }
+  &:hover .arrow-white {
+    opacity: 0;
+  }
+  &:hover {
+    background: none;
+  }
+  .arrow-blue {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+  }
+  &:hover .arrow-blue {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1440px) {
+  .privacy-policy {
+    margin: 11.3125rem 1.25rem 2rem;
+  }
+}
