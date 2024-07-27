@@ -14,6 +14,9 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactComponent {
 
+  showFocus = false;
+  checkboxState = false;
+
   http = inject(HttpClient)
 
   contactData = {
@@ -22,8 +25,6 @@ export class ContactComponent {
     message: "",
   }
 
-  mailTest = true;
-  checkboxState = false;
 
   post = {
     endPoint: 'https://damianpoloczek.com/sendMail.php',
@@ -36,12 +37,16 @@ export class ContactComponent {
     },
   };
 
+  contactMe() {
+    this.showFocus = true
+  }
+
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            window.location.replace("/sent-message-confirmation");
             ngForm.resetForm();
           },
           error: (error) => {
@@ -49,11 +54,8 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
-    }
+    } 
   }
 
-
+  
 }

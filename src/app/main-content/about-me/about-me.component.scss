@@ -159,11 +159,17 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .about-me {
     .damian {
       max-width: 35rem;
       width: 100%;
+    }
+    .ball {
+      position: absolute;
+      transform: translate(-25%, -10%);
+      width: 125vw;
+      height: 120vw;
     }
   }
 }

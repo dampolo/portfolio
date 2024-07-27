@@ -1,0 +1,62 @@
+@import "./../../styles.scss";
+
+.sent-message {
+    // margin-top: 11.3125rem;
+    margin-bottom: 100px;
+    max-width: 1440px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    
+  h1 {
+    font-family: "Baloo 2";
+    font-style: normal;
+    font-weight: 650;
+    font-size: clamp(1.75rem, 14.6667vw + -1.1667rem, 4rem);
+    line-height: 1em;
+    color: $blue;
+  }
+}
+
+
+.to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    margin-right: 40px;
+    border-radius: 50%;
+    border: solid 3px $blue;
+    width: 50px;
+    height: 50px;
+    background: $blue;
+    transition: all 175ms ease-in-out;
+    .arrow-white {
+      transform: rotate(-90deg);
+      width: 25px;
+      height: 25px;
+      // opacity: 1;
+    }
+    &:hover .arrow-white {
+      opacity: 0;
+    }
+    &:hover {
+      background: none;
+    }
+    .arrow-blue {
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      top: 50%; /* position the top  edge of the element at the middle of the parent */
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      opacity: 0;
+    }
+    &:hover .arrow-blue {
+      opacity: 1;
+    }
+  }

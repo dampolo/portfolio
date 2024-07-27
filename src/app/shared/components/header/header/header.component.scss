@@ -7,12 +7,12 @@
       display: flex;
       gap: 2.25rem;
       list-style-type: none;
+      font-family: "Montserrat";
       li {
         .link {
           position: relative;
           display: flex;
           justify-content: center;
-          font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 1.4375rem;
@@ -24,7 +24,7 @@
           transition: all 125ms ease-in;
           &:focus {
             outline: none;
-            border-bottom: 3px solid $blue;
+            border-bottom: 2px solid $blue;
           }
           &:hover {
             font-weight: 700;

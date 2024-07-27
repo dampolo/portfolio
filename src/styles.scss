@@ -104,6 +104,13 @@ app-imprint {
   background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
 }
 
+app-sent-message {
+  min-height: calc(100vh - 291px);
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+
 app-single-project {
   display: flex;
 }
