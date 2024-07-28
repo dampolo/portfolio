@@ -2,8 +2,8 @@
 
 .sent-message {
     // margin-top: 11.3125rem;
-    margin-bottom: 100px;
-    max-width: 1440px;
+    margin-bottom: 3.125rem;
+    max-width: 90rem;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -28,17 +28,17 @@
     cursor: pointer;
     position: relative;
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: 2.5rem;
     border-radius: 50%;
     border: solid 3px $blue;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     background: $blue;
     transition: all 175ms ease-in-out;
     .arrow-white {
       transform: rotate(-90deg);
-      width: 25px;
-      height: 25px;
+      width: 1.5625rem;
+      height: 1.5625rem;
       // opacity: 1;
     }
     &:hover .arrow-white {
@@ -52,8 +52,8 @@
       transform: translate(-50%, -50%) rotate(-90deg);
       top: 50%; /* position the top  edge of the element at the middle of the parent */
       left: 50%;
-      width: 25px;
-      height: 25px;
+      width: 1.5625rem;
+      height: 1.5625rem;
       opacity: 0;
     }
     &:hover .arrow-blue {

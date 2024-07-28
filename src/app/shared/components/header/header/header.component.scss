@@ -2,21 +2,27 @@
 @import "./../../../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 .main-nav {
+  font-family: "Montserrat";
+
   .links {
+    font-family: "Montserrat";
+
     ul {
       display: flex;
       gap: 2.25rem;
       list-style-type: none;
       font-family: "Montserrat";
+
       li {
-        .link {
+        font-family: "Montserrat";
+        a {
+          width: 10rem;
           position: relative;
           display: flex;
           justify-content: center;
           font-style: normal;
           font-weight: 400;
           font-size: 1.4375rem;
-          width: 7.5rem;
           height: 2rem;
           text-decoration: none;
           line-height: 1.725rem;
@@ -27,6 +33,7 @@
             border-bottom: 2px solid $blue;
           }
           &:hover {
+            font-family: "Montserrat";
             font-weight: 700;
           }
           &::before {
@@ -44,6 +51,9 @@
           &:hover::before {
             transform: scaleX(1);
             transform-origin: left;
+          }
+          span {
+            font-family: "Montserrat";
           }
         }
       }
@@ -157,6 +167,10 @@
       color: $blue;
       padding: 1.5rem 2.5rem;
       transition: all 125ms ease-in-out;
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid $blue;
+      }
       &:hover {
         font-weight: 700;
       }
@@ -172,7 +186,7 @@
         transform-origin: right;
         transition: transform 125ms ease-in;
       }
-      &:active::before {
+      &:hover::before {
         transform: scaleX(1);
         transform-origin: left;
       }

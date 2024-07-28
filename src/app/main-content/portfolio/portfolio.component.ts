@@ -23,7 +23,7 @@ export class PortfolioComponent {
       test: 'Live test',
       test_link: 'https://join.damianpoloczek.com/',
       git_hub: 'GitHub',
-      link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
+      link_git_hub: 'https://github.com/dampolo/join'
     },
     {
       id: 1,
@@ -43,7 +43,7 @@ export class PortfolioComponent {
       language: 'JavaScript | HTML | CSS | Bootstrap | API',
       description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information..',
       test: 'Live test',
-      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      test_link: 'https://pokemons.damianpoloczek.com/',
       git_hub: 'GitHub',
       link_git_hub: 'https://github.com/dampolo/PokeApi'
     },

@@ -8,28 +8,28 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  min-height: 700px;
+  max-width: 90rem;
+  min-height: 43.75rem;
   padding: 0rem 6.25rem 3rem;
   margin: auto;
 
   .big-ball {
     @include ball();
     position: absolute;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 12.5rem;
+    max-height: 12.5rem;
     width: 100%;
     height: 100%;
-    top: 250px;
-    left: 100px;
+    top: 17.5rem;
+    left: 6.25rem;
   }
 
   .title {
     h2 {
       font-family: "Baloo 2";
       font-weight: 700;
-      font-size: 96px;
-      line-height: 96px;
+      font-size: 6rem;
+      line-height: 6rem;
       // margin-top: 30px;
       color: $blue;
     }
@@ -38,10 +38,10 @@ section {
   .small-ball {
     @include ball();
     position: absolute;
-    right: 90px;
-    bottom: 70px;
-    width: 75px;
-    height: 75px;
+    right: 5.625rem;
+    bottom: 4.375rem;
+    width: 4.6875rem;
+    height: 4.6875rem;
   }
 }
 
@@ -54,7 +54,7 @@ section {
     font-family: "Montserrat";
     flex-basis: 50%;
     h3 {
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 700;
       line-height: 38.4px;
       text-align: left;
@@ -65,17 +65,17 @@ section {
       font-weight: 400;
       line-height: 19.2px;
       text-align: left;
-      padding-block: 15px;
+      padding-block: 0.9375rem;
     }
     div:nth-of-type(2) {
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 400;
       line-height: 19.2px;
       text-align: left;
       padding-block: 0;
       span {
         font-family: "Poppins";
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         line-height: 19.2px;
         text-align: left;
@@ -91,24 +91,23 @@ form {
   flex-direction: column;
   flex-basis: 50%;
   div {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
   }
 }
 
-
 .input-container {
   position: relative;
-  height: 74px;
+  height: 4.625rem;
   input {
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     padding: 15px 25px 15px 25px;
     gap: 10px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: solid 1px $blue;
     border: 1px 0px 0px 0px;
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 19.2px;
     text-align: left;
@@ -119,18 +118,18 @@ form {
     }
     &:focus ~ label,
     &:not(:placeholder-shown) ~ label {
-      font-size: 12px;
+      font-size: 0.75rem;
       top: -9px;
     }
   }
   label {
     font-family: "Poppins";
-    font-size: 15px;
+    font-size: 0.9375rem;
     position: absolute;
-    left: 20px;
-    top: 15px;
+    left: 1.25rem;
+    top: 0.9375rem;
     background-color: #ffffff;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: 0.3s ease-in-out;
   }
   .exclamation-mark {
@@ -195,7 +194,7 @@ form {
     background-image: url(./../../../assets/img/resize.png);
     background-repeat: no-repeat;
     background-size: 13px 13px;
-    background-position: 5px 5px;
+    background-position: 2px 2px;
   }
 
   label {
@@ -237,15 +236,15 @@ button[type="submit"] {
   width: 200px;
   height: 58px;
   padding: 15px 30px 15px 30px;
-  gap: 10px;
-  border-radius: 10px;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
   border: solid 2px $blue;
   color: $blue;
   background: transparent;
   opacity: 0px;
   box-shadow: 5px 5px 15px 0px #00000026;
   font-family: "Montserrat";
-  font-size: 23px;
+  font-size: 1.4375rem;
   font-weight: 400;
   line-height: 27.6px;
   text-align: left;
@@ -265,46 +264,29 @@ button[type="submit"] {
       transform: scale(1);
       border: 1px solid #999999;
       color: #666666;
+      background-color: #cccccc;
     }
   }
-
-  &:before {
-    background: linear-gradient(
-      125deg,
-      rgb(89, 136, 255) 55%,
-      rgb(89, 136, 255) 45%,
-      rgb(0, 67, 240) 63%
-    );
-    content: "";
-    height: 21.875rem;
-    width: 18.75rem;
-    left: -23.5625rem;
-    position: absolute;
-    top: -11.5625rem;
-    transform: rotate(50deg);
-    transition: all 175ms ease-in-out;
-    color: white;
-  }
-  &:hover:before {
-    left: 0.625rem;
-    z-index: -1;
-  }
   &:hover {
-    transform: scale(1.1);
-    border: solid 2px transparent;
-    color: white;
+    @include buttonBlueHover();
+  }
+  &:focus {
+    @include buttonBlueHover();
+  }
+  &:active {
+    @include buttonBlueActive();
   }
 }
 
 .checkbox-container {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 0.625rem;
   button[type="button"] {
     display: flex;
     margin-bottom: auto;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     input {
       cursor: pointer;
       align-self: baseline;
@@ -312,7 +294,7 @@ button[type="submit"] {
       height: 100%;
       &:hover {
         background: #d4e0ff;
-        border-radius: 38px;
+        border-radius: 2.375rem;
         transition: 125ms ease;
       }
     }
@@ -330,7 +312,7 @@ button[type="submit"] {
       text-align: left;
       display: flex;
       color: #ff0000;
-      padding-block: 5px;
+      padding-block: 0.3125rem;
     }
   }
 }
@@ -363,14 +345,14 @@ label {
   position: relative;
   margin-top: auto;
   border-radius: 50%;
-  border: solid 3px $blue;
-  width: 50px;
-  height: 50px;
+  border: solid 0.1875rem $blue;
+  width: 3.125rem;
+  height: 3.125rem;
   background: $blue;
   transition: all 175ms ease-in-out;
   .arrow-white {
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     // opacity: 1;
   }
   &:hover .arrow-white {
@@ -384,8 +366,8 @@ label {
     top: 50%; /* position the top  edge of the element at the middle of the parent */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     opacity: 0;
   }
   &:hover .arrow-blue {
@@ -398,13 +380,13 @@ label {
     padding: 0rem 1.25rem 3rem;
     .title {
       h2 {
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 1.5;
       }
     }
     .big-ball {
-      left: 50px;
-      top: 450px;
+      left: 31.25rem;
+      top: 21.875rem;
     }
   }
   .description-with-form {
@@ -416,9 +398,9 @@ label {
 @media (max-width: 550px) {
   section {
     .small-ball {
-      width: 42px;
-      height: 42px;
-      bottom: 35px;
+      width: 2.625rem;
+      height: 2.625rem;
+      bottom: 2.1875rem;
     }
   }
 }
