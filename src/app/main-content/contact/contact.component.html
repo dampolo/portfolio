@@ -1,17 +1,17 @@
 <section>
-  <div class="title">
+  <div class="title" data-aos="fade-right" data-aos-duration="2000">
     <h2>{{"CONTACT.TITLE" | translate  }}</h2>
   </div>
   <div class="big-ball"></div>
 
   <div class="description-with-form">
-    <div class="description">
+    <div class="description" data-aos="fade-right" data-aos-duration="2000">
       <h3>{{"CONTACT.TITLE_H3" | translate  }}</h3>
       <div> {{ "CONTACT.DESCRIPTION_1" | translate }}      </div>
       <div> {{ "CONTACT.DESCRIPTION_2" | translate }} <span (click)="contactMe()"> {{ "CONTACT.DESCRIPTION_3" | translate }} </span></div>
     </div>
 
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-left" data-aos-duration="2000">
       
       <div class="input-container">
           <input [ngClass]="{'show-focus': showFocus}" #name="ngModel" minlength="5" [(ngModel)]="contactData.name" placeholder="" type="text" id="name" name="name" required>
@@ -19,7 +19,7 @@
 
           @if(!name.valid && name.touched) {
             <img class="exclamation-mark" src="assets/img/exclamation-mark.png" alt="exclamation mark" srcset="exclamation mark">
-            <span>Your name is required</span>
+            <span>{{ "CONTACT.FORM_NAME_REQUIED" | translate }}</span>
           } @if(name.valid)  {
             <img class="confirm-mark" src="assets/img/confirm.png" alt="exclamation mark" srcset="exclamation mark">
           }
@@ -31,7 +31,7 @@
 
           @if(!email.valid && email.touched) {
             <img class="exclamation-mark" src="assets/img/exclamation-mark.png" alt="exclamation mark" srcset="exclamation mark">
-            <span>You email is required</span>
+            <span>{{ "CONTACT.FORM_E_MAIL_REQUIED" | translate }}</span>
           } @if(email.valid) {
             <img class="confirm-mark" src="assets/img/confirm.png" alt="exclamation mark" srcset="exclamation mark">
           }
@@ -45,7 +45,7 @@
 
           @if(!message.valid && message.touched) {
             <img class="exclamation-mark" src="assets/img/exclamation-mark.png" alt="exclamation mark" srcset="exclamation mark">
-            <span>Your message is empty</span>
+            <span>{{ "CONTACT.FORM_MESSAGE_REQUIED" | translate }}</span>
           } @if(message.valid)  {
             <img class="confirm-mark" src="assets/img/confirm.png" alt="exclamation mark" srcset="exclamation mark">         
           }
@@ -63,7 +63,7 @@
         <!-- TU JESTEM -->
 
           <div class="checkbox-description">
-            <label for="checkbox">{{"CONTACT.PRIVACY_1" | translate}} <a class="privacy" href="/sent-message-confirmation">{{"CONTACT.PRIVACY_2" | translate}}</a> {{"CONTACT.PRIVACY_3" | translate}}</label>
+            <label for="checkbox">{{"CONTACT.PRIVACY_1" | translate}} <a class="privacy" href="/privacy-policy">{{"CONTACT.PRIVACY_2" | translate}}</a> {{"CONTACT.PRIVACY_3" | translate}}</label>
             @if(!checkboxState && contactForm.form.valid) {
               <span>Please accept the privacy policy.</span>
             } 

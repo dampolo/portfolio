@@ -385,8 +385,8 @@ label {
       }
     }
     .big-ball {
-      left: 31.25rem;
-      top: 21.875rem;
+      left: 17rem;
+      top: 21rem;
     }
   }
   .description-with-form {
@@ -397,6 +397,10 @@ label {
 
 @media (max-width: 550px) {
   section {
+    .big-ball {
+      left: 5rem;
+      top: 19rem;
+    }
     .small-ball {
       width: 2.625rem;
       height: 2.625rem;

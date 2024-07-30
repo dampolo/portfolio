@@ -5,6 +5,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { HeaderComponent } from './shared/components/header/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer/footer.component';
 import { SentMessageComponent } from './sent-message/sent-message.component';
+import AOS from "aos";
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,7 @@ import { SentMessageComponent } from './sent-message/sent-message.component';
 })
 export class AppComponent {
   title = 'Damian Poloczek';
+  ngOnInit(): void {
+    AOS.init()
+  }
 }

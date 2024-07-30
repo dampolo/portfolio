@@ -58,6 +58,7 @@
   .about-me-top {
     min-width: 680px;
     margin: auto;
+    mix-blend-mode: multiply;
   }
   .me {
     font-family: "Montserrat";
@@ -142,6 +143,7 @@
     }
     .about-me-top {
       min-width: 300px;
+      mix-blend-mode: normal;
     }
     .about-me-bottom {
       display: none;

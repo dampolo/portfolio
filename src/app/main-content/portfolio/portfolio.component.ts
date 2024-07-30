@@ -19,7 +19,7 @@ export class PortfolioComponent {
       image: "assets/img/join.png",
       project_name: 'Join',
       language: 'Java Script | HTML | CSS',
-      description: 'MY_PROJECTS.PROJECTS_1',
+      description: 'MY_PROJECTS.PROJECT_1',
       test: 'Live test',
       test_link: 'https://join.damianpoloczek.com/',
       git_hub: 'GitHub',
@@ -30,7 +30,7 @@ export class PortfolioComponent {
       image: 'assets/img/pollo-loco.png',
       project_name: 'El Pollo loco',
       language: 'Java Script | HTML | CSS',
-      description: 'MY_PROJECTS.PROJECTS_2',
+      description: 'MY_PROJECTS.PROJECT_2',
       test: 'Live test',
       test_link: 'https://elpolloloco.damianpoloczek.com/',
       git_hub: 'GitHub',
@@ -41,7 +41,7 @@ export class PortfolioComponent {
       image: 'assets/img/pokemon.png',
       project_name: 'Pokemons',
       language: 'JavaScript | HTML | CSS | Bootstrap | API',
-      description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information..',
+      description: 'MY_PROJECTS.PROJECT_3',
       test: 'Live test',
       test_link: 'https://pokemons.damianpoloczek.com/',
       git_hub: 'GitHub',
@@ -52,11 +52,11 @@ export class PortfolioComponent {
       image: 'assets/img/simple-crm.png',
       project_name: 'Simple CRM',
       language: 'Angular | Firebase',
-      description: 'A very Simple Customer Relationship Management system working with CRUD functionality.',
+      description: 'MY_PROJECTS.PROJECT_4',
       test: 'Live test',
-      test_link: 'https://github.com/dampolo/ElPolloLoco',
+      test_link: '/in-progress-component',
       git_hub: 'GitHub',
-      link_git_hub: 'https://github.com/dampolo/ElPolloLoco'
+      link_git_hub: '/in-progress-component'
     },
   ]
 }

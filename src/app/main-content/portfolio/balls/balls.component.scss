@@ -142,19 +142,19 @@ section {
 
 @keyframes moveAnimation0 {
   from {
-      top: 600px;
+      top: 500px;
   }
   to {
-      top: -300px;
+      top: -100px;
   }
 }
 
 @keyframes moveAnimation1 {
   0% {
-    top: 1000px;
+    top: 900px;
   }
   100% {
-    top: 0;
+    top: -100px;
   }
 }
 
@@ -205,10 +205,10 @@ section {
 
 @keyframes moveAnimation7 {
   0% {
-    top: 3000px;
+    top: 3300px;
   }
   100% {
-    top: 2000px;
+    top: 2300px;
   }
 }
 

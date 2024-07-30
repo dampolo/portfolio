@@ -1,11 +1,11 @@
-<div class="main-project" [ngClass]="{'even-flex-direction': index % 2 === 0, 'odd-flex-direction': index % 2 !== 0}">
-    <div class="project">
+<div class="main-project" [ngClass]="{'even-flex-direction': index % 2 === 0, 'odd-flex-direction': index % 2 !== 0}" [attr.data-aos]="index % 2 === 0 ? 'flip-right' : 'flip-left'" data-aos-duration="3000">
+    <div class="project" data-aos="flip-left" data-aos-duration="2000">
         <a href="{{project.test_link}}">
             <img src="{{project.image}}" alt="{{project.image}}">
         </a>
     </div>
 
-    <div class="description" [ngClass]="{'even-align-items': index % 2 === 0, 'odd-align-items': index % 2 !== 0}">
+    <div class="description" [ngClass]="{'even-align-items': index % 2 === 0, 'odd-align-items': index % 2 !== 0}" [attr.data-aos]="index % 2 === 0 ? 'flip-left' : 'flip-right'" data-aos-duration="3000">
         <h3>{{project.project_name}}</h3>
         <h4>{{project.language}}</h4>
         <div [ngClass]="{'even-text-align': index % 2 === 0, 'odd-text-align': index % 2 !== 0}">{{project.description | translate}}</div>
