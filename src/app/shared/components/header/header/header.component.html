@@ -1,17 +1,13 @@
 <section>
     <header>
         <nav class="main-nav" id="aside-main-nav">
-                <a href="" class="logo" [ngClass]="{'pos-fix-logo': posFixLogo}">
-                    <img src="assets/img/logo.png" alt="Summary Icon">
+                <a href="/" class="logo" [ngClass]="{'pos-fix-logo': posFixLogo}">
+                    <img src="assets/img/logo.png" alt="my logo">
                 </a>
 
 
             <div class="links">
                 <ul>
-                    <li class="languages">
-                            <button class="en" (click)="changeLanguage('en')" [ngClass]="{'selected': selectedLanguage === 'en'}">EN</button>
-                            <button class="de" (click)="changeLanguage('de')" [ngClass]="{'selected': selectedLanguage === 'de'}">DE</button>
-                    </li>
                     @for(item of menu; track item.name; let index = $index){
                         <li>
                             <a href="{{item.path}}" class="link">
@@ -19,6 +15,10 @@
                             </a>
                         </li>
                     }
+                    <li class="languages">
+                            <button class="en" (click)="changeLanguage('en')" [ngClass]="{'selected': selectedLanguage === 'en'}">EN</button>
+                            <button class="de" (click)="changeLanguage('de')" [ngClass]="{'selected': selectedLanguage === 'de'}">DE</button>
+                    </li>
                 </ul>
             </div>
 

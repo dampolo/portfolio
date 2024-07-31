@@ -4,24 +4,29 @@
   margin-top: 11.3125rem;
   margin-bottom: 100px;
   max-width: 1440px;
-  a {
-    text-decoration: none;
-    h1 {
-      font-family: "Baloo 2";
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 40px;
-      color: #5988ff;
-      padding-bottom: 30px;
+  
+  .impressum-content {
+    a {
+      text-decoration: none;
+      h1 {
+        font-family: "Baloo 2";
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 40px;
+        color: #5988ff;
+        padding-bottom: 30px;
+      }
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
     }
   }
-  p {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-  }
+  
 }
+
 
 .impressum {
   .to-top {

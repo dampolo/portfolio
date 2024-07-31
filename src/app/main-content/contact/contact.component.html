@@ -1,17 +1,17 @@
 <section>
-  <div class="title" data-aos="fade-right" data-aos-duration="2000">
+  <div class="title" data-aos="zoom-in" data-aos-duration="2000">
     <h2>{{"CONTACT.TITLE" | translate  }}</h2>
   </div>
-  <div class="big-ball"></div>
+  <div class="big-ball" data-aos="zoom-in" data-aos-duration="2000"></div>
 
   <div class="description-with-form">
-    <div class="description" data-aos="fade-right" data-aos-duration="2000">
+    <div class="description" data-aos="zoom-in" data-aos-duration="2000">
       <h3>{{"CONTACT.TITLE_H3" | translate  }}</h3>
       <div> {{ "CONTACT.DESCRIPTION_1" | translate }}      </div>
       <div> {{ "CONTACT.DESCRIPTION_2" | translate }} <span (click)="contactMe()"> {{ "CONTACT.DESCRIPTION_3" | translate }} </span></div>
     </div>
 
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-left" data-aos-duration="2000">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="zoom-in" data-aos-duration="2000">
       
       <div class="input-container">
           <input [ngClass]="{'show-focus': showFocus}" #name="ngModel" minlength="5" [(ngModel)]="contactData.name" placeholder="" type="text" id="name" name="name" required>
@@ -82,6 +82,6 @@
     </a>
   </div>
 
-  <div class="small-ball"></div>
+  <div class="small-ball" data-aos="zoom-in" data-aos-duration="2000"></div>
 
 </section>
