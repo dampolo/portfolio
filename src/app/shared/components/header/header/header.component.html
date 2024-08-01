@@ -6,12 +6,12 @@
                 </a>
 
 
-            <div class="links">
+            <div class="links" [ngClass]="{'show-menu': isMenuOpen}">
                 <ul>
                     @for(item of menu; track item.name; let index = $index){
                         <li>
-                            <a href="{{item.path}}" class="link">
-                                <span>{{ item.name | translate }}</span>
+                            <a href="{{item.path}}" class="link" (click)="closeMenu()">
+                                {{ item.name | translate }}
                             </a>
                         </li>
                     }
@@ -28,24 +28,6 @@
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            
-            <div class="links-responsive" [ngClass]="{'show-menu': isMenuOpen}">
-                @for(item of menu; track item.name; let index = $index){
-                    <a href="{{item.path}}" (click)="closeMenu()" class="link">
-                        <span>{{ item.name | translate }}</span>
-                    </a>
-                }
-
-                <div class="languages">
-                    <button class="en" (click)="changeLanguage('en')" [ngClass]="{'selected': selectedLanguage === 'en'}">
-                        EN
-                    </button>
-                    <button class="de" (click)="changeLanguage('de')"  [ngClass]="{'selected': selectedLanguage === 'de'}">
-                        DE
-                    </button>
-                </div>
-                
-            </div>
         </nav>
     </header>
 </section>
