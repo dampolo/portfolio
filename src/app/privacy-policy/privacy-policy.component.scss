@@ -4,38 +4,40 @@
   margin-top: 11.3125rem;
   margin-bottom: 100px;
   max-width: 1440px;
-
-  h3 {
-    font-family: "Baloo 2";
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 54px;
-    color: $blue;
-    padding-bottom: 30px;
-  }
-  h4 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 27.6px;
-  }
-  h5 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 27.6px;
-  }
-  p {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    padding-bottom: 20px;
-  }
-  ul {
-    padding-bottom: 20px;
+  .privacy-policy-content {
+    h3 {
+      font-family: "Baloo 2";
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 54px;
+      color: $blue;
+      padding-bottom: 30px;
+      word-break: break-all;
+    }
+    h4 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 23px;
+      line-height: 27.6px;
+    }
+    h5 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 27.6px;
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      padding-bottom: 20px;
+    }
+    ul {
+      padding-bottom: 20px;
+    }
   }
 }
 

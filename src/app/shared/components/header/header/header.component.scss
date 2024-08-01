@@ -26,6 +26,9 @@
             outline: none;
             border-bottom: 2px solid $blue;
           }
+          &:active {
+            border: none;
+          }
           &::before {
             content: "";
             position: absolute;
@@ -131,6 +134,7 @@
 
 .show-menu {
   transform: translate(0) !important;
+  visibility: visible !important;
   display: flex !important;
 }
 
@@ -139,16 +143,17 @@
     height: 5.3125rem;
     margin-inline: 4px;
     .links {
-      display: none;
+      transform: translate(100%);
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      visibility: hidden;
       position: fixed;
       inset: 0;
       background: linear-gradient(#ffff, #eaf0ff);
       height: 100vh;
       width: 100%;
-      transform: translate(100%);
       transition: all 125ms ease-in-out;
       ul {
         flex-direction: column;
@@ -172,6 +177,9 @@
             &:focus {
               outline: none;
               border-bottom: 2px solid $blue;
+            }
+            &:active {
+              border: none;
             }
             &::before {
               content: "";
@@ -206,6 +214,15 @@
   .main-nav {
     .links-responsive {
       transform: translate(100%) !important;
+    }
+  }
+}
+
+
+@media (max-height: 400px){
+  .main-nav {
+    .links {
+      overflow-y: auto;
     }
   }
 }
