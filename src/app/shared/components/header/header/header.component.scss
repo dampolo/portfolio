@@ -2,58 +2,67 @@
 @import "./../../../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 .main-nav {
-  .links {
-    ul {
-      display: flex;
-      gap: 2.25rem;
-      list-style-type: none;
-      li {
-        font-family: "Montserrat";
-        a {
-          width: 10rem;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 1.4375rem;
-          height: 2rem;
-          text-decoration: none;
-          line-height: 1.725rem;
-          color: $blue;
-          transition: all 125ms ease-in;
-          &:focus {
-            outline: none;
-            border-bottom: 2px solid $blue;
-          }
-          &:active {
-            border: none;
-          }
-          &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: $blue;
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform 125ms ease-in;
-          }
-          &:hover::before {
-            transform: scaleX(1);
-            transform-origin: left;
-          }
-        }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+  margin-inline: 50px;
+  .logo {
+    display: flex;
+    z-index: 1;
+    height: 4rem;
+    img {
+      height: 64px;
+      filter: drop-shadow(2px 4px 6px $acent-3);
+      &:hover {
+        filter: drop-shadow(2px 4px 6px $blue);
       }
     }
   }
-}
-
-.main-nav {
-  .links {
+  ul {
     display: flex;
+    gap: 2.25rem;
+    list-style-type: none;
+    li {
+      font-family: "Montserrat";
+      a {
+        width: 10rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4375rem;
+        height: 2rem;
+        text-decoration: none;
+        line-height: 1.725rem;
+        color: $blue;
+        transition: all 125ms ease-in;
+        &:focus {
+          outline: none;
+          border-bottom: 2px solid $blue;
+        }
+        &:active {
+          border: none;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $blue;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 125ms ease-in;
+        }
+        &:hover::before {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
     .languages {
       transform: translateY(-5px);
       column-gap: 1.25rem;
@@ -86,29 +95,6 @@
       }
     }
   }
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 7.3125rem;
-  margin-inline: 50px;
-  .logo {
-    display: flex;
-    z-index: 1;
-    height: 4rem;
-    img {
-      height: 64px;
-      filter: drop-shadow(2px 4px 6px black);
-      &:hover {
-        filter: drop-shadow(2px 4px 6px $blue);
-      }
-    }
-  }
-}
-
-.main-nav {
   button {
     display: none;
     background: none;
@@ -116,113 +102,48 @@
   }
 }
 
-.pos-fix {
-  position: fixed;
-  top: 15px;
-  right: 5px;
-}
-
-.pos-fix-logo {
-  position: fixed;
-  top: 11px;
-  left: 4px;
-}
-
-.show-burger {
-  display: flex;
-}
-
-.show-menu {
-  transform: translate(0) !important;
-  visibility: visible !important;
-  display: flex !important;
-}
-
 @media (width < 1400px) {
   .main-nav {
     height: 5.3125rem;
-    margin-inline: 4px;
-    .links {
-      transform: translate(100%);
-      display: flex;
+    margin-inline: 0.25rem;
+    ul {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      visibility: hidden;
       position: fixed;
-      inset: 0;
-      background: linear-gradient(#ffff, #eaf0ff);
+      top: 0;
+      right: 0;
+      background: linear-gradient($acent-1, $acent-2);
       height: 100vh;
-      width: 100%;
-      transition: all 125ms ease-in-out;
-      ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 3.25rem;
-        li {
-          font-family: "Montserrat";
-          a {
-            width: 10rem;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.4375rem;
-            height: 2rem;
-            text-decoration: none;
-            line-height: 1.725rem;
-            color: $blue;
-            transition: all 125ms ease-in;
-            &:focus {
-              outline: none;
-              border-bottom: 2px solid $blue;
-            }
-            &:active {
-              border: none;
-            }
-            &::before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 2px;
-              background-color: $blue;
-              transform: scaleX(0);
-              transform-origin: right;
-              transition: transform 125ms ease-in;
-            }
-            &:hover::before {
-              transform: scaleX(1);
-              transform-origin: left;
-            }
-          }
-        }
-      }
+      width: 0;
+      transition: all 175ms ease-in-out;
+      gap: 3.25rem;
+      overflow-x: hidden;
     }
     button {
       display: flex;
     }
-  }
-}
-
-@media (width > 1200px) {
-  .pos-fix-logo {
-    position: static;
-  }
-  .main-nav {
-    .links-responsive {
-      transform: translate(100%) !important;
+    .show-menu {
+      width: 100%;
+    }
+    .pos-fix-hamburger {
+      position: fixed;
+      top: 0.9375rem;
+      right: 0.3125rem;
+    }
+    .pos-fix-logo {
+      position: fixed;
+      top: 0.6875rem;
+      left: 0.25rem;
     }
   }
 }
 
-
-@media (max-height: 400px){
+@media (max-height: 400px) {
   .main-nav {
-    .links {
+    ul {
       overflow-y: auto;
+      padding-block: 50px;
     }
   }
 }

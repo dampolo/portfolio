@@ -2,6 +2,10 @@
 
 $blue: #5988ff;
 $blue-active: #2963f7;
+$acent-1: #ffff;
+$acent-2: #eaf0ff;
+$acent-3: #000;
+
 $ball-color: linear-gradient(#b7c2ff, #6283ff);
 $ball-color-second: linear-gradient(
   128.94deg,
@@ -69,8 +73,6 @@ app-root {
 }
 
 app-work-together {
-  // display: flex;
-  // justify-content: center;
   background: #ffffff;
 }
 app-main-content {
@@ -83,7 +85,7 @@ app-portfolio {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: $acent-1;
   width: 100%;
 }
 

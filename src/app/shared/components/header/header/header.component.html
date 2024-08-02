@@ -1,33 +1,29 @@
-<section>
-    <header>
-        <nav class="main-nav" id="aside-main-nav">
-                <a href="/" class="logo" [ngClass]="{'pos-fix-logo': posFixLogo}">
-                    <img src="assets/img/logo.png" alt='{{ "MENU.LOGO" | translate}}'>
-                </a>
 
+<header>
+    <nav class="main-nav" id="aside-main-nav">
 
-            <div class="links" [ngClass]="{'show-menu': isMenuOpen}">
-                <ul>
-                    @for(item of menu; track item.name; let index = $index){
-                        <li>
-                            <a href="{{item.path}}" class="link" (click)="closeMenu()">
-                                {{ item.name | translate }}
-                            </a>
-                        </li>
-                    }
-                    <li class="languages">
-                            <button class="en" (click)="changeLanguage('en')" [ngClass]="{'selected': selectedLanguage === 'en'}">EN</button>
-                            <button class="de" (click)="changeLanguage('de')" [ngClass]="{'selected': selectedLanguage === 'de'}">DE</button>
-                    </li>
-                </ul>
-            </div>
+        <a href="/" class="logo" [ngClass]="{'pos-fix-logo': posFixLogo}">
+            <img src="assets/img/logo.png" alt='{{ "MENU.LOGO" | translate}}'>
+        </a>
 
-            
-            <button (click)="openMenu()" class="hamburger hamburger--collapse" type="button" [ngClass]="{'is-active': isMenuOpen, 'pos-fix': posFixBurger }">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </nav>
-    </header>
-</section>
+        <ul [ngClass]="{'show-menu': isMenuOpen}">
+            @for(item of menu; track item.name; let index = $index){
+                <li>
+                    <a href="{{item.path}}" class="link" (click)="closeMenu()">
+                        {{ item.name | translate }}
+                    </a>
+                </li>
+            }
+            <li class="languages">
+                    <button class="en" (click)="changeLanguage('en')" [ngClass]="{'selected': selectedLanguage === 'en'}">EN</button>
+                    <button class="de" (click)="changeLanguage('de')" [ngClass]="{'selected': selectedLanguage === 'de'}">DE</button>
+            </li>
+        </ul>
+        
+        <button (click)="openMenu()" class="hamburger hamburger--collapse" type="button" [ngClass]="{'is-active': isMenuOpen, 'pos-fix-hamburger': posFixBurger }">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </nav>
+</header>
