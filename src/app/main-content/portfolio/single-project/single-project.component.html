@@ -10,16 +10,17 @@
         <h4>{{project.language}}</h4>
         <div [ngClass]="{'even-text-align': index % 2 === 0, 'odd-text-align': index % 2 !== 0}">{{project.description | translate}}</div>
         <div class="buttons">
-            <a href="{{project.test_link}}" target="_blank">
-                <button>
-                {{project.test}}
-                </button>
-            </a>
-            <a href="{{project.link_git_hub}}" target="_blank">
-                <button>
-                {{project.git_hub}}
-                </button>
-            </a>
+            <button>
+                <a href="{{project.test_link}}" target="_blank">
+                    {{project.test}}
+                </a>
+            </button>
+            
+            <button>
+                <a href="{{project.link_git_hub}}" target="_blank">
+                    {{project.git_hub}}
+                </a>
+        </button>
         </div>
     </div>
 </section>

@@ -54,6 +54,7 @@
     }
   }
   .description {
+    font-family: "Montserrat";
     display: flex;
     flex-direction: column;
     flex-basis: 45%;
@@ -66,7 +67,6 @@
       color: $blue;
     }
     h4 {
-      font-family: "Montserrat";
       font-size: 23px;
       font-weight: 400;
       line-height: 27.6px;
@@ -85,11 +85,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  a {
-    text-decoration: none;
+  button {
     color: $blue;
     outline: none;
-    button {
+    border-radius: 10px 0px 0px 0px;
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
       cursor: pointer;
       font-family: "Montserrat";
       font-size: 23px;
@@ -101,7 +104,7 @@
       width: 170px;
       height: 58px;
       padding: 15px 30px 15px 30px;
-      border-radius: 10px 0px 0px 0px;
+      border-radius: inherit;
       background-color: $blue;
       border: solid 2px $blue;
       position: relative;
@@ -120,26 +123,13 @@
       }
     }
   }
-  a:nth-of-type(2) {
-    text-decoration: none;
+  button:nth-of-type(2) {
     color: $acent-1;
-    button {
-      cursor: pointer;
+    border-radius: 0px 0px 10px 0px;
+
+    a {
       background-color: $acent-1;
-      font-family: "Montserrat";
-      font-size: 23px;
-      font-weight: 400;
-      line-height: 1.725rem;
-      text-align: center;
-      box-shadow: 5px 5px 15px 0px $acent-4;
-      width: 170px;
-      height: 58px;
-      padding: 15px 30px 15px 30px;
-      border-radius: 0px 0px 10px 0px;
-      border: solid 2px $blue;
-      position: relative;
-      transform: scale(1);
-      z-index: 5;
+      border-radius: inherit;
       color: $blue;
       &:hover {
         @include buttonBlueHover();
