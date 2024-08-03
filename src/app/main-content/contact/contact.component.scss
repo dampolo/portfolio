@@ -1,6 +1,7 @@
 @import "./../../../styles.scss";
 
 section {
+  font-family: "Montserrat";
   background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -12,7 +13,6 @@ section {
   min-height: 43.75rem;
   padding: 0rem 6.25rem 3rem;
   margin: auto;
-
   .big-ball {
     @include ball();
     position: absolute;
@@ -23,18 +23,15 @@ section {
     top: 17.5rem;
     left: 6.25rem;
   }
-
   .title {
     h2 {
       font-family: "Baloo 2";
       font-weight: 700;
       font-size: 6rem;
       line-height: 6rem;
-      // margin-top: 30px;
       color: $blue;
     }
   }
-
   .small-ball {
     @include ball();
     position: absolute;
@@ -48,33 +45,27 @@ section {
 .description-with-form {
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 6.25rem;
   z-index: 1;
   .description {
-    font-family: "Montserrat";
     flex-basis: 50%;
-    h3 {
-      font-size: 2rem;
+    h4 {
+      font-family: "Montserrat";
+      font-size: 23px;
       font-weight: 700;
-      line-height: 38.4px;
-      text-align: left;
+      line-height: 27.6px;
       color: $blue;
     }
     div {
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 400;
       line-height: 19.2px;
       text-align: left;
       padding-block: 0.9375rem;
     }
     div:nth-of-type(2) {
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 19.2px;
-      text-align: left;
       padding-block: 0;
       span {
-        font-family: "Poppins";
         font-size: 1rem;
         font-weight: 700;
         line-height: 19.2px;
@@ -86,6 +77,11 @@ section {
   }
 }
 
+.show-focus {
+  border: solid 3px $blue !important;
+  outline: $blue !important;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -93,210 +89,180 @@ form {
   div {
     margin-bottom: 0.3125rem;
   }
-}
-
-.input-container {
-  position: relative;
-  height: 4.625rem;
-  input {
-    width: 100%;
-    height: 3.125rem;
-    padding: 15px 25px 15px 25px;
-    gap: 10px;
-    border-radius: 0.625rem;
-    border: solid 1px $blue;
-    border: 1px 0px 0px 0px;
-    font-family: "Montserrat";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 19.2px;
-    text-align: left;
-    color: black;
-    &:focus {
-      border: solid 3px $blue;
-      outline: $blue;
+  .input-container {
+    position: relative;
+    height: 4.625rem;
+    input {
+      width: 100%;
+      height: 3.125rem;
+      padding: 15px 25px 15px 25px;
+      gap: 0.625rem;
+      border-radius: 0.625rem;
+      border: solid 1px $blue;
+      border: 1px 0px 0px 0px;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 19.2px;
+      text-align: left;
+      color: black;
+      &:focus {
+        border: solid 3px $blue;
+        outline: $blue;
+      }
+      &:focus ~ label,
+      &:not(:placeholder-shown) ~ label {
+        font-size: 0.75rem;
+        top: -8px;
+      }
     }
-    &:focus ~ label,
-    &:not(:placeholder-shown) ~ label {
-      font-size: 0.75rem;
-      top: -9px;
+    label {
+      font-size: 0.9375rem;
+      position: absolute;
+      left: 1.25rem;
+      top: 0.9375rem;
+      background-color: #ffffff;
+      border-radius: 1.25rem;
+      transition: 0.3s ease-in-out;
     }
-  }
-  label {
-    font-family: "Poppins";
-    font-size: 0.9375rem;
-    position: absolute;
-    left: 1.25rem;
-    top: 0.9375rem;
-    background-color: #ffffff;
-    border-radius: 1.25rem;
-    transition: 0.3s ease-in-out;
-  }
-  .exclamation-mark {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 13px;
-    top: 12px;
-  }
-  .confirm-mark {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 13px;
-    top: 12px;
-  }
-  span {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    text-align: left;
-    display: flex;
-    color: #ff0000;
-    padding-block: 5px;
-  }
-}
-
-.show-focus {
-  border: solid 3px $blue !important;
-  outline: $blue !important;
-}
-
-.textarea-container {
-  position: relative;
-  min-height: 155px;
-  textarea {
-    width: 100%;
-    padding: 15px 25px 15px 25px;
-    gap: 10px;
-    border-radius: 10px;
-    border: solid 1px $blue;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.2px;
-    text-align: left;
-    min-height: 130px;
-    resize: unset;
-    resize: vertical;
-    &:focus {
-      border: solid 2px $blue;
-      outline: $blue;
+    .exclamation-mark,
+    .confirm-mark {
+      width: 1.5625rem;
+      height: 1.5625rem;
+      position: absolute;
+      right: 0.8125rem;
+      top: 0.75rem;
     }
-    &:focus ~ label,
-    &:not(:placeholder-shown) ~ label {
-      font-size: 12px;
-      top: -9px;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: left;
+      display: flex;
+      color: #ff0000;
+      padding-block: 5px;
     }
-  }
-  ::-webkit-resizer {
-    background-image: url(./../../../assets/img/resize.png);
-    background-repeat: no-repeat;
-    background-size: 13px 13px;
-    background-position: 2px 2px;
   }
 
-  label {
-    font-family: "Poppins";
-    font-size: 15px;
-    position: absolute;
-    left: 20px;
-    top: 15px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    transition: 0.3s ease-in-out;
+  .textarea-container {
+    position: relative;
+    min-height: 9.6875rem;
+    textarea {
+      width: 100%;
+      padding: 15px 25px 15px 25px;
+      gap: 10px;
+      border-radius: 10px;
+      border: solid 1px $blue;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.2px;
+      text-align: left;
+      min-height: 130px;
+      resize: unset;
+      resize: vertical;
+      &:focus {
+        border: solid 3px $blue;
+        outline: $blue;
+      }
+      &:focus ~ label,
+      &:not(:placeholder-shown) ~ label {
+        font-size: 12px;
+        top: -8px;
+      }
+    }
+    ::-webkit-resizer {
+      background-image: url(./../../../assets/img/resize.png);
+      background-repeat: no-repeat;
+      background-size: 13px 13px;
+      background-position: 2px 2px;
+    }
+
+    label {
+      font-size: 15px;
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      background-color: $acent-1;
+      border-radius: 20px;
+      transition: 0.3s ease-in-out;
+    }
+	.confirm-mark,
+    .exclamation-mark {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 13px;
+      top: 10px;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: left;
+      display: flex;
+      color: #ff0000;
+    }
   }
-  .exclamation-mark {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 13px;
-    top: 10px;
-  }
-  .confirm-mark {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 13px;
-    top: 10px;
-  }
-  span {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    text-align: left;
-    display: flex;
-    color: #ff0000;
+  button[type="submit"] {
+	width: 200px;
+	height: 58px;
+	padding: 15px 30px 15px 30px;
+	gap: 0.625rem;
+	border-radius: 0.625rem;
+	border: solid 2px $blue;
+	color: $blue;
+	background: transparent;
+	opacity: 0px;
+	box-shadow: 5px 5px 15px 0px #00000026;
+	font-size: 1.4375rem;
+	font-weight: 400;
+	line-height: 27.6px;
+	text-align: left;
+	align-self: center;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	&[disabled] {
+	  cursor: auto;
+	  border: 1px solid #999999;
+	  background-color: #cccccc;
+	  color: #666666;
+	  &::before {
+		content: none;
+	  }
+	  &:hover {
+		transform: scale(1);
+		border: 1px solid #999999;
+		color: #666666;
+		background-color: #cccccc;
+	  }
+	}
+	&:hover {
+	  @include buttonBlueHover();
+	}
+	&:focus {
+	  @include buttonBlueHover();
+	}
+	&:active {
+	  @include buttonBlueActive();
+	}
   }
 }
 
-button[type="submit"] {
-  width: 200px;
-  height: 58px;
-  padding: 15px 30px 15px 30px;
-  gap: 0.625rem;
-  border-radius: 0.625rem;
-  border: solid 2px $blue;
-  color: $blue;
-  background: transparent;
-  opacity: 0px;
-  box-shadow: 5px 5px 15px 0px #00000026;
-  font-family: "Montserrat";
-  font-size: 1.4375rem;
-  font-weight: 400;
-  line-height: 27.6px;
-  text-align: left;
-  align-self: center;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  &[disabled] {
-    cursor: auto;
-    border: 1px solid #999999;
-    background-color: #cccccc;
-    color: #666666;
-    &::before {
-      content: none;
-    }
-    &:hover {
-      transform: scale(1);
-      border: 1px solid #999999;
-      color: #666666;
-      background-color: #cccccc;
-    }
-  }
-  &:hover {
-    @include buttonBlueHover();
-  }
-  &:focus {
-    @include buttonBlueHover();
-  }
-  &:active {
-    @include buttonBlueActive();
-  }
-}
 
 .checkbox-container {
   display: flex;
   align-items: center;
   column-gap: 0.625rem;
-  button[type="button"] {
+  input[type="checkbox"] {
     display: flex;
     margin-bottom: auto;
     width: 1.25rem;
     height: 1.25rem;
-    input {
-      cursor: pointer;
-      align-self: baseline;
-      width: 100%;
-      height: 100%;
-      &:hover {
-        background: #d4e0ff;
-        border-radius: 2.375rem;
-        transition: 125ms ease;
-      }
+    cursor: pointer;
+    &:hover {
+      background: #d4e0ff;
+      border-radius: 2.375rem;
+      transition: 125ms ease;
     }
   }
 
@@ -304,8 +270,21 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     height: 70px;
+    label {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: left;
+      .privacy {
+        text-decoration: none;
+        color: $blue;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
     span {
-      font-family: "Montserrat";
       font-size: 14px;
       font-weight: 400;
       line-height: 16.8px;
@@ -313,22 +292,6 @@ button[type="submit"] {
       display: flex;
       color: #ff0000;
       padding-block: 0.3125rem;
-    }
-  }
-}
-
-label {
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16.8px;
-  text-align: left;
-  .privacy {
-    text-decoration: none;
-    color: $blue;
-    cursor: pointer;
-    &:hover {
-      text-decoration: underline;
     }
   }
 }
@@ -353,7 +316,6 @@ label {
   .arrow-white {
     width: 1.5625rem;
     height: 1.5625rem;
-    // opacity: 1;
   }
   &:hover .arrow-white {
     opacity: 0;

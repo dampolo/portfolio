@@ -97,18 +97,16 @@
       line-height: 1.725rem;
       text-align: center;
       color: $blue;
-      box-shadow: 5px 5px 15px 0px #00000026;
+      box-shadow: 5px 5px 15px 0px $acent-4;
       width: 170px;
       height: 58px;
       padding: 15px 30px 15px 30px;
-      gap: 10px;
       border-radius: 10px 0px 0px 0px;
       background-color: $blue;
       border: solid 2px $blue;
-      overflow: hidden;
       position: relative;
       z-index: 5;
-      color: white;
+      color: $acent-1;
       transform: scale(1);
       transition: all 175ms ease-in-out;
       &:hover {
@@ -122,30 +120,23 @@
       }
     }
   }
-}
-
-.buttons {
-  display: flex;
-  gap: 40px;
   a:nth-of-type(2) {
     text-decoration: none;
-    color: white;
+    color: $acent-1;
     button {
       cursor: pointer;
-      background-color: white;
+      background-color: $acent-1;
       font-family: "Montserrat";
       font-size: 23px;
       font-weight: 400;
       line-height: 1.725rem;
       text-align: center;
-      box-shadow: 5px 5px 15px 0px #00000026;
+      box-shadow: 5px 5px 15px 0px $acent-4;
       width: 170px;
       height: 58px;
       padding: 15px 30px 15px 30px;
-      gap: 10px;
       border-radius: 0px 0px 10px 0px;
       border: solid 2px $blue;
-      overflow: hidden;
       position: relative;
       transform: scale(1);
       z-index: 5;

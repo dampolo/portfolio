@@ -17,8 +17,8 @@ section {
   .title {
     h2 {
       @include fontH2();
-      color: #ffff;
-      margin-top: 30px;
+      color: $acent-1;
+      margin-top: 1.875rem;
     }
   }
   .skills-icons {
@@ -27,26 +27,27 @@ section {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    gap: 50px 100px;
-    max-width: 950px;
-    margin-bottom: 30px;
+    gap: 3.125rem 6.25rem;
+    max-width: 59.375rem;
+    margin-bottom: 1.875rem;
   }
 }
 
 @media (max-width: 1200px) {
   section {
     .title {
-      margin-top: 30px;
+      margin-top: 1.875rem;
       h2 {
+        margin: 0;
         @include fontH2Responsiv()
       }
     }
     .skills-icons {
       .icon {
-        height: 100px;
+        height: 6.25rem;
         img {
-          width: 60px;
-          height: 60px;
+          width: 3.75rem;
+          height: 3.75rem;
         }
       }
     }
