@@ -3,21 +3,11 @@
 .about-me {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(#ffff, #eaf0ff);
+  background-image: linear-gradient($acent-1, $acent-2);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   position: relative;
-  .small-ball {
-    position: absolute;
-    @include ball();
-    width: 12.875rem;
-    height: 12.875rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    @include animation();
-  }
   .ball {
     @include ball();
     position: absolute;
@@ -26,125 +16,129 @@
     top: 0;
     left: 0;
   }
-}
-
-@keyframes moveAnimation {
-  from {
-    bottom: -80px;
-  }
-  to {
-    bottom: 312px;
-  }
-}
-
-.about-me-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .damian {
-    width: 55vh;
-    z-index: 2;
-    margin-top: auto;
-  }
-}
-
-.about-me-right {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 3.125rem;
-  color: $blue;
-  .about-me-top {
-    min-width: 680px;
-    margin: auto;
-    mix-blend-mode: multiply;
-  }
-  .me {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(1.875rem, 6.5185vw + -0.3456rem, 3.7rem);
-  }
-
-  .frontend {
-    font-family: "Baloo 2";
-    font-style: normal;
-    font-weight: 650;
-    font-size: clamp(3.75rem, 14.6667vw + -1.1667rem, 8rem);
-    line-height: 0.8em;
-  }
-  .developer {
-    font-family: "Baloo 2";
-    font-style: normal;
-    font-weight: 650;
-    font-size: clamp(3.4375rem, 13.5vw + -1.0625rem, 7.375rem);
-    line-height: 0.8em;
-  }
-}
-
-.about-me-bottom {
-  position: relative;
-  h4 {
-    text-align: center;
-    left: 43%;
-    bottom: 21rem;
-    font-family: "Montserrat";
-    font-weight: 500;
-    font-size: 1.4375rem;
-  }
-  .line {
-    display: flex;
-    justify-content: center;
-  }
-
-  .icons {
+  .about-me-img {
     display: flex;
     flex-direction: column;
-    gap: 1.5625rem;
+    align-items: center;
+    .damian {
+      width: 55vh;
+      z-index: 2;
+      margin-top: auto;
+    }
+  }
+  .small-ball {
     position: absolute;
-    bottom: 3.75rem;
-    right: 2.6rem;
-    .icon-img {
-      a {
-        outline: none;
-        position: relative;
-        right: 0;
-        scale: (1);
-        cursor: pointer;
-        transition: all 125ms ease-in-out;
-        &:focus img {
-          position: relative;
-          right: 0.625rem;
-          scale: (1.1);
-          outline: none;
-        }
-        &:hover img {
-          position: relative;
-          right: 0.625rem;
-          scale: (1.1);
+    @include ball();
+    width: 13rem;
+    height: 13rem;
+    left: 50%;
+    bottom: -50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    @include animation();
+  }
+  .about-me-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 3.125rem;
+    color: $blue;
+    .about-me-top {
+      min-width: 680px;
+      margin: auto;
+      mix-blend-mode: multiply;
+    }
+    .me {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(1.6rem, 6.5185vw + -0.4456rem, 3.7rem);
+    }
+    .frontend {
+      font-family: "Baloo 2";
+      font-style: normal;
+      font-weight: 650;
+      font-size: clamp(3.75rem, 14.6667vw + -1.1667rem, 8rem);
+      line-height: 0.8em;
+    }
+    .developer {
+      font-family: "Baloo 2";
+      font-style: normal;
+      font-weight: 650;
+      font-size: clamp(3.45rem, 13.5vw + -1.0625rem, 7.5rem);
+      line-height: 0.8em;
+    }
+    .about-me-bottom {
+      position: relative;
+      h4 {
+        text-align: center;
+        left: 43%;
+        bottom: 21rem;
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: 1.4375rem;
+      }
+      .line {
+        display: flex;
+        justify-content: center;
+      }
+    
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem;
+        position: absolute;
+        bottom: 3.75rem;
+        right: 2.6rem;
+        list-style-type: none;
+        li {
+          a {
+            outline: none;
+            position: relative;
+            right: 0;
+            scale: (1);
+            cursor: pointer;
+            transition: all 125ms ease-in-out;
+            &:focus img {
+              position: relative;
+              right: 0.625rem;
+              scale: (1.1);
+              outline: none;
+            }
+            &:hover img {
+              position: relative;
+              right: 0.625rem;
+              scale: (1.1);
+            }
+          }
         }
       }
     }
   }
 }
 
+@keyframes moveAnimation {
+    from {
+      bottom: -80px;
+    }
+    to {
+      bottom: 312px;
+    }
+  }
+
 @media (max-width: 1400px) {
   .about-me {
     flex-direction: column-reverse;
-    h3 {
-      font-size: 55px;
-    }
     .about-me-right {
-      color: #ffff;
+      color: $acent-1;
       margin-top: 7.375rem;
       margin-bottom: auto;
       margin-inline: 0.625rem;
-    }
-    .about-me-top {
-      min-width: 300px;
-      mix-blend-mode: normal;
-      text-align: center;
+      .about-me-top {
+        min-width: 18.75rem;
+        mix-blend-mode: normal;
+      }
     }
     .about-me-bottom {
       display: none;
@@ -153,7 +147,7 @@
       position: absolute;
       width: 9.75rem;
       height: 9.75rem;
-      bottom: -80px;
+      bottom: -5rem;
     }
     .ball {
       width: 100%;
@@ -164,9 +158,10 @@
 
 @media (max-width: 500px) {
   .about-me {
-    .damian {
-      max-width: 35rem;
-      width: 100%;
+    .about-me-img {
+        .damian {
+            width: 100vw;
+        }
     }
     .ball {
       position: absolute;
@@ -182,19 +177,19 @@
     .about-me-right {
       margin-top: 5.375rem;
       .me {
-        font-size: clamp(1.875rem, 6.5185vh + -0.3456rem, 3.7rem);
+        font-size: clamp(1.9rem, 6.5185vh + -0.3456rem, 3.7rem);
       }
       .frontend {
         font-size: clamp(3.75rem, 14.6667vh + -1.1667rem, 8rem);
       }
       .developer {
-        font-size: clamp(3.4375rem, 13.5vh + -1.0625rem, 7.375rem);
+        font-size: clamp(3.5rem, 13.5vh + -1.0625rem, 7.375rem);
       }
     }
   }
 }
 
-@media (max-height: 400px){
+@media (max-height: 400px) {
   .about-me {
     .small-ball {
       display: none;
