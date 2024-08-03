@@ -4,12 +4,15 @@
         "SKILL_SET": "Skill set",
         "MY_WORK": "My work",
         "CONTACT": "Contact",
-        "LOGO": "log"
+        "LOGO": "Logo"
       },
     "ABOUT_ME": {
         "I_AM": "Hello! I am Damian", 
         "FRONTEND": "FRONTEND",
-        "DEVELOPER": "DEVELOPER"
+        "DEVELOPER": "DEVELOPER",
+        "GITHUB": "GitHub",
+        "E_MAIL": "E-Mail",
+        "LINKEDIN": "LinkedIn"
     },
     "SKILLS": {
         "TITLE": "Skills"
@@ -49,6 +52,10 @@
     },
     "FOOTER": {
         "LEGAL_NOTICE": "Legal notice",
+        "LOGO": "Logo",
+        "GITHUB": "GitHub",
+        "E_MAIL": "E-Mail",
+        "LINKEDIN": "LinkedIn",
         "LEGAL_NOTICE_PAGE": "<a href=\"imprint\" class=\"h1\"><h1>Legal Notice</h1></a><p>Information according to § 5 TMG</p><p>Damian Poloczek <br>Chiemgaustr. 156<br>81549 Munich <br> <br></p><p> <strong>Represented by: </strong><br>Damian Poloczek<br><br></p><p><strong>Contact:</strong> <br>Phone: (+49) 17699492988<br>Email: <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a></p><br><p><strong>Disclaimer: </strong><br><br><strong>Liability for content</strong><br><br>The content of our pages was created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with § 7 Abs.1 TMG under general law. According to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such legal violations, we will remove this content immediately.<br><br><strong>Liability for links</strong><br><br>Our offer contains links to external third-party websites, over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. Permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. Upon becoming aware of legal violations, we will remove such links immediately.<br><br><strong>Data protection</strong><br><br>The use of our website is usually possible without providing personal information. Insofar as personal data (e.g., name, address, or email addresses) is collected on our pages, this is always done on a voluntary basis, if possible. This data will not be passed on to third parties without your explicit consent. <br>We point out that data transmission over the Internet (e.g., communication by email) can have security vulnerabilities. Complete protection of data from access by third parties is not possible. <br>The use of contact data published within the scope of the legal notice obligation by third parties for the transmission of not expressly requested advertising and information materials is hereby expressly contradicted. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam emails.<br></p><br>Legal notice from <a href=\"https://www.impressum-generator.de\">Legal Notice Generator</a> of <a href=\"https://www.kanzlei-hasselbach.de/standorte/frankfurt/\" rel=\"nofollow\">Kanzlei Hasselbach, Frankfurt</a>"
     }
 }
