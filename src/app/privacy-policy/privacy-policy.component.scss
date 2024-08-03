@@ -1,7 +1,7 @@
 @import "./../../styles.scss";
 
 .privacy-policy {
-  margin-top: 11.3125rem;
+  margin-top: 7.3125rem;
   margin-bottom: 100px;
   max-width: 1440px;
   .privacy-policy-content {
@@ -47,6 +47,7 @@
   align-items: center;
   cursor: pointer;
   position: relative;
+  margin-bottom: 3.125rem;
   margin-top: auto;
   margin-left: auto;
   border-radius: 50%;
@@ -59,7 +60,6 @@
     transform: rotate(-90deg);
     width: 25px;
     height: 25px;
-    // opacity: 1;
   }
   &:hover .arrow-white {
     opacity: 0;
@@ -83,6 +83,6 @@
 
 @media (max-width: 1440px) {
   .privacy-policy {
-    margin: 11.3125rem 1.25rem 2rem;
+    margin: 7.3125rem 1.25rem 2rem;
   }
 }
