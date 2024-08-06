@@ -41,6 +41,31 @@
       line-height: 1.5;
       flex: 1;
       gap: 16px;
+      .send-a-message {
+        display: flex;
+        align-self: center;
+        outline: none;
+        border-radius: 0.625rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: $blue;
+        font-family: "Montserrat";
+        font-weight: 400;
+        padding: 0.9375rem 1.875rem;
+        min-width: 15.875rem;
+        border: solid 2px $blue;
+        background: $acent-1;
+        transition: all 175ms ease-in-out;
+        &:hover {
+          @include buttonBlueHover();
+        }
+        &:focus {
+          @include buttonBlueHover();
+        }
+        &:active {
+          @include buttonBlueActive();
+        }
+      }
     }
   }
 }
@@ -51,35 +76,6 @@
   }
   to {
     top: -75px;
-  }
-}
-
-button {
-  display: flex;
-  align-self: center;
-  outline: none;
-  border-radius: 0.625rem;
-  cursor: pointer;
-  a {
-    text-decoration: none;
-    color: $blue;
-    font-family: "Montserrat";
-    border-radius: inherit;
-    font-weight: 400;
-    padding: 0.9375rem 1.875rem;
-    min-width: 15.875rem;
-    border: solid 2px $blue;
-    background: $acent-1;
-    transition: all 175ms ease-in-out;
-    &:hover {
-      @include buttonBlueHover();
-    }
-    &:focus {
-      @include buttonBlueHover();
-    }
-    &:active {
-      @include buttonBlueActive();
-    }
   }
 }
 
