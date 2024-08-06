@@ -1,10 +1,12 @@
 <section class="about-me">
     
     <div class="ball" data-aos="zoom-in" data-aos-duration="2000"></div>
-    
-    <div class="about-me-img">
-        <img class="damian" src="assets/img/damian.webp" alt="">
-    </div>
+
+    <picture class="about-me-img">
+        <source type="image/webp" srcset="assets/img/damian-small.webp" media="(max-width: 500px)">
+        <source type="image/webp" srcset="assets/img/damian-big.webp" media="(max-width: 1400px)">
+        <img class="damian" src="assets/img/damian-min.png" alt='{{ "ABOUT_ME.MY_PHOTO" | translate}}'>
+    </picture>
 
     <div class="about-me-right">
         <div class="about-me-top" data-aos="zoom-in" data-aos-duration="2000">
