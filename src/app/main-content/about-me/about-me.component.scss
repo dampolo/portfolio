@@ -49,41 +49,50 @@
       margin: auto;
       mix-blend-mode: multiply;
     }
-    .me {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: clamp(1.6rem, 6.5185vw + -0.4456rem, 3.7rem);
-    }
-    .frontend {
-      font-family: "Baloo 2";
-      font-style: normal;
-      font-weight: 650;
-      font-size: clamp(3.75rem, 14.6667vw + -1.1667rem, 8rem);
-      line-height: 0.8em;
-    }
-    .developer {
-      font-family: "Baloo 2";
-      font-style: normal;
-      font-weight: 650;
-      font-size: clamp(3.45rem, 13.5vw + -1.0625rem, 7.5rem);
-      line-height: 0.8em;
+    h1 {
+      display: flex;
+      flex-direction: column;
+      .me {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(1.6rem, 6.5185vw + -0.4456rem, 3.7rem);
+      }
+      .frontend {
+        font-family: "Baloo 2";
+        font-style: normal;
+        font-weight: 650;
+        font-size: clamp(3.75rem, 14.6667vw + -1.1667rem, 8rem);
+        line-height: 0.8em;
+      }
+      .developer {
+        font-family: "Baloo 2";
+        font-style: normal;
+        font-weight: 650;
+        font-size: clamp(3.45rem, 13.5vw + -1.0625rem, 7.5rem);
+        line-height: 0.8em;
+      }
     }
     .about-me-bottom {
       position: relative;
-      h4 {
+      .scroll {
         text-align: center;
-        left: 43%;
-        bottom: 21rem;
         font-family: "Montserrat";
         font-weight: 500;
         font-size: 1.4375rem;
+        height: 100%;
+        min-height: 365px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 32px;
+          left: 50%;
+          background-color: $blue;
+          height: 365px;
+          width: 2px;
+        }
       }
-      .line {
-        display: flex;
-        justify-content: center;
-      }
-    
       ul {
         display: flex;
         flex-direction: column;
@@ -119,13 +128,13 @@
 }
 
 @keyframes moveAnimation {
-    from {
-      bottom: -80px;
-    }
-    to {
-      bottom: 312px;
-    }
+  from {
+    bottom: -80px;
   }
+  to {
+    bottom: 312px;
+  }
+}
 
 @media (max-width: 1400px) {
   .about-me {
@@ -159,9 +168,9 @@
 @media (max-width: 500px) {
   .about-me {
     .about-me-img {
-        .damian {
-            width: 100vw;
-        }
+      .damian {
+        width: 100vw;
+      }
     }
     .ball {
       position: absolute;
@@ -176,14 +185,16 @@
   .about-me {
     .about-me-right {
       margin-top: 5.375rem;
-      .me {
-        font-size: clamp(1.9rem, 6.5185vh + -0.3456rem, 3.7rem);
-      }
-      .frontend {
-        font-size: clamp(3.75rem, 14.6667vh + -1.1667rem, 8rem);
-      }
-      .developer {
-        font-size: clamp(3.5rem, 13.5vh + -1.0625rem, 7.375rem);
+      h1 {
+        .me {
+          font-size: clamp(1.9rem, 6.5185vh + -0.3456rem, 3.7rem);
+        }
+        .frontend {
+          font-size: clamp(3.75rem, 14.6667vh + -1.1667rem, 8rem);
+        }
+        .developer {
+          font-size: clamp(3.5rem, 13.5vh + -1.0625rem, 7.375rem);
+        }
       }
     }
   }
@@ -196,14 +207,16 @@
     }
     .about-me-right {
       margin-top: 2.375rem;
-      .me {
-        font-size: clamp(26px, 6.5185vh + -0.3456rem, 3.7rem);
-      }
-      .frontend {
-        font-size: clamp(52px, 14.6667vh + -1.1667rem, 8rem);
-      }
-      .developer {
-        font-size: clamp(48px, 13.5vh + -1.0625rem, 7.375rem);
+      h1 {
+        .me {
+          font-size: clamp(26px, 6.5185vh + -0.3456rem, 3.7rem);
+        }
+        .frontend {
+          font-size: clamp(52px, 14.6667vh + -1.1667rem, 8rem);
+        }
+        .developer {
+          font-size: clamp(48px, 13.5vh + -1.0625rem, 7.375rem);
+        }
       }
     }
   }
