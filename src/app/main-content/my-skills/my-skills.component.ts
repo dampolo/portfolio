@@ -12,46 +12,47 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class MySkillsComponent {
   
-  skillsArray = [
-    {
-        name: 'Angular',
-        img: 'angular'
-    },
-    {
-        name: 'TypeScript',
-        img: 'typescript'
-    },
-    {
-        name: 'JavaScript',
-        img: 'javascript'
-    },
-    {
-        name: 'HTML',
-        img: 'html'
-    },
-    {
-        name: 'Scrum',
-        img: 'scrum'
-    },
-    {
-        name: 'Firebase',
-        img: 'firebase'
-    },
-    {
-        name: 'GIT',
-        img: 'git'
-    },
-    {
-        name: 'CSS',
-        img: 'css'
-    },
-    {
-        name: 'Rest-Api',
-        img: 'api'
-    },
-    {
-        name: 'Material Design',
-        img: 'material_design'
-    }
-];
+    skillsArray = [
+        {
+            name: 'SKILLS.ANGULAR',
+            img: 'angular'
+        },
+        {
+            name: 'SKILLS.TYPESCRIPT',
+            img: 'typescript'
+        },
+        {
+            name: 'SKILLS.JAVASCRIPT',
+            img: 'javascript'
+        },
+        {
+            name: 'SKILLS.HTML',
+            img: 'html'
+        },
+        {
+            name: 'SKILLS.SCRUM',
+            img: 'scrum'
+        },
+        {
+            name: 'SKILLS.FIREBASE',
+            img: 'firebase'
+        },
+        {
+            name: 'SKILLS.GIT',
+            img: 'git'
+        },
+        {
+            name: 'SKILLS.CSS',
+            img: 'css'
+        },
+        {
+            name: 'SKILLS.REST_API',
+            img: 'rest-api'
+        },
+        {
+            name: 'SKILLS.MATERIAL_DESIGN',
+            img: 'material-design'
+        }
+    ];
+    
 }

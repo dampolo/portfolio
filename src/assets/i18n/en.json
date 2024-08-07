@@ -16,7 +16,17 @@
         "LINKEDIN": "LinkedIn"
     },
     "SKILLS": {
-        "TITLE": "Skills"
+        "TITLE": "Meine Skills",
+        "ANGULAR": "Angular",
+        "TYPESCRIPT": "TypeScript",
+        "JAVASCRIPT": "JavaScript",
+        "HTML": "HTML",
+        "SCRUM": "Scrum",
+        "FIREBASE": "Firebase",
+        "GIT": "GIT",
+        "CSS": "CSS",
+        "REST_API": "Rest-Api",
+        "MATERIAL_DESIGN": "Material Design"
     },
     "WORK_TOGETHER": {
         "TITEL": "Let's work together",
@@ -26,7 +36,7 @@
     },
     "MY_WORK": {
         "MY_WORK": "My work",
-        "H2": "Take a look at some of my projects here and interact with them to see my skills in action."
+        "DESCRIPTION": "Take a look at some of my projects here and interact with them to see my skills in action."
     },
     "MY_PROJECTS" : {
         "PROJECT_1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'",

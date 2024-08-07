@@ -66,17 +66,18 @@
       line-height: 54px;
       color: $blue;
     }
-    h4 {
+    p {
       font-size: 23px;
       font-weight: 400;
-      line-height: 27.6px;
+      line-height: 1.5;
       color: $blue;
     }
-    div {
+    p:nth-of-type(2) {
       font-family: "Montserrat";
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
+      color: $acent-3;
     }
   }
 }
@@ -85,61 +86,53 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  button {
+  a {
     color: $blue;
     outline: none;
     border-radius: 10px 0px 0px 0px;
-    a {
-      display: flex;
-      justify-content: center;
-      text-decoration: none;
-      cursor: pointer;
-      font-family: "Montserrat";
-      font-size: 23px;
-      font-weight: 400;
-      line-height: 1.725rem;
-      text-align: center;
-      color: $blue;
-      box-shadow: 5px 5px 15px 0px $acent-4;
-      width: 170px;
-      height: 58px;
-      padding: 15px 30px 15px 30px;
-      border-radius: inherit;
-      background-color: $blue;
-      border: solid 2px $blue;
-      position: relative;
-      z-index: 5;
-      color: $acent-1;
-      transform: scale(1);
-      transition: all 175ms ease-in-out;
-      &:hover {
-        @include buttonWhiteHover();
-      }
-      &:focus {
-        @include buttonWhiteHover();
-      }
-      &:active {
-        @include buttonBlueActive();
-      }
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.725rem;
+    text-align: center;
+    box-shadow: 5px 5px 15px 0px $acent-4;
+    width: 170px;
+    height: 58px;
+    padding: 15px 30px 15px 30px;
+    background-color: $blue;
+    border: solid 2px $blue;
+    position: relative;
+    z-index: 5;
+    color: $acent-1;
+    transform: scale(1);
+    transition: all 175ms ease-in-out;
+    &:hover {
+      @include buttonWhiteHover();
+    }
+    &:focus {
+      @include buttonWhiteHover();
+    }
+    &:active {
+      @include buttonBlueActive();
     }
   }
-  button:nth-of-type(2) {
+  a:nth-of-type(2) {
     color: $acent-1;
     border-radius: 0px 0px 10px 0px;
-
-    a {
-      background-color: $acent-1;
-      border-radius: inherit;
-      color: $blue;
-      &:hover {
-        @include buttonBlueHover();
-      }
-      &:focus {
-        @include buttonBlueHover();
-      }
-      &:active {
-        @include buttonBlueActive();
-      }
+    background-color: $acent-1;
+    color: $blue;
+    &:hover {
+      @include buttonBlueHover();
+    }
+    &:focus {
+      @include buttonBlueHover();
+    }
+    &:active {
+      @include buttonBlueActive();
     }
   }
 }

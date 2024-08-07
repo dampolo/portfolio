@@ -10,18 +10,11 @@
     width: 5.375rem;
     height: 7.5rem;
     gap: .625rem;
-    &:hover img {
-        position: relative;
-        bottom: .3125rem;
-    }
-    &:hover h5{
-        font-weight: 600;
-    }
     img {
         width: 4.75rem;
         height: 4.75rem;
     }
-    h5 {
+    span {
         font-family: 'Montserrat';
         font-weight: 400;
         color: #fff;

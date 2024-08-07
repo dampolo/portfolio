@@ -7,20 +7,17 @@
 
     <div class="description" [ngClass]="{'even-align-items': index % 2 === 0, 'odd-align-items': index % 2 !== 0}" data-aos="zoom-in" data-aos-duration="2000">
         <h3>{{project.project_name}}</h3>
-        <h4>{{project.language}}</h4>
-        <div [ngClass]="{'even-text-align': index % 2 === 0, 'odd-text-align': index % 2 !== 0}">{{project.description | translate}}</div>
+        <p>{{project.language}}</p>
+        <p [ngClass]="{'even-text-align': index % 2 === 0, 'odd-text-align': index % 2 !== 0}">{{project.description | translate}}</p>
         <div class="buttons">
-            <button>
+
                 <a href="{{project.test_link}}" target="_blank">
                     {{project.test}}
-                </a>
-            </button>
-            
-            <button>
+                </a>     
                 <a href="{{project.link_git_hub}}" target="_blank">
                     {{project.git_hub}}
                 </a>
-        </button>
+
         </div>
     </div>
 </section>

@@ -16,7 +16,17 @@
         "LINKEDIN": "LinkedIn"
     },
     "SKILLS": {
-        "TITLE": "Meine Skills"
+        "TITLE": "Meine Skills",
+        "ANGULAR": "Angular",
+        "TYPESCRIPT": "TypeScript",
+        "JAVASCRIPT": "JavaScript",
+        "HTML": "HTML",
+        "SCRUM": "Scrum",
+        "FIREBASE": "Firebase",
+        "GIT": "GIT",
+        "CSS": "CSS",
+        "REST_API": "Rest-Api",
+        "MATERIAL_DESIGN": "Material Design"
     },
     "WORK_TOGETHER": {
         "TITEL": "Über mich",
@@ -26,7 +36,7 @@
     },
     "MY_WORK": {
         "MY_WORK": "Portfolio",
-        "H2": "Hier finden Sie eine Auswahl meiner aktuellen Projekte."
+        "DESCRIPTION": "Hier finden Sie eine Auswahl meiner aktuellen Projekte."
     },
     "MY_PROJECTS" : {
         "PROJECT_1": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
