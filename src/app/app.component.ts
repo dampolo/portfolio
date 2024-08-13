@@ -17,7 +17,7 @@ import AOS from "aos";
 export class AppComponent {
   title = 'Damian Poloczek';
   ngOnInit(): void {
-    AOS.init( {
+    AOS.init({
       once: true
     });
   }
