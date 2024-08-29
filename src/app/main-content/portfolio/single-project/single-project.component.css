@@ -406,4 +406,188 @@ app-single-project {
   font-style: italic;
   font-weight: 900;
   src: url("assets/fonts/poppins-v21-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}/*# sourceMappingURL=styles.css.map */
+}
+.even-align-items {
+  align-items: start;
+}
+
+.odd-align-items {
+  align-items: end;
+}
+
+.even-text-align {
+  text-align: start;
+}
+
+.odd-text-align {
+  text-align: right;
+}
+
+.even-flex-direction {
+  flex-direction: row;
+}
+
+.odd-flex-direction {
+  flex-direction: row-reverse;
+}
+
+.main-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  margin-bottom: 5rem;
+  gap: 100px;
+  z-index: 1;
+}
+.main-project .project {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  width: 100%;
+}
+.main-project .project a {
+  outline: none;
+}
+.main-project .project a img {
+  display: flex;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  scale: 1;
+  width: inherit;
+  cursor: pointer;
+  transform-origin: bottom;
+  transition: all 125ms ease-in-out;
+}
+.main-project .project a img:hover {
+  scale: 1.1;
+}
+.main-project .description {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  gap: 15px;
+}
+.main-project .description h3 {
+  font-family: "Baloo 2";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #5988ff;
+}
+.main-project .description p {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5988ff;
+}
+.main-project .description p:nth-of-type(2) {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.buttons a {
+  color: #5988ff;
+  outline: none;
+  border-radius: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.725rem;
+  text-align: center;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  width: 170px;
+  height: 58px;
+  padding: 15px 30px 15px 30px;
+  background-color: #5988ff;
+  border: solid 2px #5988ff;
+  position: relative;
+  z-index: 5;
+  color: white;
+  transform: scale(1);
+  transition: all 175ms ease-in-out;
+}
+.buttons a:hover {
+  color: #5988ff;
+  background-color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+.buttons a:focus {
+  color: #5988ff;
+  background-color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+.buttons a:active {
+  background-color: #2963f7;
+  border-color: #2963f7;
+  color: white;
+}
+.buttons a:nth-of-type(2) {
+  color: white;
+  border-radius: 0px 0px 10px 0px;
+  background-color: white;
+  color: #5988ff;
+}
+.buttons a:nth-of-type(2):hover {
+  border: solid 2px #5988ff;
+  background-color: #5988ff;
+  color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+.buttons a:nth-of-type(2):focus {
+  border: solid 2px #5988ff;
+  background-color: #5988ff;
+  color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+.buttons a:nth-of-type(2):active {
+  background-color: #2963f7;
+  border-color: #2963f7;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .main-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 4rem 1.25rem 0rem;
+    margin-bottom: 0;
+  }
+  .main-project .project {
+    flex-basis: 0;
+  }
+  .main-project .project img {
+    width: 90%;
+  }
+  .main-project .description {
+    align-items: center;
+    padding: 0;
+  }
+  .main-project .description h3,
+  .main-project .description p {
+    text-align: start;
+  }
+  .main-project .description .buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+}/*# sourceMappingURL=single-project.component.css.map */

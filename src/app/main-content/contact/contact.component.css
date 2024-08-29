@@ -1,11 +1,789 @@
+@import url("./reset.css");
+app-root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+app-work-together {
+  background: #ffffff;
+}
+
+app-main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+app-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 100%;
+}
+
+app-contact {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
+}
+
+app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988ff 6.25%, #5988ff 51.56%, #0043f0 100%);
+  width: 100%;
+}
+
+app-imprint {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 200px - 91px);
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
+}
+
+app-in-progress,
+app-sent-message {
+  min-height: calc(100vh - 291px);
+  display: flex;
+  justify-content: center;
+}
+
+app-single-project {
+  display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(128.94deg, #5988ff -33.96%, #5988ff 36.71%, #0043f0 112.25%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2963f7;
+}
+
+/* baloo-2-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/baloo-2-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* baloo-2-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/baloo-2-v21-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* baloo-2-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/baloo-2-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* baloo-2-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/baloo-2-v21-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* baloo-2-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 800;
+  src: url("assets/fonts/baloo-2-v21-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  src: url("assets/fonts/montserrat-v26-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-100italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 100;
+  src: url("assets/fonts/montserrat-v26-latin-100italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: url("assets/fonts/montserrat-v26-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-200italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 200;
+  src: url("assets/fonts/montserrat-v26-latin-200italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/montserrat-v26-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 300;
+  src: url("assets/fonts/montserrat-v26-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/montserrat-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/montserrat-v26-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/montserrat-v26-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  src: url("assets/fonts/montserrat-v26-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/montserrat-v26-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 600;
+  src: url("assets/fonts/montserrat-v26-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/montserrat-v26-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 700;
+  src: url("assets/fonts/montserrat-v26-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("assets/fonts/montserrat-v26-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 800;
+  src: url("assets/fonts/montserrat-v26-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: url("assets/fonts/montserrat-v26-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 900;
+  src: url("assets/fonts/montserrat-v26-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  src: url("assets/fonts/poppins-v21-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-100italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 100;
+  src: url("assets/fonts/poppins-v21-latin-100italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  src: url("assets/fonts/poppins-v21-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-200italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 200;
+  src: url("assets/fonts/poppins-v21-latin-200italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/poppins-v21-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 300;
+  src: url("assets/fonts/poppins-v21-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/poppins-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/poppins-v21-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/poppins-v21-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  src: url("assets/fonts/poppins-v21-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/poppins-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  src: url("assets/fonts/poppins-v21-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/poppins-v21-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 700;
+  src: url("assets/fonts/poppins-v21-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("assets/fonts/poppins-v21-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 800;
+  src: url("assets/fonts/poppins-v21-latin-800italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("assets/fonts/poppins-v21-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 900;
+  src: url("assets/fonts/poppins-v21-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 section {
-  .title {
-    h2 {
-      font-family: 'Baloo';
-      font-size: 90px;
-      font-weight: 400;
-      line-height: 108px;
-      text-align: center;
-    }
+  font-family: "Montserrat";
+  background: linear-gradient(179.99deg, #ffffff 12.89%, #eaf0ff 91.39%);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  min-height: 43.75rem;
+  padding: 0rem 6.25rem 3rem;
+  margin: auto;
+}
+section .big-ball {
+  background: linear-gradient(#b7c2ff, #6283ff);
+  filter: blur(1px);
+  border-radius: 50%;
+  position: absolute;
+  max-width: 12.5rem;
+  max-height: 12.5rem;
+  width: 100%;
+  height: 100%;
+  top: 17.5rem;
+  left: 6.25rem;
+}
+section .title h2 {
+  font-family: "Baloo 2";
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 6rem;
+  color: #5988ff;
+}
+section .small-ball {
+  background: linear-gradient(#b7c2ff, #6283ff);
+  filter: blur(1px);
+  border-radius: 50%;
+  position: absolute;
+  right: 5.625rem;
+  bottom: 4.375rem;
+  width: 4.6875rem;
+  height: 4.6875rem;
+}
+
+.description-with-form {
+  display: flex;
+  flex-direction: row;
+  gap: 6.25rem;
+  z-index: 1;
+}
+.description-with-form .description {
+  flex-basis: 50%;
+}
+.description-with-form .description h4 {
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27.6px;
+  color: #5988ff;
+}
+.description-with-form .description div {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  padding-block: 0.9375rem;
+}
+.description-with-form .description div:nth-of-type(2) {
+  padding-block: 0;
+}
+.description-with-form .description div:nth-of-type(2) span {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align: left;
+  color: #5988ff;
+  cursor: pointer;
+}
+
+.show-focus {
+  border: solid 3px #5988ff !important;
+  outline: #5988ff !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+form div {
+  margin-bottom: 0.3125rem;
+}
+form .input-container {
+  position: relative;
+  height: 4.625rem;
+}
+form .input-container input {
+  width: 100%;
+  height: 3.125rem;
+  padding: 15px 25px 15px 25px;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  border: solid 1px #5988ff;
+  border: 1px 0px 0px 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: black;
+}
+form .input-container input:focus {
+  border: solid 3px #5988ff;
+  outline: #5988ff;
+}
+form .input-container input:not(:-moz-placeholder-shown) ~ label {
+  font-size: 0.75rem;
+  top: -8px;
+}
+form .input-container input:focus ~ label, form .input-container input:not(:placeholder-shown) ~ label {
+  font-size: 0.75rem;
+  top: -8px;
+}
+form .input-container label {
+  font-size: 0.9375rem;
+  position: absolute;
+  left: 1.25rem;
+  top: 0.9375rem;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  transition: 0.3s ease-in-out;
+}
+form .input-container .exclamation-mark,
+form .input-container .confirm-mark {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  position: absolute;
+  right: 0.8125rem;
+  top: 0.75rem;
+}
+form .input-container span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  display: flex;
+  color: #ff0000;
+  padding-block: 5px;
+}
+form .textarea-container {
+  position: relative;
+  min-height: 9.6875rem;
+}
+form .textarea-container textarea {
+  width: 100%;
+  padding: 15px 25px 15px 25px;
+  gap: 10px;
+  border-radius: 10px;
+  border: solid 1px #5988ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  min-height: 130px;
+  resize: unset;
+  resize: vertical;
+}
+form .textarea-container textarea:focus {
+  border: solid 3px #5988ff;
+  outline: #5988ff;
+}
+form .textarea-container textarea:not(:-moz-placeholder-shown) ~ label {
+  font-size: 12px;
+  top: -8px;
+}
+form .textarea-container textarea:focus ~ label, form .textarea-container textarea:not(:placeholder-shown) ~ label {
+  font-size: 12px;
+  top: -8px;
+}
+form .textarea-container ::-webkit-resizer {
+  background-image: url(./../../../assets/img/resize.png);
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  background-position: 2px 2px;
+}
+form .textarea-container label {
+  font-size: 15px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+form .textarea-container .confirm-mark,
+form .textarea-container .exclamation-mark {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 13px;
+  top: 10px;
+}
+form .textarea-container span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  display: flex;
+  color: #ff0000;
+}
+form button[type=submit] {
+  width: 200px;
+  height: 58px;
+  padding: 15px 30px 15px 30px;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  border: solid 2px #5988ff;
+  color: #5988ff;
+  background: transparent;
+  opacity: 0px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  font-size: 1.4375rem;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+  align-self: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+form button[type=submit][disabled] {
+  cursor: auto;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+form button[type=submit][disabled]::before {
+  content: none;
+}
+form button[type=submit][disabled]:hover {
+  transform: scale(1);
+  border: 1px solid #999999;
+  color: #666666;
+  background-color: #cccccc;
+}
+form button[type=submit]:hover {
+  border: solid 2px #5988ff;
+  background-color: #5988ff;
+  color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+form button[type=submit]:focus {
+  border: solid 2px #5988ff;
+  background-color: #5988ff;
+  color: white;
+  transform: scale(1.1);
+  outline: none;
+}
+form button[type=submit]:active {
+  background-color: #2963f7;
+  border-color: #2963f7;
+  color: white;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+.checkbox-container input[type=checkbox] {
+  display: flex;
+  margin-bottom: auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+.checkbox-container input[type=checkbox]:hover {
+  background: #d4e0ff;
+  border-radius: 2.375rem;
+  transition: 125ms ease;
+}
+.checkbox-container .checkbox-description {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+.checkbox-container .checkbox-description label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
+.checkbox-container .checkbox-description label .privacy {
+  text-decoration: none;
+  color: #5988ff;
+  cursor: pointer;
+}
+.checkbox-container .checkbox-description label .privacy:hover {
+  text-decoration: underline;
+}
+.checkbox-container .checkbox-description span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  display: flex;
+  color: #ff0000;
+  padding-block: 0.3125rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-top: auto;
+  border-radius: 50%;
+  border: solid 0.1875rem #5988ff;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: #5988ff;
+  transition: all 175ms ease-in-out;
+}
+.to-top .arrow-white {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.to-top:hover .arrow-white {
+  opacity: 0;
+}
+.to-top:hover {
+  background: none;
+}
+.to-top .arrow-blue {
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.5625rem;
+  height: 1.5625rem;
+  opacity: 0;
+}
+.to-top:hover .arrow-blue {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 0rem 1.25rem 3rem;
+  }
+  section .title h2 {
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+  section .big-ball {
+    left: 17rem;
+    top: 21rem;
+  }
+  .description-with-form {
+    flex-direction: column;
+    gap: 1.25rem;
   }
 }
+@media (max-width: 550px) {
+  section .big-ball {
+    left: 5rem;
+    top: 19rem;
+  }
+  section .small-ball {
+    width: 2.625rem;
+    height: 2.625rem;
+    bottom: 2.1875rem;
+  }
+}/*# sourceMappingURL=contact.component.css.map */

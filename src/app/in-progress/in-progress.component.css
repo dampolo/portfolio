@@ -406,4 +406,59 @@ app-single-project {
   font-style: italic;
   font-weight: 900;
   src: url("assets/fonts/poppins-v21-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}/*# sourceMappingURL=styles.css.map */
+}
+.in-progress-component {
+  margin-bottom: 3.125rem;
+  max-width: 90rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.in-progress-component h1 {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 650;
+  font-size: clamp(1.75rem, 14.6667vw - 1.1667rem, 4rem);
+  line-height: 1em;
+  color: #5988ff;
+}
+
+.to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-left: auto;
+  margin-right: 2.5rem;
+  border-radius: 50%;
+  border: solid 3px #5988ff;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: #5988ff;
+  transition: all 175ms ease-in-out;
+}
+.to-top .arrow-white {
+  transform: rotate(-90deg);
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.to-top:hover .arrow-white {
+  opacity: 0;
+}
+.to-top:hover {
+  background: none;
+}
+.to-top .arrow-blue {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  opacity: 0;
+}
+.to-top:hover .arrow-blue {
+  opacity: 1;
+}/*# sourceMappingURL=in-progress.component.css.map */
