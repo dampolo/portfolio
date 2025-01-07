@@ -10,7 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [
     CommonModule,
-    RouterOutlet,
     FormsModule,
     ReactiveFormsModule,
     TranslateModule,
@@ -56,7 +55,7 @@ export class ContactComponent {
           next: (response) => {
             window.location.replace('/sent-message-confirmation');
             ngForm.resetForm();
-            this.checkboxChecked = false
+            this.checkboxChecked = false;
           },
           error: (error) => {
             console.error(error);
