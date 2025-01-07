@@ -52,6 +52,10 @@ export class MySkillsComponent {
         {
             name: 'SKILLS.MATERIAL_DESIGN',
             img: 'material-design'
+        },
+        {
+            name: 'SKILLS.GROWTH_MINDSET',
+            img: 'growth-mindset'
         }
     ];
     
