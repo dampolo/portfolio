@@ -59,7 +59,7 @@
 
           <div class="checkbox-description">
             <label for="checkbox">{{"CONTACT.PRIVACY_1" | translate}} <a class="privacy" href="/privacy-policy" target="_blank">{{"CONTACT.PRIVACY_2" | translate}}</a> {{"CONTACT.PRIVACY_3" | translate}}</label>
-            @if(checkboxChecked) {
+            @if(checkboxChecked && !checkboxState) {
               <span>Please accept the privacy policy.</span>
             } 
           </div>

@@ -56,6 +56,7 @@ export class ContactComponent {
           next: (response) => {
             window.location.replace('/sent-message-confirmation');
             ngForm.resetForm();
+            this.checkboxChecked = false
           },
           error: (error) => {
             console.error(error);
