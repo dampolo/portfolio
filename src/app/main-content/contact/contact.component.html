@@ -7,8 +7,8 @@
   <div class="description-with-form">
     <div class="description" data-aos="zoom-in" data-aos-duration="2000">
       <h3>{{"CONTACT.TITLE_H3" | translate  }}</h3>
-      <div> {{ "CONTACT.DESCRIPTION_1" | translate }}      </div>
-      <div> {{ "CONTACT.DESCRIPTION_2" | translate }} <span (click)="contactMe()"> {{ "CONTACT.DESCRIPTION_3" | translate }} </span></div>
+      <p> {{ "CONTACT.DESCRIPTION_1" | translate }}      </p>
+      <p> {{ "CONTACT.DESCRIPTION_2" | translate }} <span (click)="contactMe()"> {{ "CONTACT.DESCRIPTION_3" | translate }} </span></p>
     </div>
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="zoom-in" data-aos-duration="2000">
