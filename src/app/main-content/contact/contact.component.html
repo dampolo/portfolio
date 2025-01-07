@@ -15,7 +15,7 @@
 
         <!-- INPUT NAME -->
         <div class="input-container">
-          <input [ngClass]="{'show-focus': showFocus}" #name="ngModel" minlength="5" [(ngModel)]="contactData.name" placeholder="" type="text" id="name" name="name" required>
+          <input [ngClass]="{'show-focus': showFocus}" #name="ngModel" minlength="3" [(ngModel)]="contactData.name" placeholder="" type="text" id="name" name="name" required>
           <label for="name">{{ "CONTACT.FORM_NAME" | translate }}</label>
 
           @if(!name.valid && name.touched) {
