@@ -221,6 +221,7 @@ form {
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
+  transition: all 175ms ease-in-out;
 	&[disabled] {
 	  cursor: auto;
 	  border: 1px solid #999999;
