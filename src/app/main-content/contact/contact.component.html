@@ -19,10 +19,10 @@
           <label for="name">{{ "CONTACT.FORM_NAME" | translate }}</label>
 
           @if(!name.valid && name.touched) {
-            <img class="exclamation-mark" src="assets/img/exclamation-mark.png" alt="exclamation mark">
+            <img class="exclamation-mark" src="assets/img/exclamation-mark.svg" alt="exclamation mark">
             <span>{{ "CONTACT.FORM_NAME_REQUIED" | translate }}</span>
           } @if(name.valid)  {
-            <img class="confirm-mark" src="assets/img/confirm.png" alt="exclamation mark">
+            <img class="confirm-mark" src="assets/img/confirm.svg" alt="exclamation mark">
           }
         </div>
 
@@ -32,10 +32,10 @@
           <label for="email">{{ "CONTACT.FORM_E_MAIL" | translate }}</label>
 
           @if(!email.valid && email.touched) {
-            <img class="exclamation-mark" src="assets/img/exclamation-mark.png" alt="exclamation mark">
+            <img class="exclamation-mark" src="assets/img/exclamation-mark.svg" alt="exclamation mark">
             <span>{{ "CONTACT.FORM_E_MAIL_REQUIED" | translate }}</span>
           } @if(email.valid) {
-            <img class="confirm-mark" src="assets/img/confirm.png" alt="exclamation mark">
+            <img class="confirm-mark" src="assets/img/confirm.svg" alt="exclamation mark">
           }
         </div>
 
@@ -47,10 +47,10 @@
           <label for="message">{{ "CONTACT.FORM_MESSAGE" | translate }}</label>
 
           @if(!message.valid && message.touched) {
-            <img class="exclamation-mark" src="assets/img/exclamation-mark.png" alt="exclamation mark">
+            <img class="exclamation-mark" src="assets/img/exclamation-mark.svg" alt="exclamation mark">
             <span>{{ "CONTACT.FORM_MESSAGE_REQUIED" | translate }}</span>
           } @if(message.valid)  {
-            <img class="confirm-mark" src="assets/img/confirm.png" alt="exclamation mark">         
+            <img class="confirm-mark" src="assets/img/confirm.svg" alt="exclamation mark">         
           }
         </div>
 
@@ -59,13 +59,13 @@
 
           <div class="checkbox-description">
             <label for="checkbox">{{"CONTACT.PRIVACY_1" | translate}} <a class="privacy" href="/privacy-policy" target="_blank">{{"CONTACT.PRIVACY_2" | translate}}</a> {{"CONTACT.PRIVACY_3" | translate}}</label>
-            @if(!checkboxState && contactForm.form.valid) {
+            @if(checkboxChecked) {
               <span>Please accept the privacy policy.</span>
             } 
           </div>
         </div>
         
-        <button type="submit" value="Submit" [disabled]="!contactForm.form.valid || !checkboxState" >Say Hello ;)</button>
+        <button type="submit" value="Submit" [disabled]="!contactForm.form.valid" >Say Hello ;)</button>
       
     </form>
   </div>
