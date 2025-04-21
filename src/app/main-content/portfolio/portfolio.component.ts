@@ -23,7 +23,7 @@ export class PortfolioComponent {
       test: 'Live test',
       test_link: 'https://dabubble.damianpoloczek.com/',
       git_hub: 'GitHub',
-      link_git_hub: 'https://github.com/GalasMichal/DA_Bubble'
+      link_git_hub: 'https://github.com/dampolo/dabubble'
     },
     {
       id: 1,
