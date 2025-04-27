@@ -43,7 +43,8 @@
         "PROJECT_1": "Ein Chat-Messenger im Stil von Slack für Teamkommunikation. Bietet Registrierung, Anmeldung, Echtzeit-Chats in Kanälen und Direktnachrichten. Nutzerdaten und Avatare werden sicher in Firebase gespeichert.",
         "PROJECT_2": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
         "PROJECT_3": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Helfen Sie Peppe, Münzen und Giftflaschen zu finden, um gegen den Hünchen zu kämpfen.",
-        "PROJECT_4": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+        "PROJECT_4": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+        "PROJECT_5": "Quizapp entwickelt mit Bootstrap und JavaScript. Teste dein Wissen in HTML, CSS und Python!"
     },
     "CONTACT": {
         "TITLE": "Kontakt",

@@ -58,5 +58,16 @@ export class PortfolioComponent {
       git_hub: 'GitHub',
       link_git_hub: 'https://github.com/dampolo/PokeApi'
     },
+    {
+      id: 4,
+      image: 'assets/img/quizapp.png',
+      project_name: 'Quizapp',
+      language: 'JavaScript | HTML | CSS | Bootstrap',
+      description: 'MY_PROJECTS.PROJECT_5',
+      test: 'Live test',
+      test_link: 'https://quizapp.damianpoloczek.com/',
+      git_hub: 'GitHub',
+      link_git_hub: 'https://github.com/dampolo/Quizapp'
+    },
   ]
 }

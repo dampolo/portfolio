@@ -44,7 +44,8 @@
         "PROJECT_1": "A Slack-style chat messenger for team communication. Supports registration, login, real-time chats in channels, and direct messages. User data and avatars are securely stored in Firebase.",
         "PROJECT_2": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "PROJECT_3": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "PROJECT_4": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.."
+        "PROJECT_4": "Based on the PokéAPI a simple library that provides and catalogues pokemon information..",
+        "PROJECT_5": "Quizapp developed with Bootstrap and JavaScript. Test your knowledge in HTML, CSS, and Python!"
     },
     "CONTACT": {
         "TITLE": "Contact",
