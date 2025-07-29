@@ -40,11 +40,12 @@
         "DESCRIPTION": "Hier finden Sie eine Auswahl meiner aktuellen Projekte."
     },
     "MY_PROJECTS" : {
-        "PROJECT_1": "Ein Chat-Messenger im Stil von Slack für Teamkommunikation. Bietet Registrierung, Anmeldung, Echtzeit-Chats in Kanälen und Direktnachrichten. Nutzerdaten und Avatare werden sicher in Firebase gespeichert.",
-        "PROJECT_2": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-        "PROJECT_3": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Helfen Sie Peppe, Münzen und Giftflaschen zu finden, um gegen den Hünchen zu kämpfen.",
-        "PROJECT_4": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
-        "PROJECT_5": "Quizapp entwickelt mit Bootstrap und JavaScript. Teste dein Wissen in HTML, CSS und Python!"
+        "PROJECT_1": "Quizapp entwickelt mit Bootstrap und JavaScript. Teste dein Wissen in HTML, CSS und Python!",
+        "PROJECT_2": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Helfen Sie Peppe, Münzen und Giftflaschen zu finden, um gegen den Hünchen zu kämpfen.",
+        "PROJECT_3": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+        "PROJECT_4": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "PROJECT_5": "Ein Chat-Messenger im Stil von Slack für Teamkommunikation. Bietet Registrierung, Anmeldung, Echtzeit-Chats in Kanälen und Direktnachrichten. Nutzerdaten und Avatare werden sicher in Firebase gespeichert.",
+        "PROJECT_6": "<p>Das Projekt Start in Krypto stellt eine Verbindung für Krypto-Interessierte mit einer helfenden Hand her und verschafft einen Überblick über die angebotene 1 zu 1 Einführung.</p><p>Es handelt sich um mein erstes echtes Projekt, welches im echten Leben zum Einsatz kommt und funktioniert. Es hilft Menschen, die Krypto-Welt zu verstehen und begleitet sie beim Kauf ihrer ersten Kryptos.</p><p>Start in Krypto war mein erstes Projekt außerhalb der Developer Akademie, wo ich gelernt habe zu programmieren. Ich habe es von Grund auf basierend auf den Anforderungen meiner ersten Kundin entwickelt. Dabei war ich für den gesamten Entwicklungsprozess verantwortlich - von der Anforderungsanalyse über das Design bis hin zur Umsetzung mit HTML, CSS und JavaScript.</p><p>Die Website ermöglicht es den Nutzerinnen und Nutzern, sich über ihre Dienstleistungen zu informieren, Termine zu buchen und ganz einfach Kontakt aufzunehmen. Sie ist leichtgewichtig, responsiv und legt den Fokus auf Klarheit und Benutzerfreundlichkeit.</p><p>Eine wichtige Erkenntnis aus diesem Projekt: Entscheidend ist die Vision der Kundin - nicht die Vorlieben des Entwicklers.</p><p>Dieses Projekt hat mir gezeigt, dass gute Entwicklung nicht nur aus Code besteht - sondern aus Zuhören, Anpassen und dem Ziel, etwas zu schaffen, das zu den Bedürfnissen der Kundin passt, nicht nur zu meinen eigenen Ideen.</p>"
     },
     "CONTACT": {
         "TITLE": "Kontakt",

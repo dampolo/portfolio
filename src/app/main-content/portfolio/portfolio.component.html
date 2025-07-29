@@ -12,7 +12,7 @@
 
     </div>
 
-    @for(project of portfolio; track project.id; let index = $index) {
+    @for(project of portfolio.slice().reverse(); track project.id; let index = $index) {
         <app-single-project [project]="project" [index]="index"></app-single-project>
     }
     
