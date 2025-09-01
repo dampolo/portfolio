@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     .damian {
-      width: 40vh;
+      width: 70vh;
       z-index: 2;
       margin-top: auto;
     }
@@ -139,6 +139,15 @@
 @media (max-width: 1400px) {
   .about-me {
     flex-direction: column-reverse;
+    .ball {
+      width: 100%;
+      height: 100vw;
+    }
+    .about-me-img {
+      .damian {
+        width: 40vh;
+      }
+    }
     .about-me-right {
       color: $acent-1;
       margin-top: 7.375rem;
@@ -148,19 +157,15 @@
         min-width: 18.75rem;
         mix-blend-mode: normal;
       }
-    }
-    .about-me-bottom {
-      display: none;
-    }
-    .small-ball {
-      position: absolute;
-      width: 9.75rem;
-      height: 9.75rem;
-      bottom: -5rem;
-    }
-    .ball {
-      width: 100%;
-      height: 100vw;
+      .about-me-bottom {
+        display: none;
+      }
+      .small-ball {
+        position: absolute;
+        width: 9.75rem;
+        height: 9.75rem;
+        bottom: -5rem;
+      }
     }
   }
 }
