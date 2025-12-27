@@ -25,6 +25,10 @@ app-portfolio {
   width: 100%;
 }
 
+app-privacy-policy {
+  height: calc(100vh - 291px)
+}
+
 app-contact {
   width: 100%;
   overflow: hidden;
