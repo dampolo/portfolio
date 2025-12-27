@@ -45,7 +45,7 @@
         "PROJECT_3": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
         "PROJECT_4": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
         "PROJECT_5": "Ein Chat-Messenger im Stil von Slack für Teamkommunikation. Bietet Registrierung, Anmeldung, Echtzeit-Chats in Kanälen und Direktnachrichten. Nutzerdaten und Avatare werden sicher in Firebase gespeichert.",
-        "PROJECT_6": "<p>Das Projekt Start in Krypto stellt eine Verbindung für Krypto-Interessierte mit einer helfenden Hand her und verschafft einen Überblick über die angebotene 1 zu 1 Einführung.</p><p>Es handelt sich um mein erstes echtes Projekt, welches im echten Leben zum Einsatz kommt und funktioniert. Es hilft Menschen, die Krypto-Welt zu verstehen und begleitet sie beim Kauf ihrer ersten Kryptos.</p><p>Start in Krypto war mein erstes Projekt außerhalb der Developer Akademie, wo ich gelernt habe zu programmieren. Ich habe es von Grund auf basierend auf den Anforderungen meiner ersten Kundin entwickelt. Dabei war ich für den gesamten Entwicklungsprozess verantwortlich - von der Anforderungsanalyse über das Design bis hin zur Umsetzung mit HTML, CSS und JavaScript.</p><p>Die Website ermöglicht es den Nutzerinnen und Nutzern, sich über ihre Dienstleistungen zu informieren, Termine zu buchen und ganz einfach Kontakt aufzunehmen. Sie ist leichtgewichtig, responsiv und legt den Fokus auf Klarheit und Benutzerfreundlichkeit.</p><p>Eine wichtige Erkenntnis aus diesem Projekt: Entscheidend ist die Vision der Kundin - nicht die Vorlieben des Entwicklers.</p><p>Dieses Projekt hat mir gezeigt, dass gute Entwicklung nicht nur aus Code besteht - sondern aus Zuhören, Anpassen und dem Ziel, etwas zu schaffen, das zu den Bedürfnissen der Kundin passt, nicht nur zu meinen eigenen Ideen.</p>"
+        "PROJECT_6": "<p>Das Projekt Start in Krypto stellt eine Verbindung für Krypto-Interessierte mit einer helfenden Hand her und verschafft einen Überblick über die angebotene 1 zu 1 Einführung.</p><p>Es handelt sich um mein erstes echtes Projekt, welches im echten Leben zum Einsatz kommt und funktioniert. Es hilft Menschen, die Krypto-Welt zu verstehen und begleitet sie beim Kauf ihrer ersten Kryptos.</p><p>Start in Krypto war mein erstes Projekt außerhalb der Developer Akademie, wo ich gelernt habe zu programmieren. Ich habe es von Grund auf basierend auf den Anforderungen meiner ersten Kundin entwickelt. Dabei war ich für den gesamten Entwicklungsprozess verantwortlich von der Anforderungsanalyse über das Design bis hin zur Umsetzung mit HTML, CSS und JavaScript.</p><p>Die Website ermöglicht es den Nutzerinnen und Nutzern, sich über ihre Dienstleistungen zu informieren, Termine zu buchen und ganz einfach Kontakt aufzunehmen. Sie ist leichtgewichtig, responsiv und legt den Fokus auf Klarheit und Benutzerfreundlichkeit.</p><p>Eine wichtige Erkenntnis aus diesem Projekt: Entscheidend ist die Vision der Kundin, nicht die Vorlieben des Entwicklers.</p><p>Dieses Projekt hat mir gezeigt, dass gute Entwicklung nicht nur aus Code besteht sondern aus Zuhören, Anpassen und dem Ziel, etwas zu schaffen, das zu den Bedürfnissen der Kundin passt, nicht nur zu meinen eigenen Ideen.</p>"
     },
     "CONTACT": {
         "TITLE": "Kontakt",
@@ -54,18 +54,18 @@
         "DESCRIPTION_2": "Brauchen Sie einen Frontend-Entwickler?",
         "DESCRIPTION_3": "Kontaktieren Sie mich!",
         "FORM_NAME": "Ihr Name",
-        "FORM_NAME_REQUIED": "Ihr Name ist erforderlich",
+        "FORM_NAME_REQUIED": "Ihr Name ist erforderlich.",
         "FORM_E_MAIL": "Ihre E-Mail",
-        "FORM_E_MAIL_REQUIED": "Ihre E-Mail ist erforderlich",
+        "FORM_E_MAIL_REQUIED": "Ihre E-Mail ist erforderlich.",
         "FORM_MESSAGE": "Ihre Nachricht",
-        "FORM_MESSAGE_REQUIED": "Ihre Nachricht ist leer",
+        "FORM_MESSAGE_REQUIED": "Ihre Nachricht ist leer.",
         "PRIVACY_1": "Ich habe die",
         "PRIVACY_2": "Datenschutzrichtlinie",
         "PRIVACY_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "PRIVACY_POLICY": "<h3>Datenschutzerklärung</h3><h4>Willkommen auf meiner Website</h4><p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung beschreibt, wie ich Ihre Daten sammle, verwende und schütze.</p><h4>Kontaktformular</h4><p>Wenn Sie das Kontaktformular auf meiner Website nutzen, werden die von Ihnen bereitgestellten Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zum Zwecke der Kontaktaufnahme verwendet. Diese Daten werden nicht an Dritte weitergegeben.</p><h4>Verwendung der Daten</h4><p>Die gesammelten Daten werden ausschließlich für folgende Zwecke verwendet:</p><ul><li>Kontaktaufnahme und Beantwortung Ihrer Anfragen.</li><li>Registrierung und Nutzung der Projektseiten.</li></ul><h4>Projektseiten</h4><h5>Join Projekt</h5><p>Dies ist ein Task-Manager, der nach einem Kanban-Board modelliert ist. Es gibt eine Option zur Registrierung, Anmeldung und zum Gastzugang. Diese Daten dienen nur zu Demozwecken, um das Projekt zu sehen.</p><h5>El Pollo Loco</h5><p>Ein Spiel, das in JavaScript entwickelt wurde. Hier ist keine Registrierung erforderlich.</p><h4>Weitergabe der Daten</h4><p>Ihre persönlichen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben.</p><h4>Hinweis auf deutsches Recht</h4><p>Diese Datenschutzerklärung bezieht sich auf die gesetzlichen Bestimmungen des deutschen Datenschutzgesetzes (DSGVO).</p><p>Wenn Sie Fragen oder Bedenken zum Datenschutz haben, können Sie mich per E-Mail unter <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a> kontaktieren.</p>"        
     },
     "FOOTER": {
-        "LEGAL_NOTICE_": "Impressum",
+        "LEGAL_NOTICE": "Impressum",
         "LOGO": "Logo",
         "GITHUB": "GitHub",
         "E_MAIL": "E-Mail",

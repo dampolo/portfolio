@@ -15,10 +15,10 @@ export class HeaderComponent {
   posFixBurger = false;
   posFixLogo = false;
   setBorder = false;
-  selectedLanguage: string = 'en';
+  selectedLanguage: string = 'de';
   
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('de');
   }
 
   openMenu() {
