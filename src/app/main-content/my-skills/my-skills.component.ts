@@ -50,6 +50,10 @@ export class MySkillsComponent {
             img: 'git-hub'
         },
         {
+            name: 'SKILLS.LINUX',
+            img: 'linux'
+        },
+        {
             name: 'SKILLS.GIT_HUB_ACTION',
             img: 'git-hub-action'
         },
