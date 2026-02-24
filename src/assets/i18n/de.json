@@ -1,75 +1,81 @@
-{   
-    "MENU": {
-        "ABOUT_ME": "Über mich",
-        "SKILL_SET": "Meine Skills",
-        "MY_WORK": "Portfolio",
-        "CONTACT": "Kontakt",
-        "LOGO": "Logo"
-    },
-    "ABOUT_ME": {
-        "MY_PHOTO": "Mein Bild",
-        "I_AM": "Hallo! I bin Damian", 
-        "FRONTEND": "FRONTEND",
-        "DEVELOPER": "DEVELOPER",
-        "GITHUB": "GitHub",
-        "E_MAIL": "E-Mail",
-        "LINKEDIN": "LinkedIn"
-    },
-    "SKILLS": {
-        "TITLE": "Meine Skills",
-        "ANGULAR": "Angular",
-        "TYPESCRIPT": "TypeScript",
-        "JAVASCRIPT": "JavaScript",
-        "HTML": "HTML",
-        "SCRUM": "Scrum",
-        "FIREBASE": "Firebase",
-        "GIT": "GIT",
-        "CSS": "CSS",
-        "REST_API": "Rest-Api",
-        "MATERIAL_DESIGN": "Material Design",
-        "GROWTH_MINDSET": "Growth mindset"
-    },
-    "WORK_TOGETHER": {
-        "TITEL": "Über mich",
-        "DESCRIPTION_1": "Ich bin ein Frontend-Entwickler aus München. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler fortzusetzen und eine Stelle als Junior-Webentwickler zu finden.",
-        "DESCRIPTION_2": "Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich gerne!",
-        "BUTTON": "Lassen Sie uns sprechen"
-    },
-    "MY_WORK": {
-        "MY_WORK": "Portfolio",
-        "DESCRIPTION": "Hier finden Sie eine Auswahl meiner aktuellen Projekte."
-    },
-    "MY_PROJECTS" : {
-        "PROJECT_1": "Quizapp entwickelt mit Bootstrap und JavaScript. Teste dein Wissen in HTML, CSS und Python!",
-        "PROJECT_2": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Helfen Sie Peppe, Münzen und Giftflaschen zu finden, um gegen den Hünchen zu kämpfen.",
-        "PROJECT_3": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
-        "PROJECT_4": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-        "PROJECT_5": "Ein Chat-Messenger im Stil von Slack für Teamkommunikation. Bietet Registrierung, Anmeldung, Echtzeit-Chats in Kanälen und Direktnachrichten. Nutzerdaten und Avatare werden sicher in Firebase gespeichert.",
-        "PROJECT_6": "<p>Das Projekt Start in Krypto stellt eine Verbindung für Krypto-Interessierte mit einer helfenden Hand her und verschafft einen Überblick über die angebotene 1 zu 1 Einführung.</p><p>Es handelt sich um mein erstes echtes Projekt, welches im echten Leben zum Einsatz kommt und funktioniert. Es hilft Menschen, die Krypto-Welt zu verstehen und begleitet sie beim Kauf ihrer ersten Kryptos.</p><p>Start in Krypto war mein erstes Projekt außerhalb der Developer Akademie, wo ich gelernt habe zu programmieren. Ich habe es von Grund auf basierend auf den Anforderungen meiner ersten Kundin entwickelt. Dabei war ich für den gesamten Entwicklungsprozess verantwortlich von der Anforderungsanalyse über das Design bis hin zur Umsetzung mit HTML, CSS und JavaScript.</p><p>Die Website ermöglicht es den Nutzerinnen und Nutzern, sich über ihre Dienstleistungen zu informieren, Termine zu buchen und ganz einfach Kontakt aufzunehmen. Sie ist leichtgewichtig, responsiv und legt den Fokus auf Klarheit und Benutzerfreundlichkeit.</p><p>Eine wichtige Erkenntnis aus diesem Projekt: Entscheidend ist die Vision der Kundin, nicht die Vorlieben des Entwicklers.</p><p>Dieses Projekt hat mir gezeigt, dass gute Entwicklung nicht nur aus Code besteht sondern aus Zuhören, Anpassen und dem Ziel, etwas zu schaffen, das zu den Bedürfnissen der Kundin passt, nicht nur zu meinen eigenen Ideen.</p>"
-    },
-    "CONTACT": {
-        "TITLE": "Kontakt",
-        "TITLE_H3": "Möchten Sie ein neues Projekt besprechen?",
-        "DESCRIPTION_1": "Schreiben Sie mir über dieses Formular, ich helfe Ihnen gerne, Ihre Ideen umzusetzen.",
-        "DESCRIPTION_2": "Brauchen Sie einen Frontend-Entwickler?",
-        "DESCRIPTION_3": "Kontaktieren Sie mich!",
-        "FORM_NAME": "Ihr Name",
-        "FORM_NAME_REQUIED": "Ihr Name ist erforderlich.",
-        "FORM_E_MAIL": "Ihre E-Mail",
-        "FORM_E_MAIL_REQUIED": "Ihre E-Mail ist erforderlich.",
-        "FORM_MESSAGE": "Ihre Nachricht",
-        "FORM_MESSAGE_REQUIED": "Ihre Nachricht ist leer.",
-        "PRIVACY_1": "Ich habe die",
-        "PRIVACY_2": "Datenschutzrichtlinie",
-        "PRIVACY_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-        "PRIVACY_POLICY": "<h3>Datenschutzerklärung</h3><h4>Willkommen auf meiner Website</h4><p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung beschreibt, wie ich Ihre Daten sammle, verwende und schütze.</p><h4>Kontaktformular</h4><p>Wenn Sie das Kontaktformular auf meiner Website nutzen, werden die von Ihnen bereitgestellten Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zum Zwecke der Kontaktaufnahme verwendet. Diese Daten werden nicht an Dritte weitergegeben.</p><h4>Verwendung der Daten</h4><p>Die gesammelten Daten werden ausschließlich für folgende Zwecke verwendet:</p><ul><li>Kontaktaufnahme und Beantwortung Ihrer Anfragen.</li><li>Registrierung und Nutzung der Projektseiten.</li></ul><h4>Projektseiten</h4><h5>Join Projekt</h5><p>Dies ist ein Task-Manager, der nach einem Kanban-Board modelliert ist. Es gibt eine Option zur Registrierung, Anmeldung und zum Gastzugang. Diese Daten dienen nur zu Demozwecken, um das Projekt zu sehen.</p><h5>El Pollo Loco</h5><p>Ein Spiel, das in JavaScript entwickelt wurde. Hier ist keine Registrierung erforderlich.</p><h4>Weitergabe der Daten</h4><p>Ihre persönlichen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben.</p><h4>Hinweis auf deutsches Recht</h4><p>Diese Datenschutzerklärung bezieht sich auf die gesetzlichen Bestimmungen des deutschen Datenschutzgesetzes (DSGVO).</p><p>Wenn Sie Fragen oder Bedenken zum Datenschutz haben, können Sie mich per E-Mail unter <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a> kontaktieren.</p>"        
-    },
-    "FOOTER": {
-        "LEGAL_NOTICE": "Impressum",
-        "LOGO": "Logo",
-        "GITHUB": "GitHub",
-        "E_MAIL": "E-Mail",
-        "LINKEDIN": "LinkedIn",
-        "LEGAL_NOTICE_PAGE": "<a href=\"imprint\" class=\"h1\"><h1>Impressum</h1></a><p>Angaben gemäß § 5 TMG</p><p>Damian Poloczek <br>Chiemgaustr. 156<br>81549 München <br> <br></p><p> <strong>Vertreten durch: </strong><br>Damian Poloczek<br><br></p><p><strong>Kontakt:</strong> <br>Telefon: (+49) 17699492988<br>E-Mail: <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a></p><br><p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br><strong>Haftung für Links</strong><br><br>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br><br><strong>Datenschutz</strong><br><br>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br></p><br>Impressum vom <a href=\"https://www.impressum-generator.de\">Impressum Generator</a> der <a href=\"https://www.kanzlei-hasselbach.de/standorte/frankfurt/\" rel=\"nofollow\">Kanzlei Hasselbach, Frankfurt</a>"
-    }
+{
+  "MENU": {
+    "ABOUT_ME": "Über mich",
+    "SKILL_SET": "Meine Skills",
+    "MY_WORK": "Portfolio",
+    "CONTACT": "Kontakt",
+    "LOGO": "Logo"
+  },
+  "ABOUT_ME": {
+    "MY_PHOTO": "Mein Bild",
+    "I_AM": "Hallo! Ich bin Damian",
+    "FRONTEND": "FULLSTACK",
+    "DEVELOPER": "DEVELOPER",
+    "GITHUB": "GitHub",
+    "E_MAIL": "E-Mail",
+    "LINKEDIN": "LinkedIn"
+  },
+  "SKILLS": {
+    "TITLE": "Meine Skills",
+    "DJANGO": "Django",
+    "PYTHON": "Python",
+    "ANGULAR": "Angular",
+    "TYPESCRIPT": "TypeScript",
+    "JAVASCRIPT": "JavaScript",
+    "HTML": "HTML",
+    "SCRUM": "Scrum",
+    "FIREBASE": "Firebase",
+    "GIT": "GIT",
+    "GIT_HUB_ACTION": "GitHub Actions",
+    "CSS": "CSS",
+    "VITE": "Vite",
+    "BOOTSTRAP": "Bootstrap",
+    "POSTGRESQL": "PostgreSQL",
+    "REST_API": "Rest-Api",
+    "MATERIAL_DESIGN": "Material Design",
+    "GROWTH_MINDSET": "Growth mindset"
+  },
+  "WORK_TOGETHER": {
+    "TITEL": "Über mich",
+    "DESCRIPTION_1": "Ich bin ein Fullstack-Entwickler aus München. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler fortzusetzen und eine Stelle als Junior-Webentwickler zu finden.",
+    "DESCRIPTION_2": "Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich gerne!",
+    "BUTTON": "Lassen Sie uns sprechen"
+  },
+  "MY_WORK": {
+    "MY_WORK": "Portfolio",
+    "DESCRIPTION": "Hier finden Sie eine Auswahl meiner aktuellen Projekte."
+  },
+  "MY_PROJECTS": {
+    "PROJECT_1": "Quizapp entwickelt mit Bootstrap und JavaScript. Teste dein Wissen in HTML, CSS und Python!",
+    "PROJECT_2": "Ein einfaches Jump-and-Run-Spiel, basierend auf einem objektorientierten Ansatz. Helfen Sie Peppe, Münzen und Giftflaschen zu finden, um gegen den Hünchen zu kämpfen.",
+    "PROJECT_3": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+    "PROJECT_4": "Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "PROJECT_5": "Ein Chat-Messenger im Stil von Slack für Teamkommunikation. Bietet Registrierung, Anmeldung, Echtzeit-Chats in Kanälen und Direktnachrichten. Nutzerdaten und Avatare werden sicher in Firebase gespeichert.",
+    "PROJECT_6": "<p>Das Projekt Start in Krypto stellt eine Verbindung für Krypto-Interessierte mit einer helfenden Hand her und verschafft einen Überblick über die angebotene 1 zu 1 Einführung.</p><p>Es handelt sich um mein erstes echtes Projekt, welches im echten Leben zum Einsatz kommt und funktioniert. Es hilft Menschen, die Krypto-Welt zu verstehen und begleitet sie beim Kauf ihrer ersten Kryptos.</p><p>Start in Krypto war mein erstes Projekt außerhalb der Developer Akademie, wo ich gelernt habe zu programmieren. Ich habe es von Grund auf basierend auf den Anforderungen meiner ersten Kundin entwickelt. Dabei war ich für den gesamten Entwicklungsprozess verantwortlich von der Anforderungsanalyse über das Design bis hin zur Umsetzung mit HTML, CSS und JavaScript.</p><p>Die Website ermöglicht es den Nutzerinnen und Nutzern, sich über ihre Dienstleistungen zu informieren, Termine zu buchen und ganz einfach Kontakt aufzunehmen. Sie ist leichtgewichtig, responsiv und legt den Fokus auf Klarheit und Benutzerfreundlichkeit.</p><p>Eine wichtige Erkenntnis aus diesem Projekt: Entscheidend ist die Vision der Kundin, nicht die Vorlieben des Entwicklers.</p><p>Dieses Projekt hat mir gezeigt, dass gute Entwicklung nicht nur aus Code besteht sondern aus Zuhören, Anpassen und dem Ziel, etwas zu schaffen, das zu den Bedürfnissen der Kundin passt, nicht nur zu meinen eigenen Ideen.</p>"
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "TITLE_H3": "Möchten Sie ein neues Projekt besprechen?",
+    "DESCRIPTION_1": "Schreiben Sie mir über dieses Formular, ich helfe Ihnen gerne, Ihre Ideen umzusetzen.",
+    "DESCRIPTION_2": "Brauchen Sie einen Frontend-Entwickler?",
+    "DESCRIPTION_3": "Kontaktieren Sie mich!",
+    "FORM_NAME": "Ihr Name",
+    "FORM_NAME_REQUIED": "Ihr Name ist erforderlich.",
+    "FORM_E_MAIL": "Ihre E-Mail",
+    "FORM_E_MAIL_REQUIED": "Ihre E-Mail ist erforderlich.",
+    "FORM_MESSAGE": "Ihre Nachricht",
+    "FORM_MESSAGE_REQUIED": "Ihre Nachricht ist leer.",
+    "PRIVACY_1": "Ich habe die",
+    "PRIVACY_2": "Datenschutzrichtlinie",
+    "PRIVACY_3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "PRIVACY_POLICY": "<h3>Datenschutzerklärung</h3><h4>Willkommen auf meiner Website</h4><p>Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung beschreibt, wie ich Ihre Daten sammle, verwende und schütze.</p><h4>Kontaktformular</h4><p>Wenn Sie das Kontaktformular auf meiner Website nutzen, werden die von Ihnen bereitgestellten Daten (Name, E-Mail-Adresse und Nachricht) ausschließlich zum Zwecke der Kontaktaufnahme verwendet. Diese Daten werden nicht an Dritte weitergegeben.</p><h4>Verwendung der Daten</h4><p>Die gesammelten Daten werden ausschließlich für folgende Zwecke verwendet:</p><ul><li>Kontaktaufnahme und Beantwortung Ihrer Anfragen.</li><li>Registrierung und Nutzung der Projektseiten.</li></ul><h4>Projektseiten</h4><h5>Join Projekt</h5><p>Dies ist ein Task-Manager, der nach einem Kanban-Board modelliert ist. Es gibt eine Option zur Registrierung, Anmeldung und zum Gastzugang. Diese Daten dienen nur zu Demozwecken, um das Projekt zu sehen.</p><h5>El Pollo Loco</h5><p>Ein Spiel, das in JavaScript entwickelt wurde. Hier ist keine Registrierung erforderlich.</p><h4>Weitergabe der Daten</h4><p>Ihre persönlichen Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben.</p><h4>Hinweis auf deutsches Recht</h4><p>Diese Datenschutzerklärung bezieht sich auf die gesetzlichen Bestimmungen des deutschen Datenschutzgesetzes (DSGVO).</p><p>Wenn Sie Fragen oder Bedenken zum Datenschutz haben, können Sie mich per E-Mail unter <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a> kontaktieren.</p>"
+  },
+  "FOOTER": {
+    "LEGAL_NOTICE": "Impressum",
+    "LOGO": "Logo",
+    "GITHUB": "GitHub",
+    "E_MAIL": "E-Mail",
+    "LINKEDIN": "LinkedIn",
+    "LEGAL_NOTICE_PAGE": "<a href=\"imprint\" class=\"h1\"><h1>Impressum</h1></a><p>Angaben gemäß § 5 TMG</p><p>Damian Poloczek <br>Chiemgaustr. 156<br>81549 München <br> <br></p><p> <strong>Vertreten durch: </strong><br>Damian Poloczek<br><br></p><p><strong>Kontakt:</strong> <br>Telefon: (+49) 17699492988<br>E-Mail: <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a></p><br><p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br><strong>Haftung für Links</strong><br><br>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br><br><strong>Datenschutz</strong><br><br>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br></p><br>Impressum vom <a href=\"https://www.impressum-generator.de\">Impressum Generator</a> der <a href=\"https://www.kanzlei-hasselbach.de/standorte/frankfurt/\" rel=\"nofollow\">Kanzlei Hasselbach, Frankfurt</a>"
+  }
 }

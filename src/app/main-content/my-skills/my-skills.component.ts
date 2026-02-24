@@ -4,15 +4,23 @@ import { SingleSkillComponent } from './single-skill/single-skill.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-my-skills',
-  standalone: true,
-  imports: [CommonModule, SingleSkillComponent, TranslateModule],
-  templateUrl: './my-skills.component.html',
-  styleUrl: './my-skills.component.scss'
+    selector: 'app-my-skills',
+    standalone: true,
+    imports: [CommonModule, SingleSkillComponent, TranslateModule],
+    templateUrl: './my-skills.component.html',
+    styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
-  
+
     skillsArray = [
+        {
+            name: 'SKILLS.DJANGO',
+            img: 'django'
+        },
+        {
+            name: 'SKILLS.PYTHON',
+            img: 'python'
+        },
         {
             name: 'SKILLS.ANGULAR',
             img: 'angular'
@@ -39,11 +47,27 @@ export class MySkillsComponent {
         },
         {
             name: 'SKILLS.GIT',
-            img: 'git'
+            img: 'git-hub'
+        },
+        {
+            name: 'SKILLS.GIT_HUB_ACTION',
+            img: 'git-hub-action'
         },
         {
             name: 'SKILLS.CSS',
             img: 'css'
+        },
+        {
+            name: 'SKILLS.VITE',
+            img: 'vite'
+        },
+        {
+            name: 'SKILLS.BOOTSTRAP',
+            img: 'bootstrap'
+        },
+        {
+            name: 'SKILLS.POSTGRESQL',
+            img: 'postgresql'
         },
         {
             name: 'SKILLS.REST_API',
@@ -58,5 +82,5 @@ export class MySkillsComponent {
             img: 'growth-mindset'
         }
     ];
-    
+
 }

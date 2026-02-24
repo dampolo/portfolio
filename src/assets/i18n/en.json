@@ -1,76 +1,81 @@
 {
-    "MENU": {
-        "ABOUT_ME": "About me",
-        "SKILL_SET": "Skill set",
-        "MY_WORK": "My work",
-        "CONTACT": "Contact",
-        "LOGO": "Logo"
-      },
-    "ABOUT_ME": {
-        "MY_PHOTO": "My profile photo",
-        "I_AM": "Hello! I am Damian", 
-        "FRONTEND": "FRONTEND",
-        "DEVELOPER": "DEVELOPER",
-        "GITHUB": "GitHub",
-        "E_MAIL": "E-Mail",
-        "LINKEDIN": "LinkedIn"
-    },
-    "SKILLS": {
-        "TITLE": "Skills",
-        "ANGULAR": "Angular",
-        "TYPESCRIPT": "TypeScript",
-        "JAVASCRIPT": "JavaScript",
-        "HTML": "HTML",
-        "SCRUM": "Scrum",
-        "FIREBASE": "Firebase",
-        "GIT": "GIT",
-        "CSS": "CSS",
-        "REST_API": "Rest-Api",
-        "MATERIAL_DESIGN": "Material Design",
-        "GROWTH_MINDSET": "Growth mindset"
-
-    },
-    "WORK_TOGETHER": {
-        "TITEL": "Let's work together",
-        "DESCRIPTION_1": "I am a frontend developer based in Munich. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
-        "DESCRIPTION_2": "If you think I'd be a good match for your projects, contact me!",
-        "BUTTON": "Send a message"
-    },
-    "MY_WORK": {
-        "MY_WORK": "My work",
-        "DESCRIPTION": "Take a look at some of my projects here and interact with them to see my skills in action."
-    },
-    "MY_PROJECTS" : {
-        "PROJECT_1": "Quizapp developed with Bootstrap and JavaScript. Test your knowledge in HTML, CSS, and Python!",
-        "PROJECT_2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-        "PROJECT_3": "Based on the PokéAPI a simple library that provides and catalogues pokemon information..",
-        "PROJECT_4": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "PROJECT_5": "A Slack-style chat messenger for team communication. Supports registration, login, real-time chats in channels, and direct messages. User data and avatars are securely stored in Firebase.",
-        "PROJECT_6":  "<p>My first real-life project, which I built for my wife, helps people understand the crypto world and guides them through buying their first Bitcoin.</p><p>Start in Krypto was my first project outside of Developer Akademie, where I learnt how to code. I built it from scratch based on my first client's requirements. I was responsible for the entire development process, including gathering requirements, designing the layout, and implementing the site using HTML, CSS, and JavaScript.</p><p>The site enables users to learn about her services, book appointments, and easily get in touch. It's a lightweight, responsive site focused on clarity and usability. One key lesson I took from this experience: what matters most is the client's vision, not the developer's preferences.</p><p>This project taught me that good development isn't just about code, it's about listening, adjusting, and building something that aligns with the client's goals, not just my ideas.</p>"
-    },
-    "CONTACT": {
-        "TITLE": "Contact",
-        "TITLE_H3": "Got a problem to solve?",
-        "DESCRIPTION_1": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-        "DESCRIPTION_2": "Looking for a Frontend developer?",
-        "DESCRIPTION_3": "Contact me!",
-        "FORM_NAME": "Your name",
-        "FORM_NAME_REQUIED": "Your name is required.",
-        "FORM_E_MAIL": "Your email",
-        "FORM_E_MAIL_REQUIED": "Your email is required.",
-        "FORM_MESSAGE": "Your message",
-        "FORM_MESSAGE_REQUIED": "Your message is empty.",
-        "PRIVACY_1": "I've read the",
-        "PRIVACY_2": "privacy policy",
-        "PRIVACY_3": "and agree to the processing of my data as outlined.",
-        "PRIVACY_POLICY": "<h3>Privacy Policy</h3><h4>Welcome to my website</h4><p>Protecting your personal data is important to me. This privacy policy describes how I collect, use, and protect your data.</p><h4>Contact Form</h4><p>If you use the contact form on my website, the data you provide (name, email address, and message) will be used solely for the purpose of contacting you. This data will not be shared with third parties.</p><h4>Use of Data</h4><p>The collected data is used exclusively for the following purposes:</p><ul><li>Contacting you and responding to your inquiries.</li><li>Registering and using the project pages.</li></ul><h4>Project Pages</h4><h5>Join Project</h5><p>This is a task manager modeled after a Kanban board. There is an option for registration, login, and guest access. This data is used only for demonstration purposes to view the project.</p><h5>El Pollo Loco</h5><p>A game developed in JavaScript. No registration is required here.</p><h4>Data Sharing</h4><p>Your personal data will not be shared with third parties unless required by law.</p><h4>Note on German Law</h4><p>This privacy policy refers to the legal provisions of the German Data Protection Act (GDPR).</p><p>If you have any questions or concerns about data protection, you can contact me via email at <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a>.</p>"
-    },
-    "FOOTER": {
-        "LEGAL_NOTICE": "Legal notice",
-        "LOGO": "Logo",
-        "GITHUB": "GitHub",
-        "E_MAIL": "E-Mail",
-        "LINKEDIN": "LinkedIn",
-        "LEGAL_NOTICE_PAGE": "<a href=\"imprint\" class=\"h1\"><h1>Legal Notice</h1></a><p>Information according to § 5 TMG</p><p>Damian Poloczek <br>Chiemgaustr. 156<br>81549 Munich <br> <br></p><p> <strong>Represented by: </strong><br>Damian Poloczek<br><br></p><p><strong>Contact:</strong> <br>Phone: (+49) 17699492988<br>Email: <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a></p><br><p><strong>Disclaimer: </strong><br><br><strong>Liability for content</strong><br><br>The content of our pages was created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with § 7 Abs.1 TMG under general law. According to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such legal violations, we will remove this content immediately.<br><br><strong>Liability for links</strong><br><br>Our offer contains links to external third-party websites, over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. Permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. Upon becoming aware of legal violations, we will remove such links immediately.<br><br><strong>Data protection</strong><br><br>The use of our website is usually possible without providing personal information. Insofar as personal data (e.g., name, address, or email addresses) is collected on our pages, this is always done on a voluntary basis, if possible. This data will not be passed on to third parties without your explicit consent. <br>We point out that data transmission over the Internet (e.g., communication by email) can have security vulnerabilities. Complete protection of data from access by third parties is not possible. <br>The use of contact data published within the scope of the legal notice obligation by third parties for the transmission of not expressly requested advertising and information materials is hereby expressly contradicted. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam emails.<br></p><br>Legal notice from <a href=\"https://www.impressum-generator.de\">Legal Notice Generator</a> of <a href=\"https://www.kanzlei-hasselbach.de/standorte/frankfurt/\" rel=\"nofollow\">Kanzlei Hasselbach, Frankfurt</a>"
-    }
+  "MENU": {
+    "ABOUT_ME": "About me",
+    "SKILL_SET": "Skill set",
+    "MY_WORK": "My work",
+    "CONTACT": "Contact",
+    "LOGO": "Logo"
+  },
+  "ABOUT_ME": {
+    "MY_PHOTO": "My profile photo",
+    "I_AM": "Hello! I am Damian",
+    "FRONTEND": "FULLSTACK",
+    "DEVELOPER": "DEVELOPER",
+    "GITHUB": "GitHub",
+    "E_MAIL": "E-Mail",
+    "LINKEDIN": "LinkedIn"
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "DJANGO": "Django",
+    "PYTHON": "Python",
+    "ANGULAR": "Angular",
+    "TYPESCRIPT": "TypeScript",
+    "JAVASCRIPT": "JavaScript",
+    "HTML": "HTML",
+    "SCRUM": "Scrum",
+    "FIREBASE": "Firebase",
+    "GIT": "GIT",
+    "GIT_HUB_ACTION": "GitHub Actions",
+    "CSS": "CSS",
+    "VITE": "Vite",
+    "BOOTSTRAP": "Bootstrap",
+    "POSTGRESQL": "PostgreSQL",
+    "REST_API": "Rest-Api",
+    "MATERIAL_DESIGN": "Material Design",
+    "GROWTH_MINDSET": "Growth mindset"
+  },
+  "WORK_TOGETHER": {
+    "TITEL": "Let's work together",
+    "DESCRIPTION_1": "I am a fullstack developer based in Munich. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
+    "DESCRIPTION_2": "If you think I'd be a good match for your projects, contact me!",
+    "BUTTON": "Send a message"
+  },
+  "MY_WORK": {
+    "MY_WORK": "My work",
+    "DESCRIPTION": "Take a look at some of my projects here and interact with them to see my skills in action."
+  },
+  "MY_PROJECTS": {
+    "PROJECT_1": "Quizapp developed with Bootstrap and JavaScript. Test your knowledge in HTML, CSS, and Python!",
+    "PROJECT_2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "PROJECT_3": "Based on the PokéAPI a simple library that provides and catalogues pokemon information..",
+    "PROJECT_4": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "PROJECT_5": "A Slack-style chat messenger for team communication. Supports registration, login, real-time chats in channels, and direct messages. User data and avatars are securely stored in Firebase.",
+    "PROJECT_6": "<p>My first real-life project, which I built for my wife, helps people understand the crypto world and guides them through buying their first Bitcoin.</p><p>Start in Krypto was my first project outside of Developer Akademie, where I learnt how to code. I built it from scratch based on my first client's requirements. I was responsible for the entire development process, including gathering requirements, designing the layout, and implementing the site using HTML, CSS, and JavaScript.</p><p>The site enables users to learn about her services, book appointments, and easily get in touch. It's a lightweight, responsive site focused on clarity and usability. One key lesson I took from this experience: what matters most is the client's vision, not the developer's preferences.</p><p>This project taught me that good development isn't just about code, it's about listening, adjusting, and building something that aligns with the client's goals, not just my ideas.</p>"
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "TITLE_H3": "Got a problem to solve?",
+    "DESCRIPTION_1": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "DESCRIPTION_2": "Looking for a Frontend developer?",
+    "DESCRIPTION_3": "Contact me!",
+    "FORM_NAME": "Your name",
+    "FORM_NAME_REQUIED": "Your name is required.",
+    "FORM_E_MAIL": "Your email",
+    "FORM_E_MAIL_REQUIED": "Your email is required.",
+    "FORM_MESSAGE": "Your message",
+    "FORM_MESSAGE_REQUIED": "Your message is empty.",
+    "PRIVACY_1": "I've read the",
+    "PRIVACY_2": "privacy policy",
+    "PRIVACY_3": "and agree to the processing of my data as outlined.",
+    "PRIVACY_POLICY": "<h3>Privacy Policy</h3><h4>Welcome to my website</h4><p>Protecting your personal data is important to me. This privacy policy describes how I collect, use, and protect your data.</p><h4>Contact Form</h4><p>If you use the contact form on my website, the data you provide (name, email address, and message) will be used solely for the purpose of contacting you. This data will not be shared with third parties.</p><h4>Use of Data</h4><p>The collected data is used exclusively for the following purposes:</p><ul><li>Contacting you and responding to your inquiries.</li><li>Registering and using the project pages.</li></ul><h4>Project Pages</h4><h5>Join Project</h5><p>This is a task manager modeled after a Kanban board. There is an option for registration, login, and guest access. This data is used only for demonstration purposes to view the project.</p><h5>El Pollo Loco</h5><p>A game developed in JavaScript. No registration is required here.</p><h4>Data Sharing</h4><p>Your personal data will not be shared with third parties unless required by law.</p><h4>Note on German Law</h4><p>This privacy policy refers to the legal provisions of the German Data Protection Act (GDPR).</p><p>If you have any questions or concerns about data protection, you can contact me via email at <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a>.</p>"
+  },
+  "FOOTER": {
+    "LEGAL_NOTICE": "Legal notice",
+    "LOGO": "Logo",
+    "GITHUB": "GitHub",
+    "E_MAIL": "E-Mail",
+    "LINKEDIN": "LinkedIn",
+    "LEGAL_NOTICE_PAGE": "<a href=\"imprint\" class=\"h1\"><h1>Legal Notice</h1></a><p>Information according to § 5 TMG</p><p>Damian Poloczek <br>Chiemgaustr. 156<br>81549 Munich <br> <br></p><p> <strong>Represented by: </strong><br>Damian Poloczek<br><br></p><p><strong>Contact:</strong> <br>Phone: (+49) 17699492988<br>Email: <a href='mailto:contact@damianpoloczek.com'>contact&#64;damianpoloczek.com</a></p><br><p><strong>Disclaimer: </strong><br><br><strong>Liability for content</strong><br><br>The content of our pages was created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with § 7 Abs.1 TMG under general law. According to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such legal violations, we will remove this content immediately.<br><br><strong>Liability for links</strong><br><br>Our offer contains links to external third-party websites, over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. Permanent control of the content of the linked pages is not reasonable without concrete evidence of an infringement. Upon becoming aware of legal violations, we will remove such links immediately.<br><br><strong>Data protection</strong><br><br>The use of our website is usually possible without providing personal information. Insofar as personal data (e.g., name, address, or email addresses) is collected on our pages, this is always done on a voluntary basis, if possible. This data will not be passed on to third parties without your explicit consent. <br>We point out that data transmission over the Internet (e.g., communication by email) can have security vulnerabilities. Complete protection of data from access by third parties is not possible. <br>The use of contact data published within the scope of the legal notice obligation by third parties for the transmission of not expressly requested advertising and information materials is hereby expressly contradicted. The operators of the pages expressly reserve the right to take legal action in the event of unsolicited sending of advertising information, such as spam emails.<br></p><br>Legal notice from <a href=\"https://www.impressum-generator.de\">Legal Notice Generator</a> of <a href=\"https://www.kanzlei-hasselbach.de/standorte/frankfurt/\" rel=\"nofollow\">Kanzlei Hasselbach, Frankfurt</a>"
+  }
 }
