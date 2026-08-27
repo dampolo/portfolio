@@ -46,7 +46,6 @@ export class ContactComponent {
   }
 
   onSubmit(ngForm: NgForm) {
-    debugger
     if (!this.checkboxState) {
       this.checkboxChecked = true;
     } else if (ngForm.submitted && ngForm.form.valid) {
