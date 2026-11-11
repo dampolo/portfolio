@@ -11,6 +11,8 @@ npm ci
 npm start
 ```
 
+For local development, you can also run `npm install` in place of `npm ci`. It installs the project dependencies and updates `package-lock.json` if needed.
+
 Open [http://localhost:4200](http://localhost:4200). The development server reloads the page when you save changes.
 
 ## Build and test
