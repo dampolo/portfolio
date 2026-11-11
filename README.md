@@ -1,27 +1,33 @@
-# Portfolio
+# Damian Poloczek · Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+Personal developer portfolio built with Angular 22, TypeScript, and SCSS. The site introduces my skills, links to live projects and their source code, and includes a contact form. Content is available in German and English.
 
-## Development server
+## Run locally
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Use Node.js 24.15 or later within the 24.x series and npm. From the project directory, run:
 
-## Code scaffolding
+```sh
+npm ci
+npm start
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Open [http://localhost:4200](http://localhost:4200). The development server reloads the page when you save changes.
 
-## Build
+## Build and test
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Command | Purpose |
+| --- | --- |
+| `npm run build` | Create a production build. The browser files are generated in `dist/portfolio/browser/`. |
+| `npm run watch` | Rebuild with the development configuration when files change. |
+| `npm test` | Run the Jasmine unit tests with Karma. |
 
-## Running unit tests
+When deploying the production build, configure the host to serve `index.html` for Angular routes such as `/imprint` and `/privacy-policy`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Project structure
 
-## Running end-to-end tests
+- `src/app/main-content/` contains the homepage sections, project cards, and contact form.
+- `src/app/app.routes.ts` defines the routes, including the imprint, privacy policy, and contact confirmation pages.
+- `src/assets/i18n/` contains the German and English translations.
+- `src/styles.scss` contains shared styles, variables, and mixins. Angular loads `src/reset.css` globally.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The contact form posts to the live PHP endpoint at `https://damianpoloczek.com/sendMail.php`, including when the Angular app runs locally.
