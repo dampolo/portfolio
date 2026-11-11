@@ -1,4 +1,4 @@
-@import "./../../../styles.scss";
+@use "../../../styles";
 
 .work-together {
   min-height: 500px;
@@ -12,14 +12,14 @@
   background-color: #fff;
   position: relative;
   .ball {
-    @include ball();
+    @include styles.ball();
     // align-self: end;
     position: absolute;
     width: 5.125rem;
     height: 5.125rem;
     top: 25px;
     right: 11%;
-    @include animation();
+    @include styles.animation();
   }
   .together-section {
     display: flex;
@@ -28,7 +28,7 @@
     .together {
       flex: 1;
       h2 {
-        @include fontH2();
+        @include styles.fontH2();
         padding-bottom: 50px;
       }
     }
@@ -48,22 +48,22 @@
         border-radius: 0.625rem;
         cursor: pointer;
         text-decoration: none;
-        color: $blue;
+        color: styles.$blue;
         font-family: "Montserrat";
         font-weight: 400;
         padding: 0.9375rem 1.875rem;
         min-width: 15.875rem;
-        border: solid 2px $blue;
-        background: $acent-1;
+        border: solid 2px styles.$blue;
+        background: styles.$acent-1;
         transition: all 175ms ease-in-out;
         &:hover {
-          @include buttonBlueHover();
+          @include styles.buttonBlueHover();
         }
         &:focus {
-          @include buttonBlueHover();
+          @include styles.buttonBlueHover();
         }
         &:active {
-          @include buttonBlueActive();
+          @include styles.buttonBlueActive();
         }
       }
     }
@@ -99,7 +99,7 @@
         font-size: 40px;
         line-height: 55px;
         h2 {
-          @include fontH2Responsiv($color: $blue);
+          @include styles.fontH2Responsiv($color: styles.$blue);
           padding-bottom: 25px;
         }
       }

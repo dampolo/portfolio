@@ -1,4 +1,4 @@
-@import "./../../../styles.scss";
+@use "../../../styles";
 
 section {
   display: flex;
@@ -16,8 +16,8 @@ section {
 
   .title {
     h2 {
-      @include fontH2();
-      color: $acent-1;
+      @include styles.fontH2();
+      color: styles.$acent-1;
       margin-top: 1.875rem;
     }
   }
@@ -39,7 +39,7 @@ section {
       margin-top: 1.875rem;
       h2 {
         margin: 0;
-        @include fontH2Responsiv()
+        @include styles.fontH2Responsiv()
       }
     }
     .skills-icons {

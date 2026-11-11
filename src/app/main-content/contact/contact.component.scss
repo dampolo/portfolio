@@ -1,4 +1,4 @@
-@import "./../../../styles.scss";
+@use "../../../styles";
 
 section {
   font-family: "Montserrat";
@@ -14,7 +14,7 @@ section {
   padding: 0rem 6.25rem 3rem;
   margin: auto;
   .big-ball {
-    @include ball();
+    @include styles.ball();
     position: absolute;
     max-width: 12.5rem;
     max-height: 12.5rem;
@@ -29,11 +29,11 @@ section {
       font-weight: 700;
       font-size: 6rem;
       line-height: 6rem;
-      color: $blue;
+      color: styles.$blue;
     }
   }
   .small-ball {
-    @include ball();
+    @include styles.ball();
     position: absolute;
     right: 5.625rem;
     bottom: 4.375rem;
@@ -54,7 +54,7 @@ section {
       font-size: 23px;
       font-weight: 700;
       line-height: 27.6px;
-      color: $blue;
+      color: styles.$blue;
     }
     p {
       font-size: 1rem;
@@ -70,7 +70,7 @@ section {
         font-weight: 700;
         line-height: 19.2px;
         text-align: left;
-        color: $blue;
+        color: styles.$blue;
         cursor: pointer;
       }
     }
@@ -78,8 +78,8 @@ section {
 }
 
 .show-focus {
-  border: solid 3px $blue !important;
-  outline: $blue !important;
+  border: solid 3px styles.$blue !important;
+  outline: styles.$blue !important;
 }
 
 form {
@@ -98,7 +98,7 @@ form {
       padding: 15px 25px 15px 25px;
       gap: 0.625rem;
       border-radius: 0.625rem;
-      border: solid 1px $blue;
+      border: solid 1px styles.$blue;
       border: 1px 0px 0px 0px;
       font-size: 1rem;
       font-weight: 400;
@@ -106,8 +106,8 @@ form {
       text-align: left;
       color: black;
       &:focus {
-        border: solid 3px $blue;
-        outline: $blue;
+        border: solid 3px styles.$blue;
+        outline: styles.$blue;
       }
       &:focus ~ label,
       &:not(:placeholder-shown) ~ label {
@@ -151,7 +151,7 @@ form {
       padding: 15px 25px 15px 25px;
       gap: 10px;
       border-radius: 10px;
-      border: solid 1px $blue;
+      border: solid 1px styles.$blue;
       font-size: 16px;
       font-weight: 400;
       line-height: 19.2px;
@@ -160,8 +160,8 @@ form {
       resize: unset;
       resize: vertical;
       &:focus {
-        border: solid 3px $blue;
-        outline: $blue;
+        border: solid 3px styles.$blue;
+        outline: styles.$blue;
       }
       &:focus ~ label,
       &:not(:placeholder-shown) ~ label {
@@ -181,7 +181,7 @@ form {
       position: absolute;
       left: 20px;
       top: 15px;
-      background-color: $acent-1;
+      background-color: styles.$acent-1;
       border-radius: 20px;
       transition: 0.3s ease-in-out;
     }
@@ -208,8 +208,8 @@ form {
 	padding: 15px 30px 15px 30px;
 	gap: 0.625rem;
 	border-radius: 0.625rem;
-	border: solid 2px $blue;
-	color: $blue;
+	border: solid 2px styles.$blue;
+	color: styles.$blue;
 	background: transparent;
 	opacity: 0px;
 	box-shadow: 5px 5px 15px 0px #00000026;
@@ -238,13 +238,13 @@ form {
 	  }
 	}
 	&:hover {
-	  @include buttonBlueHover();
+	  @include styles.buttonBlueHover();
 	}
 	&:focus {
-	  @include buttonBlueHover();
+	  @include styles.buttonBlueHover();
 	}
 	&:active {
-	  @include buttonBlueActive();
+	  @include styles.buttonBlueActive();
 	}
   }
 }
@@ -278,7 +278,7 @@ form {
       text-align: left;
       .privacy {
         text-decoration: none;
-        color: $blue;
+        color: styles.$blue;
         cursor: pointer;
         &:hover {
           text-decoration: underline;
@@ -309,10 +309,10 @@ form {
   position: relative;
   margin-top: auto;
   border-radius: 50%;
-  border: solid 0.1875rem $blue;
+  border: solid 0.1875rem styles.$blue;
   width: 3.125rem;
   height: 3.125rem;
-  background: $blue;
+  background: styles.$blue;
   transition: all 175ms ease-in-out;
   .arrow-white {
     width: 1.5625rem;

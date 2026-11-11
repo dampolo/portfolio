@@ -1,4 +1,4 @@
-@import "./../../styles.scss";
+@use "../../styles";
 
 .in-progress-component {
     // margin-top: 11.3125rem;
@@ -16,7 +16,7 @@
     font-weight: 650;
     font-size: clamp(1.75rem, 14.6667vw + -1.1667rem, 4rem);
     line-height: 1em;
-    color: $blue;
+    color: styles.$blue;
   }
 }
 
@@ -30,10 +30,10 @@
     margin-left: auto;
     margin-right: 2.5rem;
     border-radius: 50%;
-    border: solid 3px $blue;
+    border: solid 3px styles.$blue;
     width: 3.125rem;
     height: 3.125rem;
-    background: $blue;
+    background: styles.$blue;
     transition: all 175ms ease-in-out;
     .arrow-white {
       transform: rotate(-90deg);
