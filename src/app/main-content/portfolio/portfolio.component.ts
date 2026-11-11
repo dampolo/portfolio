@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { BallsComponent } from './balls/balls.component';
 import { TranslateModule } from '@ngx-translate/core';
@@ -8,6 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
     selector: 'app-portfolio',
     imports: [SingleProjectComponent, BallsComponent, TranslateModule],
     templateUrl: './portfolio.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {

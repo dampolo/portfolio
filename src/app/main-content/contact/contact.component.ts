@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -14,6 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
         TranslateModule,
     ],
     templateUrl: './contact.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './contact.component.scss'
 })
 export class ContactComponent {

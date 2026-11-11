@@ -1,11 +1,12 @@
 
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-single-skill',
     imports: [TranslateModule],
     templateUrl: './single-skill.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './single-skill.component.scss'
 })
 export class SingleSkillComponent {

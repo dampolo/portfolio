@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -7,6 +7,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     selector: 'app-header',
     imports: [CommonModule, TranslateModule, FormsModule],
     templateUrl: './header.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './header.component.scss'
 })
 export class HeaderComponent {

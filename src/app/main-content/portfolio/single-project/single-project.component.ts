@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { SingleProject } from '../../../models/singleProject.model';
 
@@ -7,6 +7,7 @@ import { SingleProject } from '../../../models/singleProject.model';
     selector: 'app-single-project',
     imports: [CommonModule, TranslateModule],
     templateUrl: './single-project.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './single-project.component.scss'
 })
 export class SingleProjectComponent {

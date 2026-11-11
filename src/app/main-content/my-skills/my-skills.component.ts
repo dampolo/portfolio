@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SingleSkillComponent } from './single-skill/single-skill.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -7,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
     selector: 'app-my-skills',
     imports: [SingleSkillComponent, TranslateModule],
     templateUrl: './my-skills.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
