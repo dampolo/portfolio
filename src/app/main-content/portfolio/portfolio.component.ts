@@ -5,11 +5,10 @@ import { BallsComponent } from './balls/balls.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-portfolio',
-  standalone: true,
-  imports: [CommonModule, SingleProjectComponent, BallsComponent, TranslateModule],
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.scss'
+    selector: 'app-portfolio',
+    imports: [CommonModule, SingleProjectComponent, BallsComponent, TranslateModule],
+    templateUrl: './portfolio.component.html',
+    styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
   

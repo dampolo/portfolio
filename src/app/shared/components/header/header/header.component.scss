@@ -1,5 +1,5 @@
 @use "../../../../../styles";
-@use "../../../../../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@use "../../../../../../node_modules/hamburgers/dist/hamburgers.css";
 
 .main-nav {
   display: flex;

@@ -5,7 +5,6 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-my-skills',
-    standalone: true,
     imports: [CommonModule, SingleSkillComponent, TranslateModule],
     templateUrl: './my-skills.component.html',
     styleUrl: './my-skills.component.scss'
