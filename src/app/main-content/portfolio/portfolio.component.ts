@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { SingleProjectComponent } from './single-project/single-project.component';
 import { BallsComponent } from './balls/balls.component';
@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-portfolio',
-    imports: [CommonModule, SingleProjectComponent, BallsComponent, TranslateModule],
+    imports: [SingleProjectComponent, BallsComponent, TranslateModule],
     templateUrl: './portfolio.component.html',
     styleUrl: './portfolio.component.scss'
 })

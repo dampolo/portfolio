@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { SingleSkillComponent } from './single-skill/single-skill.component';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-my-skills',
-    imports: [CommonModule, SingleSkillComponent, TranslateModule],
+    imports: [SingleSkillComponent, TranslateModule],
     templateUrl: './my-skills.component.html',
     styleUrl: './my-skills.component.scss'
 })
